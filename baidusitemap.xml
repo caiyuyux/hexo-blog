@@ -3,6 +3,48 @@
 
 
     
+  <url>
+    <loc>http://blog.caiyuyu.net/2016/01/26/2016-01-26-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%201/</loc>
+    <lastmod>2016-01-26T08:33:58.106Z</lastmod>
+    <data>
+        <display>
+        <title>Clojure 学习日记 —— 1入门</title>
+        <pubTime>2016-01-26T08:25:01.000Z</pubTime>
+        
+        <tag>clojure</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://blog.caiyuyu.net/2016/01/26/2016-01-26-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%202/</loc>
+    <lastmod>2016-01-26T08:33:24.083Z</lastmod>
+    <data>
+        <display>
+        <title>Clojure 学习日记 —— 2基础语法</title>
+        <pubTime>2016-01-26T08:28:30.000Z</pubTime>
+        
+        <tag>clojure</tag>
+         
+         
+           
+             
+              <breadCrumb title="学习笔记" url="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
     
   <url>
     <loc>http://blog.caiyuyu.net/2016/01/20/2016-01-20-The%20develop%20of%20maven%20in%20intelij%20IDEA/</loc>
@@ -27,8 +69,6 @@
     </data>
     </url>
 
-    
-    
     
     
   <url>

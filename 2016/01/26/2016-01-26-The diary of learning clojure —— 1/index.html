@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Markdown,emacs," />
+  <meta name="keywords" content="clojure," />
 
 
 
@@ -57,25 +57,16 @@
 
 
 
-<meta name="description" content="emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？">
+<meta name="description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows下 Emacs+Markdown 的使用">
-<meta property="og:url" content="http://blog.caiyuyu.net/2015/08/29/2015-08-27-How to preview markdown file on emacs/index.html">
+<meta property="og:title" content="Clojure 学习日记 —— 1入门">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/01/26/2016-01-26-The diary of learning clojure —— 1/index.html">
 <meta property="og:site_name" content="Tornado' blog">
-<meta property="og:description" content="emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/downMarkdown.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/installMarkdown.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/el.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/el2.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/t.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/t2.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/pandoc.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/el.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/well.png">
-<meta property="og:updated_time" content="2016-01-23T16:46:44.618Z">
+<meta property="og:description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
+<meta property="og:updated_time" content="2016-01-26T08:33:58.106Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows下 Emacs+Markdown 的使用">
-<meta name="twitter:description" content="emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？">
+<meta name="twitter:title" content="Clojure 学习日记 —— 1入门">
+<meta name="twitter:description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
 
 
 
@@ -93,7 +84,7 @@
   };
 </script>
 
-  <title> Windows下 Emacs+Markdown 的使用 | Tornado' blog </title>
+  <title> Clojure 学习日记 —— 1入门 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -290,7 +281,7 @@
             
             
               
-                Windows下 Emacs+Markdown 的使用
+                Clojure 学习日记 —— 1入门
               
             
           </h1>
@@ -302,8 +293,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-08-29T13:23:22+08:00" content="2015-08-29">
-              2015-08-29
+            <time itemprop="dateCreated" datetime="2016-01-26T16:25:01+08:00" content="2016-01-26">
+              2016-01-26
             </time>
           </span>
 
@@ -316,8 +307,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
-                    <span itemprop="name">技术备忘</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -332,8 +323,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2015/08/29/2015-08-27-How to preview markdown file on emacs/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/29/2015-08-27-How to preview markdown file on emacs/" itemprop="commentsCount"></span>
+                <a href="/2016/01/26/2016-01-26-The diary of learning clojure —— 1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/26/2016-01-26-The diary of learning clojure —— 1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -354,61 +345,56 @@
       
 
       
-        <p>emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？<br><a id="more"></a></p>
-<h3 id="u89E3_u51B3_u4EC0_u4E48_u95EE_u9898_uFF1F"><a href="#u89E3_u51B3_u4EC0_u4E48_u95EE_u9898_uFF1F" class="headerlink" title="解决什么问题？"></a>解决什么问题？</h3><p>简单的来说，本文解决的是你在emacs下使用 <code>C+c C+c p</code> 指令预览markdown文件发生的错误，类似如下。</p>
-<blockquote>
-<p>‘markdown’不是内部或外部指令，也不是可运行的程序或批处理文件。</p>
-</blockquote>
-<p>如果是这个问题的话，恭喜你，继续往下看。</p>
-<p>一般来说，我们使用markdown会输出成html格式才可以使用。除非网站可以解析md文件，比如说github，那就可以省了这个步骤。<br>所以我们要预览就肯定要导出一个html文件，而md文件转成html文件是要添加外部依赖的，这就是问题的根源。</p>
-<p>这里我用了两种方法来解决。</p>
-<ul>
-<li>使用python的Markdown包</li>
-<li>使用pandoc工具</li>
-</ul>
-<h3 id="u4F7F_u7528python_u7684markdown_u5305"><a href="#u4F7F_u7528python_u7684markdown_u5305" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><p>####搭建python环境<br>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
-<p>####下载Markdown包并安装<br>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
-<blockquote>
-<p>pip install markdown</p>
-</blockquote>
-<p><img src="/img/pics/2015-08-29/downMarkdown.png" alt="down"></p>
-<p>安装好它会提示你安装的位置，进入该目录的包文件，你会看到有个<code>setup.py</code>文件，这个是python脚本的安装文件，<br>打开<code>cmd</code>，cd到该位置，输入指令</p>
-<blockquote>
-<p>python setup.py install</p>
-</blockquote>
-<p><img src="/img/pics/2015-08-29/installMarkdown.png" alt="install"></p>
-<p>又是一大堆信息出来，个人觉得python这点很好，可以让我们很清楚的知道产生了那些文件。<br>我们可以看到在<code>Scripts</code>文件夹下产生了一个名为<code>markdown_py</code>的批处理文件。</p>
-<p>####修改markdown-mode.el<br>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
-<p>打开<code>markdown-mode.el</code>文件，在800多行左右可以看到如下</p>
-<p><img src="/img/pics/2015-08-29/el.png" alt="el"></p>
-<p>将<code>markdown</code>改成<code>markdown_py</code></p>
-<p><img src="/img/pics/2015-08-29/el2.png" alt="el2"></p>
-<p>再打开emacs，切换到<code>markdown-mode</code>，随便输点东西，<code>C-c C-c p</code>一下，运行如下。</p>
-<p><img src="/img/pics/2015-08-29/t.png" alt="t"></p>
-<p>成功运行，没有报出指令错误，但是我们可以发现浏览器中文乱码。</p>
-<p>这个简单，因为md文件最终也是要转成html的，我们可以在在每个md文件开头加上一句</p>
-<blockquote>
-<p><code>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</code></p>
-</blockquote>
-<p><img src="/img/pics/2015-08-29/t2.png" alt="t2"></p>
-<p>不过确实，在md文件加上这一句确实不太美观，所以我推荐第二种方法，更好更强大。</p>
-<p>###使用pandoc工具</p>
-<p>####下载pandoc并安装<br>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
-<p>pandoc可以解析markdown文件，但是它并不仅仅支持markdown的标记语法，还支持语法高亮和LaTex数学公式，可以把它当作markdown的拓展。</p>
-<p>以下是官网介绍，可以简单看一下。</p>
-<p><img src="/img/pics/2015-08-29/pandoc.png" alt="pandoc"></p>
-<p>####修改markdown-mode.el<br>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
-<p>打开<code>markdown-mode.el</code>，还是刚才那个位置</p>
-<p><img src="/img/pics/2015-08-29/el.png" alt=""></p>
-<p><code>pandoc</code>的命令选项如下</p>
-<p>||选项||描述|||<br>||<code>-f html</code>||转换成html文件||<br>||<code>-t markdown</code>||解析markdown||<br>||<code>--ascii</code>||解决中文乱码||<br>||<code>--highlight-style pygments</code>||支持语法高亮||<br>||<code>--mathjax</code>||支持 LaTex数学公式||</p>
-<p>一股脑都加进去吧，将<code>markdown</code>修改为如下</p>
-<blockquote>
-<p><code>pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax</code></p>
-</blockquote>
-<p><img src="/img/pics/2015-08-29/well.png" alt="well"></p>
-<p>水平所限，欢迎指点交流，谢谢。</p>
-<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://panqiincs.github.io/" target="_blank" rel="external">辛未羊的博客</a></p>
+        <p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>
+<a id="more"></a>
+<h3 id="u5B66_u4E60_u6559_u6750"><a href="#u5B66_u4E60_u6559_u6750" class="headerlink" title="学习教材"></a>学习教材</h3><p>嗯，废话不多说，教材用的是《Clojure Programming》，也就是俗称的动物书，听说比较全面，打基础不错。</p>
+<p>当然，是翻译版的，英语水平不够是硬伤呀。 可以点 <a href="http://leanote.com/api/file/getAttach?fileId=56a72482ab6441777600233a" target="_blank" rel="external">Clojure Programming.pdf</a> 下载英文版PDF文档。</p>
+<h3 id="Clojure_u7279_u70B9"><a href="#Clojure_u7279_u70B9" class="headerlink" title="Clojure特点"></a>Clojure特点</h3><ol>
+<li><p>基于JVM平台，lisp恶劣的生态圈和稳定的JVM一结合，赶脚是天造地设的一对。</p>
+</li>
+<li><p>函数式编程语言，不可否认，函数式编程确实可以锻炼你的思维。</p>
+</li>
+<li><p>天生适合进行并行、并发编程。</p>
+</li>
+<li><p>动态编程语言，可以交互式开发。</p>
+</li>
+</ol>
+<h3 id="Clojure_u7684_u540C_u50CF_u6027"><a href="#Clojure_u7684_u540C_u50CF_u6027" class="headerlink" title="Clojure的同像性"></a>Clojure的同像性</h3><p>同像性一般称为“代码即数据”，即是说clojure没有太多臃肿的代码片段，这也是元编程的前提。  </p>
+<p>从代码转换成AST(抽象语法树)是一门语言的核心，也是体现一门语言的表达能力的所在，</p>
+<p>但是你要作出这个转换一般的前提是你对这么语言有一定的理解，理解的程度和该门语言的表达能力成反比，但是具有同像性的语言是个例外，</p>
+<p>因为clojure的代码是直接用AST的数据结构来写的，就是说，你写下的clojure代码就是一个AST了，不需要特意去转换，</p>
+<p>这也意味着clojure拥有其他语言所不能及的优秀的表达能力。</p>
+<h3 id="Clojure_u8DD1_u8D77_u6765"><a href="#Clojure_u8DD1_u8D77_u6765" class="headerlink" title="Clojure跑起来"></a>Clojure跑起来</h3><h4 id="u5FC5_u5907jar_u5305"><a href="#u5FC5_u5907jar_u5305" class="headerlink" title="必备jar包"></a>必备jar包</h4><ol>
+<li><p>JRE；也就是java运行时，当然，有JDK肯定也是可以的。</p>
+</li>
+<li><p>clojure.jar；可以在官网下载，现在最新的是1.8。</p>
+</li>
+</ol>
+<p>####编程工具</p>
+<ol>
+<li><p>Emacs；神器来着，可惜我驾驭不了，号称天生适合开发lisp，不适合新手，套用大牛的话，因为学习曲线太陡峭，除非你是emacs大牛。</p>
+</li>
+<li><p>Eclipse；没用过，用了一段时间的myeclipse，已弃用。</p>
+</li>
+<li><p>IDEA；没得说，强烈推荐，对clojure的支持很好，不过注意，不用La Clojure插件，用cursive插件，同时支持Leiningen，可惜要付费，不过真的很值，可以试用看看先。</p>
+</li>
+<li><p>命令行；这个不太熟悉，之前很久搞过，好像是要用lein运行的，不过用命令行，想想都觉得累，大牛走开、走开。</p>
+</li>
+</ol>
+<h3 id="REPL_u662F_u4EC0_u4E48_u9B3C"><a href="#REPL_u662F_u4EC0_u4E48_u9B3C" class="headerlink" title="REPL是什么鬼"></a>REPL是什么鬼</h3><h4 id="u7B80_u5355_u4ECB_u7ECD"><a href="#u7B80_u5355_u4ECB_u7ECD" class="headerlink" title="简单介绍"></a>简单介绍</h4><p>即 Read(读入)-Eval(求值)-Print(打印)-Loop(循环)。</p>
+<p>其实很多语言都都有repl这个东东，就是俗称的解释器，解析代码用的，像java也有BeanShell。</p>
+<p>但是clojure的repl是有点不同的，clojure的repl在解析代码的时候有个编译的过程，会编译成JVM的字节码，即是说clojure不是像html那种边解析边执行的，它是要编译成字节码后才能执行的，只不过clojure在解释执行的时候顺便编译了，跟直接执行一个clojure源文件是一样的，这点其实我也有点懵。</p>
+<p>clojure有repl肯定是个不小的有点，因为这意味着clojure可以交互，可以在运行时更新现有或新的代码，类似phtyon，可以对比下java的web，更新代码都要重启服务器，如果是clojure来实现，就支持热部署。</p>
+<h4 id="u6572_u5165_u4EE3_u7801"><a href="#u6572_u5165_u4EE3_u7801" class="headerlink" title="敲入代码"></a>敲入代码</h4><p>运行REPL，看到如下界面</p>
+<p><code>user=&gt;</code></p>
+<p>这个clojure是有命名空间的概念，user表示你当前的命名空间，user是默认命名空间。</p>
+<p>我们定义一个函数average，可以传入一个数组求平均值。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(defn average    &#10;    [numbers]&#10;    (/ (apply + numbers) (count numbers)</span><br></pre></td></tr></table></figure></p>
+<p>然后调用代码得到结果<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(average [60 80 100 400]&#10;;=160</span><br></pre></td></tr></table></figure></p>
+<p>注意 <code>;=</code>  前缀表示函数结果输出，在函数式语言中，函数是头等公民，都具有一个返回值，160就是average的返回值，也就是我们要求的平均值结果。</p>
+<p>如果换成这样就变成这样<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(println (average [60 80 100 499]))&#10;;160&#10;;=nil</span><br></pre></td></tr></table></figure></p>
+<p>先求值<code>average</code>得到160的结果，<code>println</code>函数打印结果为 ;160  </p>
+<p>但是这个打印的功能只是附加的，每个函数都要求值才是repl本身就有的，<code>println</code> 求值为空，</p>
+<p>即<code>nil</code> </p>
 
       
     </div>
@@ -417,9 +403,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Markdown/" rel="tag">#Markdown</a>
-          
-            <a href="/tags/emacs/" rel="tag">#emacs</a>
+            <a href="/tags/clojure/" rel="tag">#clojure</a>
           
         </div>
       
@@ -428,16 +412,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/07/15/2015-07-15-How to use TortoiseGit+codding on windows/" rel="next" title="Windows下 TortoiseGit+Coding 的使用">
-                <i class="fa fa-chevron-left"></i> Windows下 TortoiseGit+Coding 的使用
+              <a href="/2016/01/20/2016-01-20-The diary of learning clojure —— 0/" rel="next" title="Clojure 学习日记 —— 0序言">
+                <i class="fa fa-chevron-left"></i> Clojure 学习日记 —— 0序言
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/20/2016-01-20-The develop of maven in intelij IDEA/" rel="prev" title="IDEA 下的 maven+git 开发">
-                IDEA 下的 maven+git 开发 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/26/2016-01-26-The diary of learning clojure —— 2/" rel="prev" title="Clojure 学习日记 —— 2基础语法">
+                Clojure 学习日记 —— 2基础语法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -464,8 +448,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2015/08/29/2015-08-27-How to preview markdown file on emacs/"
-           data-title="Windows下 Emacs+Markdown 的使用" data-url="http://blog.caiyuyu.net/2015/08/29/2015-08-27-How to preview markdown file on emacs/">
+      <div class="ds-thread" data-thread-key="2016/01/26/2016-01-26-The diary of learning clojure —— 1/"
+           data-title="Clojure 学习日记 —— 1入门" data-url="http://blog.caiyuyu.net/2016/01/26/2016-01-26-The diary of learning clojure —— 1/">
       </div>
     
   </div>
@@ -574,7 +558,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u89E3_u51B3_u4EC0_u4E48_u95EE_u9898_uFF1F"><span class="nav-number">1.</span> <span class="nav-text">解决什么问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4F7F_u7528python_u7684markdown_u5305"><span class="nav-number">2.</span> <span class="nav-text">使用python的markdown包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B66_u4E60_u6559_u6750"><span class="nav-number">1.</span> <span class="nav-text">学习教材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u7279_u70B9"><span class="nav-number">2.</span> <span class="nav-text">Clojure特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u7684_u540C_u50CF_u6027"><span class="nav-number">3.</span> <span class="nav-text">Clojure的同像性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u8DD1_u8D77_u6765"><span class="nav-number">4.</span> <span class="nav-text">Clojure跑起来</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5FC5_u5907jar_u5305"><span class="nav-number">4.1.</span> <span class="nav-text">必备jar包</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#REPL_u662F_u4EC0_u4E48_u9B3C"><span class="nav-number">5.</span> <span class="nav-text">REPL是什么鬼</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u7B80_u5355_u4ECB_u7ECD"><span class="nav-number">5.1.</span> <span class="nav-text">简单介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6572_u5165_u4EE3_u7801"><span class="nav-number">5.2.</span> <span class="nav-text">敲入代码</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
