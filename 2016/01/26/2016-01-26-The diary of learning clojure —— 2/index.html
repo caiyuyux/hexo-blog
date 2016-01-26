@@ -63,7 +63,7 @@
 <meta property="og:url" content="http://blog.caiyuyu.net/2016/01/26/2016-01-26-The diary of learning clojure —— 2/index.html">
 <meta property="og:site_name" content="Tornado' blog">
 <meta property="og:description" content="唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。">
-<meta property="og:updated_time" content="2016-01-26T08:33:24.083Z">
+<meta property="og:updated_time" content="2016-01-26T08:42:35.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Clojure 学习日记 —— 2基础语法">
 <meta name="twitter:description" content="唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。">
@@ -347,18 +347,17 @@
       
         <p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br><a id="more"></a></p>
 <h3 id="u57FA_u672C_u6982_u5FF5"><a href="#u57FA_u672C_u6982_u5FF5" class="headerlink" title="基本概念"></a>基本概念</h3><ul>
-<li><p>字符串；跟java的字符串一样，不过天然支持多行。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#34;hello there&#34;&#10;;=&#34;hello there&#34;&#10;&#34;multiline strings&#10;are very handy&#34;&#10;;=&#34;multiline strings\nare very handy&#34;</span><br></pre></td></tr></table></figure>
+<li>字符串；跟java的字符串一样，不过天然支持多行。</li>
+</ul>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello there"</span></span><br><span class="line"><span class="comment">;="hello there"</span></span><br><span class="line"><span class="string">"multiline strings</span><br><span class="line">are very handy"</span></span><br><span class="line"><span class="comment">;="multiline strings\nare very handy"</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>布尔值；类似java，true和false。<br>空值；这个有点不同，为nil，类似java的null，python的none。<br>字符；clojure看起来有点怪，没有用单引号包起来，不过跟java的字符差不多。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\c&#10;;=\c</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>关键字；类似概念，直接看例子。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(def person &#123;:name &#34;Sandra Cruz&#34;&#10;             :City &#34;Portland, ME&#34;&#10;             ::lod &#34;Demo&#34;&#125;)&#10;;=#&#39;user/person&#10;(:city person)&#10;;=&#34;Portland, ME&#34;</span><br></pre></td></tr></table></figure>
-</li>
+<li>布尔值；类似java，true和false。<br>空值；这个有点不同，为nil，类似java的null，python的none。<br>字符；clojure看起来有点怪，没有用单引号包起来，不过跟java的字符差不多。</li>
 </ul>
-</li>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\c</span><br><span class="line">;=\c</span><br></pre></td></tr></table></figure>
+<ul>
+<li>关键字；类似概念，直接看例子。</li>
 </ul>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> person <span class="collection">&#123;<span class="attribute">:name</span> <span class="string">"Sandra Cruz"</span></span><br><span class="line">             <span class="attribute">:City</span> <span class="string">"Portland, ME"</span></span><br><span class="line">             :<span class="attribute">:lod</span> <span class="string">"Demo"</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;=#'user/person</span></span><br><span class="line"><span class="list">(<span class="attribute">:city</span> person)</span></span><br><span class="line"><span class="comment">;="Portland, ME"</span></span><br></pre></td></tr></table></figure>
 <p>关键字是要冒号开头的，双冒号开头表示所属当前命名空间，<br>如果双冒号开头又包含了/，表示所属特定命名空间，<br>这点有点懵，我估计是翻译的不好，我实际验证下。<br><code>:name</code> 表示只能在当前命名空间用<code>(:name person)</code>取到值。<br><code>::lod</code> 表示你可以在当前命名空间用<code>(::lod person)</code>取到值。<br>同时在所有命名空间，可以用<code>(:user/lod person)</code>取到值。</p>
 <ul>
 <li>进制<br>十六进制：<code>0xff</code>表示255；<br>八进制：<code>040</code>表示32；<br>任意进制；<code>BrN</code>，N为数字，B为进制，<code>16rff</code>表示255，最高支持36进制。</li>
@@ -366,14 +365,13 @@
 <li>正则表达式<br>clojure用以<code>#</code>开头的字符串当作正则表达式，在字符串中不需要加反斜杠转义。</li>
 <li>注释</li>
 <li>支持俩种注释，以分号<code>;</code>开头的单行注释还有以<code>#_</code>开头的形式级别的注释，可以直接注释一个形式。</li>
-<li><p>空格和逗号<br>空格和逗号基本上是等价的，一般用逗号在希望提高代码可读性的时候使用，比如<code>map</code>里面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(create-user &#123;:name new-username, :email email)</span><br></pre></td></tr></table></figure>
+<li>空格和逗号<br>空格和逗号基本上是等价的，一般用逗号在希望提高代码可读性的时候使用，比如<code>map</code>里面</li>
+</ul>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">create-user</span> <span class="collection">&#123;<span class="attribute">:name</span> new-username, <span class="attribute">:email</span> email)</span></span></span><br></pre></td></tr></table></figure>
 <ul>
-<li>集合字面量<br>字面量这个看下来很高大上的词其实不是新概念，就相当于我们的数据形式，有四种。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`(a b :name 12.5)      ;list&#10;[&#39;a &#39;b :name 12.5]     ;vector&#10;&#123;:name &#34;Chas&#34; :age 31&#125; ;map&#10;#&#123;1 2 3&#125;               ;set</span><br></pre></td></tr></table></figure></li>
+<li>集合字面量<br>字面量这个看下来很高大上的词其实不是新概念，就相当于我们的数据形式，有四种。</li>
 </ul>
-</li>
-</ul>
-
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`(a b :name 12.5)      ;list</span><br><span class="line">['a 'b :name 12.5]     ;vector</span><br><span class="line">&#123;:name "Chas" :age 31&#125; ;map</span><br><span class="line">#&#123;1 2 3&#125;               ;set</span><br></pre></td></tr></table></figure>
       
     </div>
 
