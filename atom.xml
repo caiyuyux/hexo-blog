@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Tornado' blog]]></title>
+  <subtitle><![CDATA[蘑菇不开花，你还爱它吗？]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://blog.caiyuyu.net/"/>
+  <updated>2016-01-26T08:54:48.864Z</updated>
+  <id>http://blog.caiyuyu.net/</id>
+  
+  <author>
+    <name><![CDATA[Tornado]]></name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Clojure 学习日记 —— 2基础语法]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%202/"/>
+    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-The diary of learning clojure —— 2/</id>
+    <published>2016-01-26T08:28:30.000Z</published>
+    <updated>2016-01-26T08:54:48.864Z</updated>
+    <content type="html"><![CDATA[<p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br><a id="more"></a></p>
+<h3 id="u5B57_u7B26_u4E32"><a href="#u5B57_u7B26_u4E32" class="headerlink" title="字符串"></a>字符串</h3><p>跟java的字符串一样，不过天然支持多行。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello there"</span></span><br><span class="line"><span class="comment">;="hello there"</span></span><br><span class="line"><span class="string">"multiline strings</span><br><span class="line">are very handy"</span></span><br><span class="line"><span class="comment">;="multiline strings\nare very handy"</span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="u5E03_u5C14_u503C"><a href="#u5E03_u5C14_u503C" class="headerlink" title="布尔值"></a>布尔值</h3><p>类似java，true和false。<br>空值；这个有点不同，为nil，类似java的null，python的none。<br>字符；clojure看起来有点怪，没有用单引号包起来，不过跟java的字符差不多。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\c</span><br><span class="line">;=\c</span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="u5173_u952E_u5B57"><a href="#u5173_u952E_u5B57" class="headerlink" title="关键字"></a>关键字</h3><p>类似概念，直接看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> person <span class="collection">&#123;<span class="attribute">:name</span> <span class="string">"Sandra Cruz"</span></span><br><span class="line">             <span class="attribute">:City</span> <span class="string">"Portland, ME"</span></span><br><span class="line">             :<span class="attribute">:lod</span> <span class="string">"Demo"</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;=#'user/person</span></span><br><span class="line"><span class="list">(<span class="attribute">:city</span> person)</span></span><br><span class="line"><span class="comment">;="Portland, ME"</span></span><br></pre></td></tr></table></figure></p>
+<p>关键字是要冒号开头的，双冒号开头表示所属当前命名空间，<br>如果双冒号开头又包含了/，表示所属特定命名空间，<br>这点有点懵，我估计是翻译的不好，我实际验证下。<br><code>:name</code> 表示只能在当前命名空间用<code>(:name person)</code>取到值。<br><code>::lod</code> 表示你可以在当前命名空间用<code>(::lod person)</code>取到值。<br>同时在所有命名空间，可以用<code>(:user/lod person)</code>取到值。</p>
+<hr>
+<h3 id="u8FDB_u5236"><a href="#u8FDB_u5236" class="headerlink" title="进制"></a>进制</h3><p> 十六进制：<code>0xff</code>表示255；<br> 八进制：<code>040</code>表示32；<br> 任意进制；<code>BrN</code>，N为数字，B为进制，<code>16rff</code>表示255，最高支持36进制。</p>
+<hr>
+<h3 id="u7CBE_u5EA6"><a href="#u7CBE_u5EA6" class="headerlink" title="精度"></a>精度</h3><p> clojure支持任意精度的数字。</p>
+<hr>
+<h3 id="u6B63_u5219_u8868_u8FBE_u5F0F"><a href="#u6B63_u5219_u8868_u8FBE_u5F0F" class="headerlink" title="正则表达式"></a>正则表达式</h3><p> clojure用以<code>#</code>开头的字符串当作正则表达式，在字符串中不需要加反斜杠转义。</p>
+<hr>
+<h3 id="u6CE8_u91CA"><a href="#u6CE8_u91CA" class="headerlink" title="注释"></a>注释</h3><p>支持俩种注释，以分号<code>;</code>开头的单行注释还有以<code>#_</code>开头的形式级别的注释，可以直接注释一个形式。</p>
+<hr>
+<h3 id="u7A7A_u683C_u548C_u9017_u53F7"><a href="#u7A7A_u683C_u548C_u9017_u53F7" class="headerlink" title="空格和逗号"></a>空格和逗号</h3><p>空格和逗号基本上是等价的，一般用逗号在希望提高代码可读性的时候使用，比如<code>map</code>里面<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">create-user</span> <span class="collection">&#123;<span class="attribute">:name</span> new-username, <span class="attribute">:email</span> email)</span></span></span><br></pre></td></tr></table></figure></p>
+<hr>
+<h3 id="u96C6_u5408_u5B57_u9762_u91CF"><a href="#u96C6_u5408_u5B57_u9762_u91CF" class="headerlink" title="集合字面量"></a>集合字面量</h3><p> 字面量这个看下来很高大上的词其实不是新概念，就相当于我们的数据形式，有四种。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`(a b :name 12.5)      ;list</span><br><span class="line">['a 'b :name 12.5]     ;vector</span><br><span class="line">&#123;:name "Chas" :age 31&#125; ;map</span><br><span class="line">#&#123;1 2 3&#125;               ;set</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br>]]>
+    
+    </summary>
+    
+      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
+    
+      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Clojure 学习日记 —— 1入门]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%201/"/>
+    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-The diary of learning clojure —— 1/</id>
+    <published>2016-01-26T08:25:01.000Z</published>
+    <updated>2016-01-26T08:46:40.989Z</updated>
+    <content type="html"><![CDATA[<p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>
+<a id="more"></a>
+<h3 id="u5B66_u4E60_u6559_u6750"><a href="#u5B66_u4E60_u6559_u6750" class="headerlink" title="学习教材"></a>学习教材</h3><p>嗯，废话不多说，教材用的是《Clojure Programming》，也就是俗称的动物书，听说比较全面，打基础不错。</p>
+<p>当然，是翻译版的，英语水平不够是硬伤呀。 可以点 <a href="http://leanote.com/api/file/getAttach?fileId=56a72482ab6441777600233a" target="_blank" rel="external">Clojure Programming.pdf</a> 下载英文版PDF文档。</p>
+<hr>
+<h3 id="Clojure_u7279_u70B9"><a href="#Clojure_u7279_u70B9" class="headerlink" title="Clojure特点"></a>Clojure特点</h3><ol>
+<li><p>基于JVM平台，lisp恶劣的生态圈和稳定的JVM一结合，赶脚是天造地设的一对。</p>
+</li>
+<li><p>函数式编程语言，不可否认，函数式编程确实可以锻炼你的思维。</p>
+</li>
+<li><p>天生适合进行并行、并发编程。</p>
+</li>
+<li><p>动态编程语言，可以交互式开发。</p>
+</li>
+</ol>
+<hr>
+<h3 id="Clojure_u7684_u540C_u50CF_u6027"><a href="#Clojure_u7684_u540C_u50CF_u6027" class="headerlink" title="Clojure的同像性"></a>Clojure的同像性</h3><p>同像性一般称为“代码即数据”，即是说clojure没有太多臃肿的代码片段，这也是元编程的前提。  </p>
+<p>从代码转换成AST(抽象语法树)是一门语言的核心，也是体现一门语言的表达能力的所在，</p>
+<p>但是你要作出这个转换一般的前提是你对这么语言有一定的理解，理解的程度和该门语言的表达能力成反比，但是具有同像性的语言是个例外，</p>
+<p>因为clojure的代码是直接用AST的数据结构来写的，就是说，你写下的clojure代码就是一个AST了，不需要特意去转换，</p>
+<p>这也意味着clojure拥有其他语言所不能及的优秀的表达能力。</p>
+<hr>
+<h3 id="Clojure_u8DD1_u8D77_u6765"><a href="#Clojure_u8DD1_u8D77_u6765" class="headerlink" title="Clojure跑起来"></a>Clojure跑起来</h3><h4 id="u5FC5_u5907jar_u5305"><a href="#u5FC5_u5907jar_u5305" class="headerlink" title="必备jar包"></a>必备jar包</h4><ol>
+<li><p>JRE；也就是java运行时，当然，有JDK肯定也是可以的。</p>
+</li>
+<li><p>clojure.jar；可以在官网下载，现在最新的是1.8。</p>
+</li>
+</ol>
+<h4 id="u7F16_u7A0B_u5DE5_u5177"><a href="#u7F16_u7A0B_u5DE5_u5177" class="headerlink" title="编程工具"></a>编程工具</h4><ol>
+<li><p>Emacs；神器来着，可惜我驾驭不了，号称天生适合开发lisp，不适合新手，套用大牛的话，因为学习曲线太陡峭，除非你是emacs大牛。</p>
+</li>
+<li><p>Eclipse；没用过，用了一段时间的myeclipse，已弃用。</p>
+</li>
+<li><p>IDEA；没得说，强烈推荐，对clojure的支持很好，不过注意，不用La Clojure插件，用cursive插件，同时支持Leiningen，可惜要付费，不过真的很值，可以试用看看先。</p>
+</li>
+<li><p>命令行；这个不太熟悉，之前很久搞过，好像是要用lein运行的，不过用命令行，想想都觉得累，大牛走开、走开。</p>
+</li>
+</ol>
+<hr>
+<h3 id="REPL_u662F_u4EC0_u4E48_u9B3C"><a href="#REPL_u662F_u4EC0_u4E48_u9B3C" class="headerlink" title="REPL是什么鬼"></a>REPL是什么鬼</h3><h4 id="u7B80_u5355_u4ECB_u7ECD"><a href="#u7B80_u5355_u4ECB_u7ECD" class="headerlink" title="简单介绍"></a>简单介绍</h4><p>即 Read(读入)-Eval(求值)-Print(打印)-Loop(循环)。</p>
+<p>其实很多语言都都有repl这个东东，就是俗称的解释器，解析代码用的，像java也有BeanShell。</p>
+<p>但是clojure的repl是有点不同的，clojure的repl在解析代码的时候有个编译的过程，会编译成JVM的字节码，即是说clojure不是像html那种边解析边执行的，它是要编译成字节码后才能执行的，只不过clojure在解释执行的时候顺便编译了，跟直接执行一个clojure源文件是一样的，这点其实我也有点懵。</p>
+<p>clojure有repl肯定是个不小的有点，因为这意味着clojure可以交互，可以在运行时更新现有或新的代码，类似phtyon，可以对比下java的web，更新代码都要重启服务器，如果是clojure来实现，就支持热部署。</p>
+<h4 id="u6572_u5165_u4EE3_u7801"><a href="#u6572_u5165_u4EE3_u7801" class="headerlink" title="敲入代码"></a>敲入代码</h4><p>运行REPL，看到如下界面</p>
+<p><code>user=&gt;</code></p>
+<p>这个clojure是有命名空间的概念，user表示你当前的命名空间，user是默认命名空间。</p>
+<p>我们定义一个函数average，可以传入一个数组求平均值。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> average    </span><br><span class="line">    <span class="collection">[numbers]</span></span><br><span class="line">    <span class="list">(/ <span class="list">(<span class="keyword"><span class="built_in">apply</span></span> + numbers)</span> <span class="list">(<span class="keyword"><span class="built_in">count</span></span> numbers)</span></span></span></span><br></pre></td></tr></table></figure></p>
+<p>然后调用代码得到结果<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">average</span> <span class="collection">[<span class="number">60</span> <span class="number">80</span> <span class="number">100</span> <span class="number">400</span>]</span></span><br><span class="line"><span class="comment">;=160</span></span></span><br></pre></td></tr></table></figure></p>
+<p>注意 <code>;=</code>  前缀表示函数结果输出，在函数式语言中，函数是头等公民，都具有一个返回值，160就是average的返回值，也就是我们要求的平均值结果。</p>
+<p>如果换成这样就变成这样<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">println</span> <span class="list">(<span class="keyword">average</span> <span class="collection">[<span class="number">60</span> <span class="number">80</span> <span class="number">100</span> <span class="number">499</span>]</span>)</span>)</span></span><br><span class="line"><span class="comment">;160</span></span><br><span class="line"><span class="comment">;=nil</span></span><br></pre></td></tr></table></figure></p>
+<p>先求值<code>average</code>得到160的结果，<code>println</code>函数打印结果为 ;160  </p>
+<p>但是这个打印的功能只是附加的，每个函数都要求值才是repl本身就有的，<code>println</code> 求值为空，</p>
+<p>即<code>nil</code> </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>]]>
+    
+    </summary>
+    
+      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
+    
+      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Clojure 学习日记 —— 0序言]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%200/"/>
+    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-The diary of learning clojure —— 0/</id>
+    <published>2016-01-20T15:11:35.000Z</published>
+    <updated>2016-01-23T16:46:44.619Z</updated>
+    <content type="html"><![CDATA[<p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>
+<a id="more"></a>
+<h3 id="lisp_u4ECB_u7ECD"><a href="#lisp_u4ECB_u7ECD" class="headerlink" title="lisp介绍"></a>lisp介绍</h3><p>说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  </p>
+<p>lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，<br>而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 </p>
+<p>现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，<br>到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  </p>
+<blockquote>
+<ol>
+<li>最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来</li>
+<li>lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了</li>
+<li>lisp是一种研究型、实验室语言，应用不广，无法推广。</li>
+</ol>
+</blockquote>
+<p>在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。<br>综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  </p>
+<hr>
+<h3 id="clojure_u4ECB_u7ECD"><a href="#clojure_u4ECB_u7ECD" class="headerlink" title="clojure介绍"></a>clojure介绍</h3><p>虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。<br>2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  </p>
+<blockquote>
+<ol>
+<li>基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  </li>
+<li>可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  </li>
+<li>clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  </li>
+<li>clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。</li>
+</ol>
+</blockquote>
+<p>综上所述，clojure的这个坑我是掉定了，我也愿意！  </p>
+<hr>
+<h3 id="u5173_u4E8E_u672C_u6587"><a href="#u5173_u4E8E_u672C_u6587" class="headerlink" title="关于本文"></a>关于本文</h3><p>2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，<br>索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>]]>
+    
+    </summary>
+    
+      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
+    
+      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[IDEA 下的 maven+git 开发]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-The%20develop%20of%20maven%20in%20intelij%20IDEA/"/>
+    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-The develop of maven in intelij IDEA/</id>
+    <published>2016-01-20T04:23:11.000Z</published>
+    <updated>2016-01-23T16:55:36.916Z</updated>
+    <content type="html"><![CDATA[<p>不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。<br><a id="more"></a></p>
+<h3 id="u4E3A_u4EC0_u4E48_u8981_u7528maven_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528maven_uFF1F" class="headerlink" title="为什么要用maven？"></a>为什么要用maven？</h3><p>maven是一个项目管理工具，基于Java平台，主要用于项目构建，依赖管理等。<br>可以说在企业开发中这个是必不可少的，这样说可能有些空泛，给你们列点实际点的。  </p>
+<blockquote>
+<p><code>1. 在进行ssh开发的导jar包的时候是不是很痛苦，经常会遇到jar包冲突的情况？</code><br><code>2. 团队开发还必须统一下开发环境，考虑用idea还是myeclipse，因为其不同的项目文件？</code><br><code>3. 团队开发是不是很纠结，共享代码要复制整个jar包库？</code>  </p>
+</blockquote>
+<p>嗯，是不是若有所思了呢？<br>那就好，接下来我们用maven来解决这些问题  </p>
+<hr>
+<h3 id="u5B89_u88C5maven_u548C_u914D_u7F6E_u73AF_u5883_u53D8_u91CF"><a href="#u5B89_u88C5maven_u548C_u914D_u7F6E_u73AF_u5883_u53D8_u91CF" class="headerlink" title="安装maven和配置环境变量"></a>安装maven和配置环境变量</h3><p>因为我的电脑并没有手动装maven，用的是myeclipse集成的maven，<br>大概看了下网上的教程，基本无脑安装，各位可以自行安装，<br>要注意的一点是如果需要用到命令行的就记得添加环境变量，<br>我是没有添加的，因为idea插件对maven支持的很好，不需要我们做什么命令行操作了。  </p>
+<ul>
+<li><a href="http://maven.apache.org/" target="_blank" rel="external">maven官网</a>  </li>
+<li><a href="http://tutorialspoint.com/maven/" target="_blank" rel="external">maven教程网</a>  </li>
+</ul>
+<p>上面的maven官网就不用说什么了，在这里下载，至于这个教程网，介绍的比较详细，可以参考下  </p>
+<p><img src="/img/pics/2016-01-20/maven.png" alt="down"></p>
+<hr>
+<h3 id="u521B_u5EFAgit_u9879_u76EE"><a href="#u521B_u5EFAgit_u9879_u76EE" class="headerlink" title="创建git项目"></a>创建git项目</h3><p>在这里我使用的是coding这个代码托管平台，在这里创建项目，其他的平台也可以，这个没什么区别  </p>
+<p><img src="/img/pics/2016-01-20/maven2.png" alt="down">  </p>
+<p><img src="/img/pics/2016-01-20/maven3.png" alt="down">  </p>
+<p>复制下https的git访问链，等下要用到。  </p>
+<hr>
+<h3 id="u5728IDEA_u5E94_u7528git_u9879_u76EE"><a href="#u5728IDEA_u5E94_u7528git_u9879_u76EE" class="headerlink" title="在IDEA应用git项目"></a>在IDEA应用git项目</h3><h4 id="u5BFC_u5165git_u9879_u76EE"><a href="#u5BFC_u5165git_u9879_u76EE" class="headerlink" title="导入git项目"></a>导入git项目</h4><p><img src="/img/pics/2016-01-20/idea.png" alt="down">  </p>
+<p><img src="/img/pics/2016-01-20/idea2.png" alt="down">  </p>
+<p>将我们刚才复制的git链粘贴进去，然后ok，这个项目就是git项目了，你可以pull or push来进行更新。  </p>
+<h4 id="u6DFB_u52A0-gitignore"><a href="#u6DFB_u52A0-gitignore" class="headerlink" title="添加.gitignore"></a>添加.gitignore</h4><p>如我们所知，idea的项目的根目录有个.idea的文件夹，myeclipse有.setting文件夹，<br>这些IDE的配置文件肯定不能上传到托管平台的，所以在.gitignore里面要加入  </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="header"># Maven</span></span><br><span class="line">target/</span><br><span class="line">*.ser</span><br><span class="line">*.ec</span><br><span class="line"></span><br><span class="line"><span class="header"># IntelliJ Idea</span></span><br><span class="line">.idea/</span><br><span class="line">out/</span><br><span class="line">*.ipr</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line"></span><br><span class="line"><span class="header"># Eclipse</span></span><br><span class="line">.classpath</span><br><span class="line">.project</span><br><span class="line">.settings/</span><br><span class="line">.metadata/</span><br></pre></td></tr></table></figure>
+<p>这样这些配置文件就被git忽略掉了，记得，在idea中要确保.gitignore的颜色是绿色的，<br>才表示加入到git中未提交的，红色是没有加入，蓝色是修改过的，如下图右键点击文件可以加入。  </p>
+<p><img src="/img/pics/2016-01-20/idea3.png" alt="down">  </p>
+<h4 id="u5728IDEA_u4E2D_u6DFB_u52A0maven_u652F_u6301"><a href="#u5728IDEA_u4E2D_u6DFB_u52A0maven_u652F_u6301" class="headerlink" title="在IDEA中添加maven支持"></a>在IDEA中添加maven支持</h4><p>右键项目，有个<code>Add Framework support</code>，点击进去可以看到如下  </p>
+<p><img src="/img/pics/2016-01-20/idea4.png" alt="down">  </p>
+<p>选择maven后结束，这样就把这个项目变成maven项目了<br>可以看到项目多出了一个项目骨架及<code>pom.xml</code>文件<br>记得加入git中，这样生成的骨架是默认的，如果需要就在<code>pom.xml</code>中添加支持，自行创建文件夹  </p>
+<p>这里我以添加ssh框架支持做个小例子  </p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line">&lt;project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</span><br><span class="line">  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"&gt;</span><br><span class="line">  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">  &lt;groupId&gt;com.gank.sandCrossFingers&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;BackEndSystem&lt;/artifactId&gt;</span><br><span class="line">  &lt;packaging&gt;war&lt;/packaging&gt;</span><br><span class="line">  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">  &lt;name&gt;BackEndSystem Maven Webapp&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span><br><span class="line">  &lt;build&gt;</span><br><span class="line">    &lt;plugins&gt;</span><br><span class="line">      &lt;plugin&gt;</span><br><span class="line">        &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;</span><br><span class="line">        &lt;!--如果要使用jdk1.8，需要spring4搭配，否则版本有冲突--&gt;</span><br><span class="line">        &lt;configuration&gt;</span><br><span class="line">          &lt;source&gt;1.7&lt;/source&gt;</span><br><span class="line">          &lt;target&gt;1.7&lt;/target&gt;</span><br><span class="line">        &lt;/configuration&gt;</span><br><span class="line">      &lt;/plugin&gt;</span><br><span class="line">    &lt;/plugins&gt;</span><br><span class="line">  &lt;/build&gt;</span><br><span class="line">  &lt;properties&gt;</span><br><span class="line">    &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;</span><br><span class="line">  &lt;/properties&gt;</span><br><span class="line">  &lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.8.1&lt;/version&gt;</span><br><span class="line">      &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;commons-dbcp&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;commons-dbcp&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.2.2&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;spring-webmvc&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.2.2.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;spring-web&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.2.2.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;c3p0&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;c3p0&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;0.9.1.2&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;!--</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;org.slf4j&lt;/groupId&gt;</span><br><span class="line">        &lt;artifactId&gt;slf4j-api&lt;/artifactId&gt;</span><br><span class="line">        &lt;version&gt;1.6.1&lt;/version&gt;</span><br><span class="line">        &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">        &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">     --&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;log4j&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;log4j&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.2.16&lt;/version&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.slf4j&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;slf4j-log4j12&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.6.1&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;spring-orm&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.2.2.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.springframework&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;spring-aspects&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.2.2.RELEASE&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;struts2-spring-plugin&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;2.3.1.2&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.apache.struts&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;struts2-json-plugin&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;2.3.1.2&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line"></span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.hibernate&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;hibernate-core&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.6.10.Final&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;javassist&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;javassist&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;3.12.1.GA&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;mysql&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;5.1.25&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.apache.tomcat&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;servlet-api&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;6.0.33&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;provided&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;jackson-mapper-asl&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.9.3&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;jackson-core-asl&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.9.3&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;commons-lang&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;commons-lang&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;2.6&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;org.apache.velocity&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;velocity&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.7&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;javax.servlet&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;jstl&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.2&lt;/version&gt;</span><br><span class="line">      &lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">      &lt;scope&gt;compile&lt;/scope&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">      &lt;groupId&gt;commons-beanutils&lt;/groupId&gt;</span><br><span class="line">      &lt;artifactId&gt;commons-beanutils&lt;/artifactId&gt;</span><br><span class="line">      &lt;version&gt;1.8.3&lt;/version&gt;</span><br><span class="line">    &lt;/dependency&gt;</span><br><span class="line">  &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+<p>修改完pom.xml文件后右上角可能是出现这个  </p>
+<p><img src="/img/pics/2016-01-20/idea7.png" alt="down">  </p>
+<p>点击后，每次修改<code>pom.xml</code>代码就会自动提交更新了，会自动根据<code>pom.xml</code>里面的配置下载jar包<br>在团队协作中，只要这个<code>pom.xml</code>文件一样，就可以保证你们的jar包完全一样，代码托管也不必上传一大堆jar包,<br>导入maven项目后就会自动根据<code>pom.xml</code>文件下载的  </p>
+<p>点击右边边界的maven，可以弹出个窗口，可以查看maven的详细信息  </p>
+<p><img src="/img/pics/2016-01-20/idea8.png" alt="down">  </p>
+<p>如果要查看jar包冲突，可以点击这个去查看排除，有冲突会提示，只要<code>pom.xml</code>写得对一般没问题，这里就不多说了。  </p>
+<p><img src="/img/pics/2016-01-20/idea9.png" alt="down">  </p>
+<h4 id="u6DFB_u52A0webapp_u6587_u4EF6_u5939"><a href="#u6DFB_u52A0webapp_u6587_u4EF6_u5939" class="headerlink" title="添加webapp文件夹"></a>添加webapp文件夹</h4><p>前面已经说了，我们添加的骨架只是默认的，一般web的maven项目在<code>/src/main</code>下有个<code>webapp</code>目录，<br>里面存放<code>web.xml</code>等文件，没关系，我们可以自行创建文件夹，创建完<code>webapp</code>可以看到图标发生变化，<br>标明这是个web目录，如果没有变也没关系，可能是默认设置有误，我们可以去项目设置那里去设置，如下  </p>
+<p><img src="/img/pics/2016-01-20/idea10.png" alt="down">  </p>
+<p><img src="/img/pics/2016-01-20/idea11.png" alt="down">  </p>
+<p><img src="/img/pics/2016-01-20/idea12.png" alt="down">  </p>
+<blockquote>
+<p><code>注意上下两个路径都要仔细看清楚，不要选错，这个很容易错！！！</code>  </p>
+</blockquote>
+<p>然后好了，基本上就是这样了，接下来就是ssh配置文件的添加，类似添加<code>web.xml</code>，然后添加服务器运行，完了。  </p>
+<p>水平所限，欢迎指点交流，谢谢。  </p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://www.youmeek.com/intellij-idea-part-xviii-maven/" target="_blank" rel="external">Judas.n的教程</a><br><a href="http://blog.csdn.net/gol_phing/article/details/49331845" target="_blank" rel="external">Golphing的博客</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。<br>]]>
+    
+    </summary>
+    
+      <category term="IDEA" scheme="http://blog.caiyuyu.net/tags/IDEA/"/>
+    
+      <category term="git" scheme="http://blog.caiyuyu.net/tags/git/"/>
+    
+      <category term="maven" scheme="http://blog.caiyuyu.net/tags/maven/"/>
+    
+      <category term="技术备忘" scheme="http://blog.caiyuyu.net/categories/%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Windows下 Emacs+Markdown 的使用]]></title>
+    <link href="http://blog.caiyuyu.net/2015/08/29/2015-08-27-How%20to%20preview%20markdown%20file%20on%20emacs/"/>
+    <id>http://blog.caiyuyu.net/2015/08/29/2015-08-27-How to preview markdown file on emacs/</id>
+    <published>2015-08-29T05:23:22.000Z</published>
+    <updated>2016-01-23T16:46:44.618Z</updated>
+    <content type="html"><![CDATA[<p>emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？<br><a id="more"></a></p>
+<h3 id="u89E3_u51B3_u4EC0_u4E48_u95EE_u9898_uFF1F"><a href="#u89E3_u51B3_u4EC0_u4E48_u95EE_u9898_uFF1F" class="headerlink" title="解决什么问题？"></a>解决什么问题？</h3><p>简单的来说，本文解决的是你在emacs下使用 <code>C+c C+c p</code> 指令预览markdown文件发生的错误，类似如下。</p>
+<blockquote>
+<p>‘markdown’不是内部或外部指令，也不是可运行的程序或批处理文件。</p>
+</blockquote>
+<p>如果是这个问题的话，恭喜你，继续往下看。</p>
+<p>一般来说，我们使用markdown会输出成html格式才可以使用。除非网站可以解析md文件，比如说github，那就可以省了这个步骤。<br>所以我们要预览就肯定要导出一个html文件，而md文件转成html文件是要添加外部依赖的，这就是问题的根源。</p>
+<p>这里我用了两种方法来解决。</p>
+<ul>
+<li>使用python的Markdown包</li>
+<li>使用pandoc工具</li>
+</ul>
+<h3 id="u4F7F_u7528python_u7684markdown_u5305"><a href="#u4F7F_u7528python_u7684markdown_u5305" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><p>####搭建python环境<br>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
+<p>####下载Markdown包并安装<br>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
+<blockquote>
+<p>pip install markdown</p>
+</blockquote>
+<p><img src="/img/pics/2015-08-29/downMarkdown.png" alt="down"></p>
+<p>安装好它会提示你安装的位置，进入该目录的包文件，你会看到有个<code>setup.py</code>文件，这个是python脚本的安装文件，<br>打开<code>cmd</code>，cd到该位置，输入指令</p>
+<blockquote>
+<p>python setup.py install</p>
+</blockquote>
+<p><img src="/img/pics/2015-08-29/installMarkdown.png" alt="install"></p>
+<p>又是一大堆信息出来，个人觉得python这点很好，可以让我们很清楚的知道产生了那些文件。<br>我们可以看到在<code>Scripts</code>文件夹下产生了一个名为<code>markdown_py</code>的批处理文件。</p>
+<p>####修改markdown-mode.el<br>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
+<p>打开<code>markdown-mode.el</code>文件，在800多行左右可以看到如下</p>
+<p><img src="/img/pics/2015-08-29/el.png" alt="el"></p>
+<p>将<code>markdown</code>改成<code>markdown_py</code></p>
+<p><img src="/img/pics/2015-08-29/el2.png" alt="el2"></p>
+<p>再打开emacs，切换到<code>markdown-mode</code>，随便输点东西，<code>C-c C-c p</code>一下，运行如下。</p>
+<p><img src="/img/pics/2015-08-29/t.png" alt="t"></p>
+<p>成功运行，没有报出指令错误，但是我们可以发现浏览器中文乱码。</p>
+<p>这个简单，因为md文件最终也是要转成html的，我们可以在在每个md文件开头加上一句</p>
+<blockquote>
+<p><code>&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</code></p>
+</blockquote>
+<p><img src="/img/pics/2015-08-29/t2.png" alt="t2"></p>
+<p>不过确实，在md文件加上这一句确实不太美观，所以我推荐第二种方法，更好更强大。</p>
+<p>###使用pandoc工具</p>
+<p>####下载pandoc并安装<br>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
+<p>pandoc可以解析markdown文件，但是它并不仅仅支持markdown的标记语法，还支持语法高亮和LaTex数学公式，可以把它当作markdown的拓展。</p>
+<p>以下是官网介绍，可以简单看一下。</p>
+<p><img src="/img/pics/2015-08-29/pandoc.png" alt="pandoc"></p>
+<p>####修改markdown-mode.el<br>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
+<p>打开<code>markdown-mode.el</code>，还是刚才那个位置</p>
+<p><img src="/img/pics/2015-08-29/el.png" alt=""></p>
+<p><code>pandoc</code>的命令选项如下</p>
+<p>||选项||描述|||<br>||<code>-f html</code>||转换成html文件||<br>||<code>-t markdown</code>||解析markdown||<br>||<code>--ascii</code>||解决中文乱码||<br>||<code>--highlight-style pygments</code>||支持语法高亮||<br>||<code>--mathjax</code>||支持 LaTex数学公式||</p>
+<p>一股脑都加进去吧，将<code>markdown</code>修改为如下</p>
+<blockquote>
+<p><code>pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax</code></p>
+</blockquote>
+<p><img src="/img/pics/2015-08-29/well.png" alt="well"></p>
+<p>水平所限，欢迎指点交流，谢谢。</p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://panqiincs.github.io/" target="_blank" rel="external">辛未羊的博客</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？<br>]]>
+    
+    </summary>
+    
+      <category term="Markdown" scheme="http://blog.caiyuyu.net/tags/Markdown/"/>
+    
+      <category term="emacs" scheme="http://blog.caiyuyu.net/tags/emacs/"/>
+    
+      <category term="技术备忘" scheme="http://blog.caiyuyu.net/categories/%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Windows下 TortoiseGit+Coding 的使用]]></title>
+    <link href="http://blog.caiyuyu.net/2015/07/15/2015-07-15-How%20to%20use%20TortoiseGit+codding%20on%20windows/"/>
+    <id>http://blog.caiyuyu.net/2015/07/15/2015-07-15-How to use TortoiseGit+codding on windows/</id>
+    <published>2015-07-15T14:06:36.000Z</published>
+    <updated>2016-01-23T16:46:44.617Z</updated>
+    <content type="html"><![CDATA[<p>git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。</p>
+<a id="more"></a>
+<h3 id="u4E3A_u4EC0_u4E48_u8981_u7528Git"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528Git" class="headerlink" title="为什么要用Git"></a>为什么要用Git</h3><p>简单来说，Git就是一个版本控制系统，它可以保存我们对代码的每次修改，也可以创建多个分支，必要时可以返回修改。</p>
+<p>那么Git比我们熟知的svn又有哪些优点呢？经验所限，我只能大概说出几点。</p>
+<p><code>1.Git会在自己电脑本地创建一个本地仓库</code><br>为什么说这一点好呢？和svn不同的是，git因为本机带有一个本地仓库，所有修改操作都要先提交到本机，然后再推送出去。<br>这也意味着git可以缓存多个版本，而svn只能缓存一个，所以git相当于svn的客户端+svn的服务器端。<br>咋一看没什么实际的用处，假设你现在现在不能联网，与团队的其他人数据无法交互，同时这段时间你又对代码做了很大的修改，这也意味着git可以保存<br>每一模块修改的版本，如果需要恢复会很方便，如果是svn，只能返回到你大量修改前，相当于你做了大量的无用功。</p>
+<p><code>2.Git支持的代码托管平台比较多</code><br>好像开源中国的Git@OSC支持svn，这点不确定，没用过，这也从侧面反映了svn的托管平台确实少。<br>git的就多了,基本上有名的托管平台都是支持的。<br>像大名鼎鼎的<code>gitHub</code>,支持无限的公有项目和私有项目<code>gitlab</code>,还有国内速度极快的<code>coding</code>等等，这个很多，有兴趣可以自己找下。</p>
+<p>据说git可是Linus用C耗费两周写出来的，各种狂霸酷炫拽有木有，<br>具体教程可以参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的教程</a>，写得很不错。</p>
+<h3 id="u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177"><a href="#u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177" class="headerlink" title="下载及安装所需工具"></a>下载及安装所需工具</h3><h4 id="u4E0B_u8F7Dgit_for_windows"><a href="#u4E0B_u8F7Dgit_for_windows" class="headerlink" title="下载git for windows"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">git for windows</a></h4><p>进入git的官网,选择windows版本下载，</p>
+<p><img src="/img/pics/2015-07-15/gitdown.png" alt="git"></p>
+<p><img src="/img/pics/2015-07-15/gitDown2.png" alt="git"></p>
+<h4 id="u4E0B_u8F7DTortoiseGit"><a href="#u4E0B_u8F7DTortoiseGit" class="headerlink" title="下载TortoiseGit"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">TortoiseGit</a></h4><p>习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。<br>选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。</p>
+<p><img src="/img/pics/2015-07-15/TortoiseGit.png" alt="tortoiseGit"></p>
+<p><img src="/img/pics/2015-07-15/TortoiseGit2.png" alt="tortoiseGit"></p>
+<h4 id="u5B89_u88C5git"><a href="#u5B89_u88C5git" class="headerlink" title="安装git"></a>安装git</h4><p>把第一、三、四个一级复选框都勾上，因为我们用小乌龟做图形界面，所以不需要安装git gui<br><img src="/img/pics/2015-07-15/installGit.png" alt="installGit"></p>
+<p> 下面选择use git from the windows command prompt<br> 选择这个会将git配置到path里面<br><img src="/img/pics/2015-07-15/installGit2.png" alt="installGit"></p>
+<p>这个是选择回车换行的格式，默认第一个即可，检出时转换为Windows风格,提交时转换为Linux风格<br><img src="/img/pics/2015-07-15/installGit3.png" alt="installGit"></p>
+<p>接下来应该没什么问题了，结束。</p>
+<h4 id="u5B89_u88C5TortoiseGit"><a href="#u5B89_u88C5TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h4><p>小乌龟安装更简单了，默认，直接下一步，结束。</p>
+<p><img src="/img/pics/2015-07-15/installTortoise.png" alt="tortoiseGit"></p>
+<p><img src="/img/pics/2015-07-15/installTortoise2.png" alt="tortoiseGit"></p>
+<h3 id="u6CE8_u518Ccoding-net_u8D26_u53F7"><a href="#u6CE8_u518Ccoding-net_u8D26_u53F7" class="headerlink" title="注册coding.net账号"></a>注册coding.net账号</h3><p>由于我们选择在coding创建远程仓库，所以注册一个<a href="https://coding.net" target="_blank" rel="external">coding.net</a>的账号是必须滴。</p>
+<p><img src="/img/pics/2015-07-15/coding.png" alt="coding"></p>
+<p>需要一个邮箱和独一存在的用户名，或者说是个性后缀，都可以。<br>由于我已经注册过，下面的邮箱和用户名显示已存在，这个没什么可说的，自己注册个。</p>
+<p><img src="/img/pics/2015-07-15/coding2.png" alt="coding"></p>
+<h3 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E" class="headerlink" title="创建本地仓库并配置"></a>创建本地仓库并配置</h3><h4 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939" class="headerlink" title="创建本地仓库文件夹"></a>创建本地仓库文件夹</h4><p>在你对应的工作空间创建一个空的文件夹<code>test_demo</code><br>右键<code>test_demo</code>文件夹，选择Git Create repository here。<br>第一次会弹出git init的对话框，不要勾选make it bare，ok。<br>这样就选择这个文件夹作为你的本地仓库，这个文件夹也是你的项目。每次修改代码会先提交到这个地方，然后再从这里推送到远程仓库。</p>
+<h4 id="u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6"><a href="#u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6" class="headerlink" title="配置git日志标识"></a>配置git日志标识</h4><p>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>一栏选择setting，在弹出的窗口点击左边的git节点，<br>填入name和email，这个只是作为你的这个项目的本地机器的日志标识，关系并不大，可以随便填。</p>
+<p><img src="/img/pics/2015-07-15/setGit.png" alt="setting"></p>
+<h4 id="u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F"><a href="#u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F" class="headerlink" title="配置访问方式"></a>配置访问方式</h4><p>假如在远程仓库上，你创建了一个项目，<br>一般有三种访问方式<br>1) HTTPS：读写仓库加密通道，有单次上传限制。<br>2) SSH：读写仓库加密通道，无单次上传限制，需先在设置公钥，完成配对验证。<br>3) Git：只读，并且只对公开项目有效。</p>
+<blockquote>
+<p><code>如果要使用ssh方式访问</code><br>ssh方式是一种加密的访问方式，使用这种方式我们需要在本机机器生成一串公钥，然后在托管平台上进行绑定授权。<br>我们安装小乌龟会附带安装一些组件，找到<code>Puttygen</code>这个程序打开，点击Generate按钮，接着你会发现随着你鼠标在<code>Puttygen</code>窗口滑动，进度条会滚动并最终生成一串公钥<br><img src="/img/pics/2015-07-15/setGit2.png" alt="setting"><br><code>ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIB+gadTNAA3iID1l5rg0qEhn5YySxANkYS6pQykbvdq8p
+V70dIFrsN2QCxoVz7W0NZydgFSAwGc4TYWKCSJUKVqgg+2Sf2mFc5LwaHwOX+NilA6SwH2NEOd1lUmr
+MgV7HJ8f4OhL4Ivwoqw/ZRPfBURfuHpVSXol5T4XuqMS00G0w== rsa-key-20150715</code><br>上面这一串就是了，copy下。<br>接着点击 <code>save private key</code> 把私钥保存在本地，注意！你的公钥对应的私钥必须要妥善保存，如果丢失跟密码被盗一样严重。记住路径和文件名，等下要用到。</p>
+</blockquote>
+<p>打开<code>coding.net</code>,当然肯定要登陆了，然后创建一个新项目，中文界面滴，看不懂找你小学语文老师。</p>
+<p><img src="/img/pics/2015-07-15/import.png" alt="init"></p>
+<p>在这里我选了启用readme.md来初始化，这个没什么关系，一个介绍页面而已，不过写这个东东还是挺有趣的，一种新的语法应用。</p>
+<p><img src="/img/pics/2015-07-15/import2.png" alt="init"></p>
+<p>可以看到，默认创建了一个master分支，然后我——Tornado作为项目创建者也默认添加进了项目成员里面，<code>如果是团队协作，需要先把人邀请到这个项目，他们才能访问</code>。</p>
+<blockquote>
+<p><code>如果是ssh方式访问</code><br>在个人账户信息配置ssh公钥，把刚才copy的粘贴上去，名称随便填，不过最好稍微标记下是哪台电脑。<br><img src="/img/pics/2015-07-15/t.png" alt="init"><br><img src="/img/pics/2015-07-15/t2.png" alt="init"></p>
+</blockquote>
+<p>打开<code>coding.net</code>,点击<code>代码</code>选项卡，可以看到这个。</p>
+<p><img src="/img/pics/2015-07-15/v.png" alt="init"></p>
+<p>左下角那个选择ssh或者https方式访问，copy下那串链接。</p>
+<p>打开项目的<code>setting</code>，选择git节点下的remote。</p>
+<p><img src="/img/pics/2015-07-15/v2.png" alt="init"></p>
+<p>在url那栏把刚才copy的访问链接粘贴下去，<code>putty key</code>，ssh访问需要导入私钥路径，https则不需要，<code>remote</code>标记这个这条访问链，随便填。填好后点击<code>Add new / save</code>。<br>ok后接着下一步，出现下面这个。</p>
+<p>成功了，就会提示<code>Success</code>，不成功的话就检查下信息是否有误或者前面哪个操作出现问题，再试一次。</p>
+<h3 id="u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE"><a href="#u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE" class="headerlink" title="初始化项目及推送项目"></a>初始化项目及推送项目</h3><p>这样配置的东西都搞定了，不过由于我们本地仓库是空的，需要从远程仓库<code>pull</code>下来初始化一下。<br>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>里面选择<code>pull</code>，<code>Success</code>后可以看到项目里面多了个<code>readme.md</code>文件。</p>
+<p>接下来在项目里面随便建立一个<code>test.php</code>文件，刚建立可以看到图标是一个问号，表明还没加入到本地仓库。右键这个文件，在<code>TortoiseGit</code>里面选择<code>add</code>，会弹出一个对话框，我们直接提交到本地仓库，点击<code>commit</code>按钮</p>
+<p><img src="/img/pics/2015-07-15/c.png" alt="init"></p>
+<p>会弹出一个确定操作的窗口，可以看到你对什么文件进行提交，我们勾选<code>test.php</code>文件，在<code>message</code>修改操作信息，这个是必填的。</p>
+<blockquote>
+<p><code>如果是https方式访问</code><br><img src="/img/pics/2015-07-15/v3.png" alt="init"><br>推送的时候会弹出这个，提示要输入用户名和密码，每次推送都需要输一次，像我这么懒的人就受不了了。<br>我们可以点击<code>setting</code>下git节点下的<code>Edit local.git/config</code>按钮，在弹出的<br>Notepad文本的最后输入。<br><code>[credential]
+helper = store</code><br>这样就只要输入一次就会自动保存，不过需要注意的是这种方式会在本地以明文形式保存信息，具体信息可以自行拓展。</p>
+</blockquote>
+<p>当看到<code>test.php</code>文件图标变成绿色对勾时，就证明提交成功了。</p>
+<p>接着往coding.net推送，我们可以选择整个项目，也可以选择单个文件推送，<br>右键<code>test_demo</code>，在<code>TortoiseGit</code>里面选择<code>push</code>，没什么意外都是直接ok。<br><code>success</code>后打开<code>coding.net</code>看下动态，可以看到最新的推送信息。至此完成。</p>
+<p><img src="/img/pics/2015-07-15/c2.png" alt="init"></p>
+<h3 id="u60F3_u8BF4_u7684_u8BDD"><a href="#u60F3_u8BF4_u7684_u8BDD" class="headerlink" title="想说的话"></a>想说的话</h3><p>首先非常感谢各位耐心的看到了最后，第一次写博文，可能会存在很多不足，希望各位路过的大牛不吝赐教，如果对于文章有什么疑惑或者建议的，也希望你们在下面的多玩评论里面留下你们的脚印，谢谢。</p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/ethan_xue/article/details/7749639" target="_blank" rel="external">ethan_xue</a><br><a href="http://www.cnblogs.com/Bonker/p/3441781.html" target="_blank" rel="external">Bonker</a><br><a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">铁锚</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。</p>]]>
+    
+    </summary>
+    
+      <category term="git" scheme="http://blog.caiyuyu.net/tags/git/"/>
+    
+      <category term="技术备忘" scheme="http://blog.caiyuyu.net/categories/%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98/"/>
+    
+  </entry>
+  
+</feed>
