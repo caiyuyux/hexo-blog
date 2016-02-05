@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[Java中传值和传引用]]></title>
-    <link href="http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue%20or%20PassByReference%20in%20java%20/"/>
-    <id>http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue or PassByReference in java /</id>
+    <link href="http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue%20or%20PassByReference%20in%20java/"/>
+    <id>http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue or PassByReference in java/</id>
     <published>2016-02-05T14:41:10.000Z</published>
     <updated>2016-02-05T16:16:12.743Z</updated>
     <content type="html"><![CDATA[<p>老虎老鼠，傻傻分不清楚。<br><a id="more"></a><br>传值和传引用的概念在C++的时候确实是个问题，什么指针什么引用搞得很头疼；<br>Java还好，没有指针了。<br>Java的数据类型如下，先看下。<br><img src="/img/pics/2016-02-05/2011100711181651.jpg" alt="down">  </p>
