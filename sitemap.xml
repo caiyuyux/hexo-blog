@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue%20or%20PassByReference%20in%20java%20/</loc>
+    <lastmod>2016-02-05T16:16:12.743Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.caiyuyu.net/2016/01/30/2016-01-30-The%20diary%20of%20learning%20clojure%20%E2%80%94%E2%80%94%203/</loc>
     <lastmod>2016-01-30T06:00:13.135Z</lastmod>
   </url>

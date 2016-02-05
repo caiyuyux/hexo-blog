@@ -4,7 +4,7 @@
   <subtitle><![CDATA[蘑菇不开花，你还爱它吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-01-30T06:00:13.135Z</updated>
+  <updated>2016-02-05T16:16:12.743Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -13,6 +13,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Java中传值和传引用]]></title>
+    <link href="http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue%20or%20PassByReference%20in%20java%20/"/>
+    <id>http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue or PassByReference in java /</id>
+    <published>2016-02-05T14:41:10.000Z</published>
+    <updated>2016-02-05T16:16:12.743Z</updated>
+    <content type="html"><![CDATA[<p>老虎老鼠，傻傻分不清楚。<br><a id="more"></a><br>传值和传引用的概念在C++的时候确实是个问题，什么指针什么引用搞得很头疼；<br>Java还好，没有指针了。<br>Java的数据类型如下，先看下。<br><img src="/img/pics/2016-02-05/2011100711181651.jpg" alt="down">  </p>
+<h3 id="u57FA_u7840_u6570_u636E_u7C7B_u578B_u662F_u4F20_u503C"><a href="#u57FA_u7840_u6570_u636E_u7C7B_u578B_u662F_u4F20_u503C" class="headerlink" title="基础数据类型是传值"></a>基础数据类型是传值</h3><p>这个没什么可说的，看例子。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">        a = <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">"in Test function: a = "</span>+a);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">        System.out.println(<span class="string">"before Test function: a = "</span>+a);</span><br><span class="line">        test(a);</span><br><span class="line">        System.out.println(<span class="string">"after Test function: a = "</span>+a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test function: a = 1</span></span><br><span class="line"><span class="comment">//in Test function: a = 2</span></span><br><span class="line"><span class="comment">//after Test function: a = 1</span></span><br></pre></td></tr></table></figure></p>
+<p>如果是基础数据类型，你就放心的把值交给函数了，肯定不会改变原值的。</p>
+<h3 id="u5F15_u7528_u6570_u636E_u7C7B_u578B_u662F_u4F20_u5F15_u7528"><a href="#u5F15_u7528_u6570_u636E_u7C7B_u578B_u662F_u4F20_u5F15_u7528" class="headerlink" title="引用数据类型是传引用"></a>引用数据类型是传引用</h3><p>一般大家会觉得，有俩种情况嘛，<em>传值不改变原值，传引用会改变</em>，唔，这句话不完全正确，<br>应该说 <em>传值一定不改变原值，传引用可能会改变</em>，先看一下会改变的情况。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">        str.append(<span class="string">" world"</span>);</span><br><span class="line">        System.out.println(<span class="string">"in Test2 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StringBuffer  str = <span class="keyword">new</span> StringBuffer(<span class="string">"hello"</span>);</span><br><span class="line">        System.out.println(<span class="string">"before Test2 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test2 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test2 function: str = hello</span></span><br><span class="line"><span class="comment">//in Test2 function: str = hello world</span></span><br><span class="line"><span class="comment">//after Test2 function: str = hello world</span></span><br></pre></td></tr></table></figure></p>
+<p>接着看下不变的情况。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">        str = <span class="keyword">new</span> StringBuffer(<span class="string">"world"</span>);</span><br><span class="line">        System.out.println(<span class="string">"in Test2 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StringBuffer  str = <span class="keyword">new</span> StringBuffer(<span class="string">"hello"</span>);</span><br><span class="line">        System.out.println(<span class="string">"before Test2 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test2 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test2 function: str = hello</span></span><br><span class="line"><span class="comment">//in Test2 function: str = world</span></span><br><span class="line"><span class="comment">//after Test2 function: str = hello</span></span><br></pre></td></tr></table></figure></p>
+<p>怎么样，如果你可以理解这俩种情况的区别，那就证明你对java中引用的概念理解得不错；<br>简单解释下，我们一直在说透过现象看本质，所谓引用，就是要你看准最本质的东西，也就是最底层的不变的值。<br>在main函数中，str引用一个对象，这个对象是有实例化的，存在于内存中的；<br>调用test函数时，传入引用，内存不会有任何变化，对象还是那个对象，test函数中的str其实不一定是str，你可以是string或者是s都可以，但是这个符号所指向的内存地址是和main函数中的str是一样的，这就是引用。<br>第一个例子中，在test函数中调用了append方法，操作的就是我们内存中由main函数实例化的那个对象，所以调用test函数值会变化。<br>第二个例子中，实际上是什么呢，是再实例化一个新的对象，然后让原先引用旧对象的str重新指向新的对象，既然没有对原先对象做任何操作，调用test函数后值自然不会变化。  </p>
+<p>其实到了这里你基本上不用往下看，就是这个理，一通百通，不过还是有些人对以下情况会疑惑，  </p>
+<p>java的string类型有点特别，字符串池什么的我就不说了，结论就是string类型的值不可变，<br>虽然是传引用，但是它传引用和传值没什么区别，它不像StringBuffer有个append方法，<br>把一个string引用给你，你最多也只能重新引用一个新的字符串，不能改变原先的，上例子。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test3</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        str = <span class="string">"hello world"</span>;</span><br><span class="line">        System.out.println(<span class="string">"in Test3 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String  str = <span class="string">"hello"</span>;</span><br><span class="line">        System.out.println(<span class="string">"before Test3 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test3 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>与string类似，java的基础数据类型的包装类的数据也是不可变的，<br>类中没有提供方法调用，而且属性用final写死了，你想变也没辙。  </p>
+<table>
+<thead>
+<tr>
+<th><em>基本数据类型</em></th>
+<th><em>包装类</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td> boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td> short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td> char</td>
+<td>Character </td>
+</tr>
+<tr>
+<td> int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td> long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td> float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td> double</td>
+<td>Double</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>老虎老鼠，傻傻分不清楚。<br>]]>
+    
+    </summary>
+    
+      <category term="java" scheme="http://blog.caiyuyu.net/tags/java/"/>
+    
+      <category term="基础知识" scheme="http://blog.caiyuyu.net/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Clojure 学习日记 —— 3进阶语法]]></title>
