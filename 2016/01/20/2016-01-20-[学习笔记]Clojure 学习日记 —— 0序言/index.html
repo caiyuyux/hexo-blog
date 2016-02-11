@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="java," />
+  <meta name="keywords" content="clojure," />
 
 
 
@@ -59,17 +59,16 @@
 
 
 
-<meta name="description" content="老虎老鼠，傻傻分不清楚。">
+<meta name="description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java中传值和传引用">
-<meta property="og:url" content="http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue or PassByReference in java/index.html">
+<meta property="og:title" content="[学习笔记]Clojure 学习日记 —— 0序言">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/index.html">
 <meta property="og:site_name" content="Tornado' blog">
-<meta property="og:description" content="老虎老鼠，傻傻分不清楚。">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-02-05/2011100711181651.jpg">
-<meta property="og:updated_time" content="2016-02-05T16:16:12.743Z">
+<meta property="og:description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
+<meta property="og:updated_time" content="2016-02-11T16:35:00.212Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java中传值和传引用">
-<meta name="twitter:description" content="老虎老鼠，傻傻分不清楚。">
+<meta name="twitter:title" content="[学习笔记]Clojure 学习日记 —— 0序言">
+<meta name="twitter:description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
 
 
 
@@ -87,7 +86,7 @@
   };
 </script>
 
-  <title> Java中传值和传引用 | Tornado' blog </title>
+  <title> [学习笔记]Clojure 学习日记 —— 0序言 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +283,7 @@
             
             
               
-                Java中传值和传引用
+                [学习笔记]Clojure 学习日记 —— 0序言
               
             
           </h1>
@@ -296,8 +295,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-05T22:41:10+08:00" content="2016-02-05">
-              2016-02-05
+            <time itemprop="dateCreated" datetime="2016-01-20T23:11:35+08:00" content="2016-01-20">
+              2016-01-20
             </time>
           </span>
 
@@ -310,8 +309,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/基础知识/" itemprop="url" rel="index">
-                    <span itemprop="name">基础知识</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -326,8 +325,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/05/2016-02-05-PassByValue or PassByReference in java/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/05/2016-02-05-PassByValue or PassByReference in java/" itemprop="commentsCount"></span>
+                <a href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -337,7 +336,7 @@
 
           
           
-             <span id="/2016/02/05/2016-02-05-PassByValue or PassByReference in java/" class="leancloud_visitors" data-flag-title="Java中传值和传引用">
+             <span id="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/" class="leancloud_visitors" data-flag-title="[学习笔记]Clojure 学习日记 —— 0序言">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -357,57 +356,32 @@
       
 
       
-        <p>老虎老鼠，傻傻分不清楚。<br><a id="more"></a><br>传值和传引用的概念在C++的时候确实是个问题，什么指针什么引用搞得很头疼；<br>Java还好，没有指针了。<br>Java的数据类型如下，先看下。<br><img src="/img/pics/2016-02-05/2011100711181651.jpg" alt="down">  </p>
-<h3 id="u57FA_u7840_u6570_u636E_u7C7B_u578B_u662F_u4F20_u503C"><a href="#u57FA_u7840_u6570_u636E_u7C7B_u578B_u662F_u4F20_u503C" class="headerlink" title="基础数据类型是传值"></a>基础数据类型是传值</h3><p>这个没什么可说的，看例子。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(<span class="keyword">int</span> a)</span> </span>&#123;</span><br><span class="line">        a = <span class="number">2</span>;</span><br><span class="line">        System.out.println(<span class="string">"in Test function: a = "</span>+a);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line">        System.out.println(<span class="string">"before Test function: a = "</span>+a);</span><br><span class="line">        test(a);</span><br><span class="line">        System.out.println(<span class="string">"after Test function: a = "</span>+a);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test function: a = 1</span></span><br><span class="line"><span class="comment">//in Test function: a = 2</span></span><br><span class="line"><span class="comment">//after Test function: a = 1</span></span><br></pre></td></tr></table></figure></p>
-<p>如果是基础数据类型，你就放心的把值交给函数了，肯定不会改变原值的。</p>
-<h3 id="u5F15_u7528_u6570_u636E_u7C7B_u578B_u662F_u4F20_u5F15_u7528"><a href="#u5F15_u7528_u6570_u636E_u7C7B_u578B_u662F_u4F20_u5F15_u7528" class="headerlink" title="引用数据类型是传引用"></a>引用数据类型是传引用</h3><p>一般大家会觉得，有俩种情况嘛，<em>传值不改变原值，传引用会改变</em>，唔，这句话不完全正确，<br>应该说 <em>传值一定不改变原值，传引用可能会改变</em>，先看一下会改变的情况。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">        str.append(<span class="string">" world"</span>);</span><br><span class="line">        System.out.println(<span class="string">"in Test2 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StringBuffer  str = <span class="keyword">new</span> StringBuffer(<span class="string">"hello"</span>);</span><br><span class="line">        System.out.println(<span class="string">"before Test2 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test2 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test2 function: str = hello</span></span><br><span class="line"><span class="comment">//in Test2 function: str = hello world</span></span><br><span class="line"><span class="comment">//after Test2 function: str = hello world</span></span><br></pre></td></tr></table></figure></p>
-<p>接着看下不变的情况。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test2</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(StringBuffer str)</span> </span>&#123;</span><br><span class="line">        str = <span class="keyword">new</span> StringBuffer(<span class="string">"world"</span>);</span><br><span class="line">        System.out.println(<span class="string">"in Test2 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        StringBuffer  str = <span class="keyword">new</span> StringBuffer(<span class="string">"hello"</span>);</span><br><span class="line">        System.out.println(<span class="string">"before Test2 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test2 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//before Test2 function: str = hello</span></span><br><span class="line"><span class="comment">//in Test2 function: str = world</span></span><br><span class="line"><span class="comment">//after Test2 function: str = hello</span></span><br></pre></td></tr></table></figure></p>
-<p>怎么样，如果你可以理解这俩种情况的区别，那就证明你对java中引用的概念理解得不错；<br>简单解释下，我们一直在说透过现象看本质，所谓引用，就是要你看准最本质的东西，也就是最底层的不变的值。<br>在main函数中，str引用一个对象，这个对象是有实例化的，存在于内存中的；<br>调用test函数时，传入引用，内存不会有任何变化，对象还是那个对象，test函数中的str其实不一定是str，你可以是string或者是s都可以，但是这个符号所指向的内存地址是和main函数中的str是一样的，这就是引用。<br>第一个例子中，在test函数中调用了append方法，操作的就是我们内存中由main函数实例化的那个对象，所以调用test函数值会变化。<br>第二个例子中，实际上是什么呢，是再实例化一个新的对象，然后让原先引用旧对象的str重新指向新的对象，既然没有对原先对象做任何操作，调用test函数后值自然不会变化。  </p>
-<p>其实到了这里你基本上不用往下看，就是这个理，一通百通，不过还是有些人对以下情况会疑惑，  </p>
-<p>java的string类型有点特别，字符串池什么的我就不说了，结论就是string类型的值不可变，<br>虽然是传引用，但是它传引用和传值没什么区别，它不像StringBuffer有个append方法，<br>把一个string引用给你，你最多也只能重新引用一个新的字符串，不能改变原先的，上例子。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test3</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">        str = <span class="string">"hello world"</span>;</span><br><span class="line">        System.out.println(<span class="string">"in Test3 function: str = "</span> + str);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String  str = <span class="string">"hello"</span>;</span><br><span class="line">        System.out.println(<span class="string">"before Test3 function: str = "</span>+str);</span><br><span class="line">        test(str);</span><br><span class="line">        System.out.println(<span class="string">"after Test3 function: str = "</span>+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>与string类似，java的基础数据类型的包装类的数据也是不可变的，<br>类中没有提供方法调用，而且属性用final写死了，你想变也没辙。  </p>
-<table>
-<thead>
-<tr>
-<th><em>基本数据类型</em></th>
-<th><em>包装类</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> byte</td>
-<td>Byte</td>
-</tr>
-<tr>
-<td> boolean</td>
-<td>Boolean</td>
-</tr>
-<tr>
-<td> short</td>
-<td>Short</td>
-</tr>
-<tr>
-<td> char</td>
-<td>Character </td>
-</tr>
-<tr>
-<td> int</td>
-<td>Integer</td>
-</tr>
-<tr>
-<td> long</td>
-<td>Long</td>
-</tr>
-<tr>
-<td> float</td>
-<td>Float</td>
-</tr>
-<tr>
-<td> double</td>
-<td>Double</td>
-</tr>
-</tbody>
-</table>
+        <p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>
+<a id="more"></a>
+<h3 id="lisp_u4ECB_u7ECD"><a href="#lisp_u4ECB_u7ECD" class="headerlink" title="lisp介绍"></a>lisp介绍</h3><p>说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  </p>
+<p>lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，<br>而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 </p>
+<p>现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，<br>到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  </p>
+<blockquote>
+<ol>
+<li>最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来</li>
+<li>lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了</li>
+<li>lisp是一种研究型、实验室语言，应用不广，无法推广。</li>
+</ol>
+</blockquote>
+<p>在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。<br>综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  </p>
+<hr>
+<h3 id="clojure_u4ECB_u7ECD"><a href="#clojure_u4ECB_u7ECD" class="headerlink" title="clojure介绍"></a>clojure介绍</h3><p>虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。<br>2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  </p>
+<blockquote>
+<ol>
+<li>基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  </li>
+<li>可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  </li>
+<li>clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  </li>
+<li>clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。</li>
+</ol>
+</blockquote>
+<p>综上所述，clojure的这个坑我是掉定了，我也愿意！  </p>
+<hr>
+<h3 id="u5173_u4E8E_u672C_u6587"><a href="#u5173_u4E8E_u672C_u6587" class="headerlink" title="关于本文"></a>关于本文</h3><p>2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，<br>索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。</p>
 
       
     </div>
@@ -416,7 +390,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag">#java</a>
+            <a href="/tags/clojure/" rel="tag">#clojure</a>
           
         </div>
       
@@ -425,13 +399,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/30/2016-01-30-The diary of learning clojure —— 3/" rel="next" title="Clojure 学习日记 —— 3进阶语法">
-                <i class="fa fa-chevron-left"></i> Clojure 学习日记 —— 3进阶语法
+              <a href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" rel="next" title="[技术备忘]IDEA 下的 maven+git 开发">
+                <i class="fa fa-chevron-left"></i> [技术备忘]IDEA 下的 maven+git 开发
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 —— 1入门/" rel="prev" title="[学习笔记]Clojure 学习日记 —— 1入门">
+                [学习笔记]Clojure 学习日记 —— 1入门 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -457,8 +435,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/05/2016-02-05-PassByValue or PassByReference in java/"
-           data-title="Java中传值和传引用" data-url="http://blog.caiyuyu.net/2016/02/05/2016-02-05-PassByValue or PassByReference in java/">
+      <div class="ds-thread" data-thread-key="2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/"
+           data-title="[学习笔记]Clojure 学习日记 —— 0序言" data-url="http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/">
       </div>
     
   </div>
@@ -503,21 +481,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -574,7 +552,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u57FA_u7840_u6570_u636E_u7C7B_u578B_u662F_u4F20_u503C"><span class="nav-number">1.</span> <span class="nav-text">基础数据类型是传值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5F15_u7528_u6570_u636E_u7C7B_u578B_u662F_u4F20_u5F15_u7528"><span class="nav-number">2.</span> <span class="nav-text">引用数据类型是传引用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lisp_u4ECB_u7ECD"><span class="nav-number">1.</span> <span class="nav-text">lisp介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clojure_u4ECB_u7ECD"><span class="nav-number">2.</span> <span class="nav-text">clojure介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5173_u4E8E_u672C_u6587"><span class="nav-number">3.</span> <span class="nav-text">关于本文</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="clojure," />
+  <meta name="keywords" content="git," />
 
 
 
@@ -59,16 +59,38 @@
 
 
 
-<meta name="description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
+<meta name="description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Clojure 学习日记 —— 0序言">
-<meta property="og:url" content="http://blog.caiyuyu.net/2016/01/20/2016-01-20-The diary of learning clojure —— 0/index.html">
+<meta property="og:title" content="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
+<meta property="og:url" content="http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/index.html">
 <meta property="og:site_name" content="Tornado' blog">
-<meta property="og:description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
-<meta property="og:updated_time" content="2016-01-23T16:46:44.619Z">
+<meta property="og:description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/gitdown.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/gitDown2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/TortoiseGit.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/TortoiseGit2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/installGit.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/installGit2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/installGit3.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/installTortoise.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/installTortoise2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/coding.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/coding2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/setGit.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/setGit2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/import.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/import2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/t.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/t2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/v.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/v2.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/c.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/v3.png">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/c2.png">
+<meta property="og:updated_time" content="2016-02-11T16:33:50.929Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Clojure 学习日记 —— 0序言">
-<meta name="twitter:description" content="吼吼吼，clojure你别跑，我来了，啦啦啦！">
+<meta name="twitter:title" content="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
+<meta name="twitter:description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
 
 
 
@@ -86,7 +108,7 @@
   };
 </script>
 
-  <title> Clojure 学习日记 —— 0序言 | Tornado' blog </title>
+  <title> [技术备忘]Windows下 TortoiseGit+Coding 的使用 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -283,7 +305,7 @@
             
             
               
-                Clojure 学习日记 —— 0序言
+                [技术备忘]Windows下 TortoiseGit+Coding 的使用
               
             
           </h1>
@@ -295,8 +317,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T23:11:35+08:00" content="2016-01-20">
-              2016-01-20
+            <time itemprop="dateCreated" datetime="2015-07-15T22:06:36+08:00" content="2015-07-15">
+              2015-07-15
             </time>
           </span>
 
@@ -309,8 +331,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
+                    <span itemprop="name">技术备忘</span>
                   </a>
                 </span>
 
@@ -325,8 +347,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/01/20/2016-01-20-The diary of learning clojure —— 0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/2016-01-20-The diary of learning clojure —— 0/" itemprop="commentsCount"></span>
+                <a href="/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -336,7 +358,7 @@
 
           
           
-             <span id="/2016/01/20/2016-01-20-The diary of learning clojure —— 0/" class="leancloud_visitors" data-flag-title="Clojure 学习日记 —— 0序言">
+             <span id="/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/" class="leancloud_visitors" data-flag-title="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -356,32 +378,67 @@
       
 
       
-        <p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>
+        <p>git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。</p>
 <a id="more"></a>
-<h3 id="lisp_u4ECB_u7ECD"><a href="#lisp_u4ECB_u7ECD" class="headerlink" title="lisp介绍"></a>lisp介绍</h3><p>说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  </p>
-<p>lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，<br>而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 </p>
-<p>现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，<br>到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  </p>
+<h3 id="u4E3A_u4EC0_u4E48_u8981_u7528Git"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528Git" class="headerlink" title="为什么要用Git"></a>为什么要用Git</h3><p>简单来说，Git就是一个版本控制系统，它可以保存我们对代码的每次修改，也可以创建多个分支，必要时可以返回修改。</p>
+<p>那么Git比我们熟知的svn又有哪些优点呢？经验所限，我只能大概说出几点。</p>
+<p><code>1.Git会在自己电脑本地创建一个本地仓库</code><br>为什么说这一点好呢？和svn不同的是，git因为本机带有一个本地仓库，所有修改操作都要先提交到本机，然后再推送出去。<br>这也意味着git可以缓存多个版本，而svn只能缓存一个，所以git相当于svn的客户端+svn的服务器端。<br>咋一看没什么实际的用处，假设你现在现在不能联网，与团队的其他人数据无法交互，同时这段时间你又对代码做了很大的修改，这也意味着git可以保存<br>每一模块修改的版本，如果需要恢复会很方便，如果是svn，只能返回到你大量修改前，相当于你做了大量的无用功。</p>
+<p><code>2.Git支持的代码托管平台比较多</code><br>好像开源中国的Git@OSC支持svn，这点不确定，没用过，这也从侧面反映了svn的托管平台确实少。<br>git的就多了,基本上有名的托管平台都是支持的。<br>像大名鼎鼎的<code>gitHub</code>,支持无限的公有项目和私有项目<code>gitlab</code>,还有国内速度极快的<code>coding</code>等等，这个很多，有兴趣可以自己找下。</p>
+<p>据说git可是Linus用C耗费两周写出来的，各种狂霸酷炫拽有木有，<br>具体教程可以参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的教程</a>，写得很不错。</p>
+<h3 id="u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177"><a href="#u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177" class="headerlink" title="下载及安装所需工具"></a>下载及安装所需工具</h3><h4 id="u4E0B_u8F7Dgit_for_windows"><a href="#u4E0B_u8F7Dgit_for_windows" class="headerlink" title="下载git for windows"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">git for windows</a></h4><p>进入git的官网,选择windows版本下载，</p>
+<p><img src="/img/pics/2015-07-15/gitdown.png" alt="git"></p>
+<p><img src="/img/pics/2015-07-15/gitDown2.png" alt="git"></p>
+<h4 id="u4E0B_u8F7DTortoiseGit"><a href="#u4E0B_u8F7DTortoiseGit" class="headerlink" title="下载TortoiseGit"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">TortoiseGit</a></h4><p>习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。<br>选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。</p>
+<p><img src="/img/pics/2015-07-15/TortoiseGit.png" alt="tortoiseGit"></p>
+<p><img src="/img/pics/2015-07-15/TortoiseGit2.png" alt="tortoiseGit"></p>
+<h4 id="u5B89_u88C5git"><a href="#u5B89_u88C5git" class="headerlink" title="安装git"></a>安装git</h4><p>把第一、三、四个一级复选框都勾上，因为我们用小乌龟做图形界面，所以不需要安装git gui<br><img src="/img/pics/2015-07-15/installGit.png" alt="installGit"></p>
+<p> 下面选择use git from the windows command prompt<br> 选择这个会将git配置到path里面<br><img src="/img/pics/2015-07-15/installGit2.png" alt="installGit"></p>
+<p>这个是选择回车换行的格式，默认第一个即可，检出时转换为Windows风格,提交时转换为Linux风格<br><img src="/img/pics/2015-07-15/installGit3.png" alt="installGit"></p>
+<p>接下来应该没什么问题了，结束。</p>
+<h4 id="u5B89_u88C5TortoiseGit"><a href="#u5B89_u88C5TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h4><p>小乌龟安装更简单了，默认，直接下一步，结束。</p>
+<p><img src="/img/pics/2015-07-15/installTortoise.png" alt="tortoiseGit"></p>
+<p><img src="/img/pics/2015-07-15/installTortoise2.png" alt="tortoiseGit"></p>
+<h3 id="u6CE8_u518Ccoding-net_u8D26_u53F7"><a href="#u6CE8_u518Ccoding-net_u8D26_u53F7" class="headerlink" title="注册coding.net账号"></a>注册coding.net账号</h3><p>由于我们选择在coding创建远程仓库，所以注册一个<a href="https://coding.net" target="_blank" rel="external">coding.net</a>的账号是必须滴。</p>
+<p><img src="/img/pics/2015-07-15/coding.png" alt="coding"></p>
+<p>需要一个邮箱和独一存在的用户名，或者说是个性后缀，都可以。<br>由于我已经注册过，下面的邮箱和用户名显示已存在，这个没什么可说的，自己注册个。</p>
+<p><img src="/img/pics/2015-07-15/coding2.png" alt="coding"></p>
+<h3 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E" class="headerlink" title="创建本地仓库并配置"></a>创建本地仓库并配置</h3><h4 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939" class="headerlink" title="创建本地仓库文件夹"></a>创建本地仓库文件夹</h4><p>在你对应的工作空间创建一个空的文件夹<code>test_demo</code><br>右键<code>test_demo</code>文件夹，选择Git Create repository here。<br>第一次会弹出git init的对话框，不要勾选make it bare，ok。<br>这样就选择这个文件夹作为你的本地仓库，这个文件夹也是你的项目。每次修改代码会先提交到这个地方，然后再从这里推送到远程仓库。</p>
+<h4 id="u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6"><a href="#u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6" class="headerlink" title="配置git日志标识"></a>配置git日志标识</h4><p>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>一栏选择setting，在弹出的窗口点击左边的git节点，<br>填入name和email，这个只是作为你的这个项目的本地机器的日志标识，关系并不大，可以随便填。</p>
+<p><img src="/img/pics/2015-07-15/setGit.png" alt="setting"></p>
+<h4 id="u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F"><a href="#u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F" class="headerlink" title="配置访问方式"></a>配置访问方式</h4><p>假如在远程仓库上，你创建了一个项目，<br>一般有三种访问方式<br>1) HTTPS：读写仓库加密通道，有单次上传限制。<br>2) SSH：读写仓库加密通道，无单次上传限制，需先在设置公钥，完成配对验证。<br>3) Git：只读，并且只对公开项目有效。</p>
 <blockquote>
-<ol>
-<li>最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来</li>
-<li>lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了</li>
-<li>lisp是一种研究型、实验室语言，应用不广，无法推广。</li>
-</ol>
+<p><code>如果要使用ssh方式访问</code><br>ssh方式是一种加密的访问方式，使用这种方式我们需要在本机机器生成一串公钥，然后在托管平台上进行绑定授权。<br>我们安装小乌龟会附带安装一些组件，找到<code>Puttygen</code>这个程序打开，点击Generate按钮，接着你会发现随着你鼠标在<code>Puttygen</code>窗口滑动，进度条会滚动并最终生成一串公钥<br><img src="/img/pics/2015-07-15/setGit2.png" alt="setting"><br><code>ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIB+gadTNAA3iID1l5rg0qEhn5YySxANkYS6pQykbvdq8p
+V70dIFrsN2QCxoVz7W0NZydgFSAwGc4TYWKCSJUKVqgg+2Sf2mFc5LwaHwOX+NilA6SwH2NEOd1lUmr
+MgV7HJ8f4OhL4Ivwoqw/ZRPfBURfuHpVSXol5T4XuqMS00G0w== rsa-key-20150715</code><br>上面这一串就是了，copy下。<br>接着点击 <code>save private key</code> 把私钥保存在本地，注意！你的公钥对应的私钥必须要妥善保存，如果丢失跟密码被盗一样严重。记住路径和文件名，等下要用到。</p>
 </blockquote>
-<p>在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。<br>综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  </p>
-<hr>
-<h3 id="clojure_u4ECB_u7ECD"><a href="#clojure_u4ECB_u7ECD" class="headerlink" title="clojure介绍"></a>clojure介绍</h3><p>虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。<br>2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  </p>
+<p>打开<code>coding.net</code>,当然肯定要登陆了，然后创建一个新项目，中文界面滴，看不懂找你小学语文老师。</p>
+<p><img src="/img/pics/2015-07-15/import.png" alt="init"></p>
+<p>在这里我选了启用readme.md来初始化，这个没什么关系，一个介绍页面而已，不过写这个东东还是挺有趣的，一种新的语法应用。</p>
+<p><img src="/img/pics/2015-07-15/import2.png" alt="init"></p>
+<p>可以看到，默认创建了一个master分支，然后我——Tornado作为项目创建者也默认添加进了项目成员里面，<code>如果是团队协作，需要先把人邀请到这个项目，他们才能访问</code>。</p>
 <blockquote>
-<ol>
-<li>基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  </li>
-<li>可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  </li>
-<li>clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  </li>
-<li>clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。</li>
-</ol>
+<p><code>如果是ssh方式访问</code><br>在个人账户信息配置ssh公钥，把刚才copy的粘贴上去，名称随便填，不过最好稍微标记下是哪台电脑。<br><img src="/img/pics/2015-07-15/t.png" alt="init"><br><img src="/img/pics/2015-07-15/t2.png" alt="init"></p>
 </blockquote>
-<p>综上所述，clojure的这个坑我是掉定了，我也愿意！  </p>
-<hr>
-<h3 id="u5173_u4E8E_u672C_u6587"><a href="#u5173_u4E8E_u672C_u6587" class="headerlink" title="关于本文"></a>关于本文</h3><p>2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，<br>索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。</p>
+<p>打开<code>coding.net</code>,点击<code>代码</code>选项卡，可以看到这个。</p>
+<p><img src="/img/pics/2015-07-15/v.png" alt="init"></p>
+<p>左下角那个选择ssh或者https方式访问，copy下那串链接。</p>
+<p>打开项目的<code>setting</code>，选择git节点下的remote。</p>
+<p><img src="/img/pics/2015-07-15/v2.png" alt="init"></p>
+<p>在url那栏把刚才copy的访问链接粘贴下去，<code>putty key</code>，ssh访问需要导入私钥路径，https则不需要，<code>remote</code>标记这个这条访问链，随便填。填好后点击<code>Add new / save</code>。<br>ok后接着下一步，出现下面这个。</p>
+<p>成功了，就会提示<code>Success</code>，不成功的话就检查下信息是否有误或者前面哪个操作出现问题，再试一次。</p>
+<h3 id="u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE"><a href="#u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE" class="headerlink" title="初始化项目及推送项目"></a>初始化项目及推送项目</h3><p>这样配置的东西都搞定了，不过由于我们本地仓库是空的，需要从远程仓库<code>pull</code>下来初始化一下。<br>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>里面选择<code>pull</code>，<code>Success</code>后可以看到项目里面多了个<code>readme.md</code>文件。</p>
+<p>接下来在项目里面随便建立一个<code>test.php</code>文件，刚建立可以看到图标是一个问号，表明还没加入到本地仓库。右键这个文件，在<code>TortoiseGit</code>里面选择<code>add</code>，会弹出一个对话框，我们直接提交到本地仓库，点击<code>commit</code>按钮</p>
+<p><img src="/img/pics/2015-07-15/c.png" alt="init"></p>
+<p>会弹出一个确定操作的窗口，可以看到你对什么文件进行提交，我们勾选<code>test.php</code>文件，在<code>message</code>修改操作信息，这个是必填的。</p>
+<blockquote>
+<p><code>如果是https方式访问</code><br><img src="/img/pics/2015-07-15/v3.png" alt="init"><br>推送的时候会弹出这个，提示要输入用户名和密码，每次推送都需要输一次，像我这么懒的人就受不了了。<br>我们可以点击<code>setting</code>下git节点下的<code>Edit local.git/config</code>按钮，在弹出的<br>Notepad文本的最后输入。<br><code>[credential]
+helper = store</code><br>这样就只要输入一次就会自动保存，不过需要注意的是这种方式会在本地以明文形式保存信息，具体信息可以自行拓展。</p>
+</blockquote>
+<p>当看到<code>test.php</code>文件图标变成绿色对勾时，就证明提交成功了。</p>
+<p>接着往coding.net推送，我们可以选择整个项目，也可以选择单个文件推送，<br>右键<code>test_demo</code>，在<code>TortoiseGit</code>里面选择<code>push</code>，没什么意外都是直接ok。<br><code>success</code>后打开<code>coding.net</code>看下动态，可以看到最新的推送信息。至此完成。</p>
+<p><img src="/img/pics/2015-07-15/c2.png" alt="init"></p>
+<h3 id="u60F3_u8BF4_u7684_u8BDD"><a href="#u60F3_u8BF4_u7684_u8BDD" class="headerlink" title="想说的话"></a>想说的话</h3><p>首先非常感谢各位耐心的看到了最后，第一次写博文，可能会存在很多不足，希望各位路过的大牛不吝赐教，如果对于文章有什么疑惑或者建议的，也希望你们在下面的多玩评论里面留下你们的脚印，谢谢。</p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/ethan_xue/article/details/7749639" target="_blank" rel="external">ethan_xue</a><br><a href="http://www.cnblogs.com/Bonker/p/3441781.html" target="_blank" rel="external">Bonker</a><br><a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">铁锚</a></p>
 
       
     </div>
@@ -390,7 +447,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/clojure/" rel="tag">#clojure</a>
+            <a href="/tags/git/" rel="tag">#git</a>
           
         </div>
       
@@ -399,16 +456,12 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/20/2016-01-20-The develop of maven in intelij IDEA/" rel="next" title="IDEA 下的 maven+git 开发">
-                <i class="fa fa-chevron-left"></i> IDEA 下的 maven+git 开发
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/26/2016-01-26-The diary of learning clojure —— 1/" rel="prev" title="Clojure 学习日记 —— 1入门">
-                Clojure 学习日记 —— 1入门 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="prev" title="[技术备忘]Windows下 Emacs+Markdown 的使用">
+                [技术备忘]Windows下 Emacs+Markdown 的使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -435,8 +488,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/01/20/2016-01-20-The diary of learning clojure —— 0/"
-           data-title="Clojure 学习日记 —— 0序言" data-url="http://blog.caiyuyu.net/2016/01/20/2016-01-20-The diary of learning clojure —— 0/">
+      <div class="ds-thread" data-thread-key="2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/"
+           data-title="[技术备忘]Windows下 TortoiseGit+Coding 的使用" data-url="http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/">
       </div>
     
   </div>
@@ -481,21 +534,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">8</span>
+              <span class="site-state-item-count">9</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -552,7 +605,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#lisp_u4ECB_u7ECD"><span class="nav-number">1.</span> <span class="nav-text">lisp介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clojure_u4ECB_u7ECD"><span class="nav-number">2.</span> <span class="nav-text">clojure介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5173_u4E8E_u672C_u6587"><span class="nav-number">3.</span> <span class="nav-text">关于本文</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3A_u4EC0_u4E48_u8981_u7528Git"><span class="nav-number">1.</span> <span class="nav-text">为什么要用Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177"><span class="nav-number">2.</span> <span class="nav-text">下载及安装所需工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E0B_u8F7Dgit_for_windows"><span class="nav-number">2.1.</span> <span class="nav-text">下载git for windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E0B_u8F7DTortoiseGit"><span class="nav-number">2.2.</span> <span class="nav-text">下载TortoiseGit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5git"><span class="nav-number">2.3.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5TortoiseGit"><span class="nav-number">2.4.</span> <span class="nav-text">安装TortoiseGit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6CE8_u518Ccoding-net_u8D26_u53F7"><span class="nav-number">3.</span> <span class="nav-text">注册coding.net账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E"><span class="nav-number">4.</span> <span class="nav-text">创建本地仓库并配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939"><span class="nav-number">4.1.</span> <span class="nav-text">创建本地仓库文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6"><span class="nav-number">4.2.</span> <span class="nav-text">配置git日志标识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F"><span class="nav-number">4.3.</span> <span class="nav-text">配置访问方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE"><span class="nav-number">5.</span> <span class="nav-text">初始化项目及推送项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u60F3_u8BF4_u7684_u8BDD"><span class="nav-number">6.</span> <span class="nav-text">想说的话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
