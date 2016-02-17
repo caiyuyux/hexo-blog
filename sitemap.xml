@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.caiyuyu.net/guestbook/index.html</loc>
+    <lastmod>2016-02-17T10:03:46.400Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.caiyuyu.net/about/index.html</loc>
+    <lastmod>2016-02-17T10:03:23.655Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.caiyuyu.net/2016/02/17/2016-02-17-%5B%E7%BE%8E%E6%96%87%E9%80%9F%E8%AE%B0%5DLife%20as%20Chopsticks/</loc>
     <lastmod>2016-02-17T08:43:50.916Z</lastmod>
   </url>
@@ -49,16 +59,6 @@
   <url>
     <loc>http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%E2%80%94%201%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2016-02-11T16:33:03.291Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.caiyuyu.net/guestbook/index.html</loc>
-    <lastmod>2016-01-23T17:53:38.274Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.caiyuyu.net/about/index.html</loc>
-    <lastmod>2016-01-23T17:29:57.432Z</lastmod>
   </url>
   
   <url>
