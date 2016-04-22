@@ -1,0 +1,956 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+
+
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="ajax,bootstrap,paginator," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Tornado' blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+
+
+
+
+
+
+<meta name="description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[技术备忘]Ajax实现bootstrap-paginator的分页">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/index.html">
+<meta property="og:site_name" content="Tornado' blog">
+<meta property="og:description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-04-22/qq.png">
+<meta property="og:updated_time" content="2016-04-22T11:41:26.012Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[技术备忘]Ajax实现bootstrap-paginator的分页">
+<meta name="twitter:description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> [技术备忘]Ajax实现bootstrap-paginator的分页 | Tornado' blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-72791691-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?bebab2a5ea5fe2339f2c538cb6e5df50";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Tornado' blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">蘑菇不开花，你还爱它吗？</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu menu-left">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+
+      
+      
+      
+        <li class="menu-item menu-item-search">
+          <a href="#" class="st-search-show-outputs">
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '4zuJpK6UJFFWBqDY3LZe','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                [技术备忘]Ajax实现bootstrap-paginator的分页
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-22T18:41:20+08:00" content="2016-04-22">
+              2016-04-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
+                    <span itemprop="name">技术备忘</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" class="leancloud_visitors" data-flag-title="[技术备忘]Ajax实现bootstrap-paginator的分页">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？<br><a id="more"></a></p>
+<h3 id="u4EC0_u4E48_u662F_u5206_u9875_uFF1F"><a href="#u4EC0_u4E48_u662F_u5206_u9875_uFF1F" class="headerlink" title="什么是分页？"></a>什么是分页？</h3><p>这个就不废话了，分页分客户端分页和服务端分页，对于数据量比较大的情况，无疑是服务端分页优选，更快更便捷，本文讲的就是服务端分页，当然也可以做成客户端的效果，看你怎么实现。</p>
+<hr>
+<h3 id="Bootstrap_Paginator__u662F_u4EC0_u4E48_uFF1F"><a href="#Bootstrap_Paginator__u662F_u4EC0_u4E48_uFF1F" class="headerlink" title="Bootstrap Paginator 是什么？"></a>Bootstrap Paginator 是什么？</h3><p>Bootstrap Paginator 一款基于Bootstrap的js分页插件，至于什么事bootstrap是什么就不用说了，前端框架，用起来很方便，漂亮简洁，不用费心去找模板了。</p>
+<hr>
+<h3 id="u5982_u4F55_u4F7F_u7528Bootstrap_Paginator_uFF1F"><a href="#u5982_u4F55_u4F7F_u7528Bootstrap_Paginator_uFF1F" class="headerlink" title="如何使用Bootstrap Paginator？"></a>如何使用Bootstrap Paginator？</h3><p><strong>声明</strong>：我这里的代码是参照我的项目的，我直接复制过来，有些不是必要的，各位自行斟酌。</p>
+<h4 id="u5BFC_u5165_u5E93_u6587_u4EF6"><a href="#u5BFC_u5165_u5E93_u6587_u4EF6" class="headerlink" title="导入库文件"></a>导入库文件</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span> <span class="attribute">href</span>=<span class="value">"bootstrap.css"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"jquery-2.1.4.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"bootstrap-paginator.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="u524D_u7AEF_u754C_u9762_u7684html_u4EE3_u7801"><a href="#u524D_u7AEF_u754C_u9762_u7684html_u4EE3_u7801" class="headerlink" title="前端界面的html代码"></a>前端界面的html代码</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"panel-body"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"post"</span> <span class="attribute">class</span>=<span class="value">"list-group"</span> <span class="attribute">style</span>=<span class="value">"height: 430px;"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">style</span>=<span class="value">"width: 500px; text-align: center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"pageLimit"</span> <span class="attribute">style</span>=<span class="value">"position: absolute; bottom: 0px; margin-left: auto; margin-right: auto"</span>&gt;</span><span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这个是个div，我想在这里放置一个列表，这里要说明下，<code>id=&quot;post&quot;</code>这个<code>ul</code>放的是列表，<code>id=&quot;pageLimit&quot;</code>这个<code>ul</code>放的是分页显示的按钮，不要搞混了。</p>
+<h4 id="Ajax_u548Cjquery_u4EE3_u7801"><a href="#Ajax_u548Cjquery_u4EE3_u7801" class="headerlink" title="Ajax和jquery代码"></a>Ajax和jquery代码</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Bootstrap_paging</span>(<span class="params">page</span>)</span>&#123;</span><br><span class="line">       <span class="keyword">var</span> listNum = <span class="number">2</span>;<span class="comment">//每页多少条数据</span></span><br><span class="line">       $.ajax(&#123;</span><br><span class="line">           type: <span class="string">"GET"</span>,</span><br><span class="line">           url:<span class="string">"/PostGetData"</span>,</span><br><span class="line">           dataType:<span class="string">"json"</span>,</span><br><span class="line">           data: <span class="string">"pageId="</span>+page+<span class="string">"&amp;listNum="</span>+listNum,</span><br><span class="line">           success:<span class="function"><span class="keyword">function</span>(<span class="params">msg</span>)</span>&#123;</span><br><span class="line">               <span class="keyword">var</span> element = $(<span class="string">'#post'</span>);</span><br><span class="line">               <span class="keyword">var</span> pages = <span class="built_in">Math</span>.ceil(msg.num/listNum)</span><br><span class="line">               $(<span class="string">'.postList'</span>).remove();</span><br><span class="line">               $.each(msg.post,<span class="function"><span class="keyword">function</span>(<span class="params">index,item</span>)</span>&#123;</span><br><span class="line">                   element.append(<span class="string">'&lt;li class="list-group-item postList" onclick="getContent(this)"&gt;'</span>+item.title+<span class="string">'&lt;span style="float: right;"&gt;'</span>+item.time);</span><br><span class="line">               &#125;);</span><br><span class="line">               <span class="keyword">var</span> options = &#123;</span><br><span class="line">                   currentPage: page,</span><br><span class="line">                   totalPages: pages,</span><br><span class="line">                   useBootstrapTooltip: <span class="literal">true</span>,</span><br><span class="line">                   bootstrapMajorVersion: <span class="number">3</span>,</span><br><span class="line">                   tooltipTitles: <span class="function"><span class="keyword">function</span> (<span class="params">type, page, current</span>) </span>&#123;</span><br><span class="line">                       <span class="keyword">switch</span> (type) &#123;</span><br><span class="line">                           <span class="keyword">case</span> <span class="string">"first"</span>:</span><br><span class="line">                               <span class="keyword">return</span> <span class="string">"Go To First Page &lt;i class='icon-fast-backward icon-white'&gt;&lt;/i&gt;"</span>;</span><br><span class="line">                           <span class="keyword">case</span> <span class="string">"prev"</span>:</span><br><span class="line">                               <span class="keyword">return</span> <span class="string">"Go To Previous Page &lt;i class='icon-backward icon-white'&gt;&lt;/i&gt;"</span>;</span><br><span class="line">                           <span class="keyword">case</span> <span class="string">"next"</span>:</span><br><span class="line">                               <span class="keyword">return</span> <span class="string">"Go To Next Page &lt;i class='icon-forward icon-white'&gt;&lt;/i&gt;"</span>;</span><br><span class="line">                           <span class="keyword">case</span> <span class="string">"last"</span>:</span><br><span class="line">                               <span class="keyword">return</span> <span class="string">"Go To Last Page &lt;i class='icon-fast-forward icon-white'&gt;&lt;/i&gt;"</span>;</span><br><span class="line">                           <span class="keyword">case</span> <span class="string">"page"</span>:</span><br><span class="line">                               <span class="keyword">return</span> <span class="string">"Go to page "</span> + page + <span class="string">" &lt;i class='icon-file icon-white'&gt;&lt;/i&gt;"</span>;</span><br><span class="line">                       &#125;</span><br><span class="line">                   &#125;,</span><br><span class="line">                   bootstrapTooltipOptions: &#123;</span><br><span class="line">                       html: <span class="literal">true</span>,</span><br><span class="line">                       placement: <span class="string">'bottom'</span></span><br><span class="line">                   &#125;</span><br><span class="line">               &#125;</span><br><span class="line">               $(<span class="string">'#pageLimit'</span>).bootstrapPaginator(options);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;);</span><br><span class="line">   &#125;</span><br><span class="line">   $(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">       Bootstrap_paging(<span class="number">1</span>);</span><br><span class="line">   &#125;)</span><br></pre></td></tr></table></figure>
+<p>这里其实就是一个函数，传入的参数是需要跳转的页面，在第一次访问页面调用它，传入参数1，这样就显示了第一页的数据。<br><code>url</code>是后台的请求数据的页面，因为我们实现的是服务端分页，所以是一页一页的获取数据，需要传给后台的有俩个参数，<br>一个是<code>pageId</code>，即当前的页面，一个是<code>listNum</code>，是每页最多显示多少条数据。</p>
+<h4 id="u4FEE_u6539bootstrap-paginator-js_u6587_u4EF6_u7684_u4EE3_u7801"><a href="#u4FEE_u6539bootstrap-paginator-js_u6587_u4EF6_u7684_u4EE3_u7801" class="headerlink" title="修改bootstrap-paginator.js文件的代码"></a>修改bootstrap-paginator.js文件的代码</h4><p>这个我觉得不是太好，因为bootstrap-paginator.js文件是一个库，一般我们尽量不要去改的，如果有需要修改的会提供一个接口给我们，但是我找了一下没有找到，所以只能直接在这里改了，<br>如果有大牛路过知道怎么回事的希望不吝赐教。<br>在该文件223行左右的地方加入刚才上面我们定义的函数。  </p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">onPageClicked: <span class="function"><span class="keyword">function</span> (<span class="params">event, originalEvent, type, page</span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//show the corresponding page and retrieve the newly built item related to the page clicked before for the event return</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> currentTarget = $(event.currentTarget);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">switch</span> (type) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"first"</span>:</span><br><span class="line">        currentTarget.bootstrapPaginator(<span class="string">"showFirst"</span>);</span><br><span class="line">        Bootstrap_paging(page);<span class="comment">//add</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"prev"</span>:</span><br><span class="line">        currentTarget.bootstrapPaginator(<span class="string">"showPrevious"</span>);</span><br><span class="line">        Bootstrap_paging(page);<span class="comment">//add</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"next"</span>:</span><br><span class="line">        currentTarget.bootstrapPaginator(<span class="string">"showNext"</span>);</span><br><span class="line">        Bootstrap_paging(page);<span class="comment">//add</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"last"</span>:</span><br><span class="line">        currentTarget.bootstrapPaginator(<span class="string">"showLast"</span>);</span><br><span class="line">        Bootstrap_paging(page);<span class="comment">//add</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">"page"</span>:</span><br><span class="line">        currentTarget.bootstrapPaginator(<span class="string">"show"</span>, page);</span><br><span class="line">        Bootstrap_paging(page);<span class="comment">//add</span></span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h4 id="u540E_u53F0_u670D_u52A1_u5668_u7AEF_u7684clojure_u4EE3_u7801"><a href="#u540E_u53F0_u670D_u52A1_u5668_u7AEF_u7684clojure_u4EE3_u7801" class="headerlink" title="后台服务器端的clojure代码"></a>后台服务器端的clojure代码</h4><p>嗯，因为我这个后台是clojure实现的，所以这部分代码是clojure的，你们可以根据自己的语言写，功能挺简单。</p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> PostGetData</span><br><span class="line">  <span class="collection">[request]</span></span><br><span class="line">  <span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[pageId  <span class="list">(<span class="keyword">parse-int</span> <span class="list">(<span class="keyword"><span class="built_in">-&gt;</span></span> request <span class="attribute">:params</span> <span class="attribute">:pageId</span>)</span>)</span></span><br><span class="line">        listNum <span class="list">(<span class="keyword">parse-int</span> <span class="list">(<span class="keyword"><span class="built_in">-&gt;</span></span> request <span class="attribute">:params</span> <span class="attribute">:listNum</span>)</span>)</span>]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">def</span></span> data <span class="list">(<span class="keyword">db/all_for_post</span>)</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">def</span></span> Newdata <span class="list">(<span class="keyword"><span class="built_in">hash-map</span></span> <span class="attribute">:post</span> <span class="list">(<span class="keyword"><span class="built_in">into</span></span> <span class="collection">[]</span> <span class="list">(<span class="keyword"><span class="built_in">nth</span></span> <span class="list">(<span class="keyword">partition-all</span> listNum data)</span> <span class="list">(<span class="keyword"><span class="built_in">-</span></span> pageId <span class="number">1</span>)</span>)</span>)</span>,</span><br><span class="line">                           <span class="attribute">:num</span> <span class="list">(<span class="keyword"><span class="built_in">count</span></span> data)</span>)</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword">generate-string</span> Newdata)</span>)</span>)</span></span><br></pre></td></tr></table></figure>
+<p>如上，从数据库查询所需的全部数据，根据我们ajax异步请求传的<code>listNum</code>参数来确定切割几份，再根据<code>pageId</code>确定返回哪部分，自然，要转成json形式。<br>最后返回的数据大概是这样的。  </p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    "<span class="attribute">num</span>": <span class="value"><span class="number">3</span></span>,</span><br><span class="line">    "<span class="attribute">post</span>": <span class="value">[</span><br><span class="line">        &#123;</span><br><span class="line">            "<span class="attribute">title</span>": <span class="value"><span class="string">"title"</span></span>,</span><br><span class="line">            "<span class="attribute">time</span>": <span class="value"><span class="string">"Wed Apr 20 2016"</span></span><br><span class="line">        </span>&#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            "<span class="attribute">title</span>": <span class="value"><span class="string">"aa"</span></span>,</span><br><span class="line">            "<span class="attribute">time</span>": <span class="value"><span class="string">"Wed Apr 20 2016"</span></span><br><span class="line">        </span>&#125;</span><br><span class="line">    ]</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="u6548_u679C"><a href="#u6548_u679C" class="headerlink" title="效果"></a>效果</h3><p><img src="/img/pics/2016-04-22/qq.png" alt=""></p>
+<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://my.oschina.net/xiaoxiangdaizi/blog/489047?fromerr=5pEgJ0C1" target="_blank" rel="external">alleybag的教程</a><br><a href="http://blog.csdn.net/zxw394/article/details/30067827" target="_blank" rel="external">zxw394的博客</a></p>
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ajax/" rel="tag">#ajax</a>
+          
+            <a href="/tags/bootstrap/" rel="tag">#bootstrap</a>
+          
+            <a href="/tags/paginator/" rel="tag">#paginator</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" rel="next" title="[阅读随笔]第一次亲密接触">
+                <i class="fa fa-chevron-left"></i> [阅读随笔]第一次亲密接触
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/"
+           data-title="[技术备忘]Ajax实现bootstrap-paginator的分页" data-url="http://blog.caiyuyu.net/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Tornado" />
+          <p class="site-author-name" itemprop="name">Tornado</p>
+          <p class="site-description motion-element" itemprop="description">欣欣以向荣 萋萋而摇绿</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            <a href="/categories">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">分类</span>
+              </a>
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/yinyizhixian" target="_blank">
+                  
+                    <i class="fa fa-github"></i> GitHub
+                  
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/TornadoFeitian" target="_blank">
+                  
+                    <i class="fa fa-twitter"></i> Twitter
+                  
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator">
+            <i class="fa fa-angle-double-up"></i>
+          </div>
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4EC0_u4E48_u662F_u5206_u9875_uFF1F"><span class="nav-number">1.</span> <span class="nav-text">什么是分页？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Bootstrap_Paginator__u662F_u4EC0_u4E48_uFF1F"><span class="nav-number">2.</span> <span class="nav-text">Bootstrap Paginator 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5982_u4F55_u4F7F_u7528Bootstrap_Paginator_uFF1F"><span class="nav-number">3.</span> <span class="nav-text">如何使用Bootstrap Paginator？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5BFC_u5165_u5E93_u6587_u4EF6"><span class="nav-number">3.1.</span> <span class="nav-text">导入库文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u524D_u7AEF_u754C_u9762_u7684html_u4EE3_u7801"><span class="nav-number">3.2.</span> <span class="nav-text">前端界面的html代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ajax_u548Cjquery_u4EE3_u7801"><span class="nav-number">3.3.</span> <span class="nav-text">Ajax和jquery代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539bootstrap-paginator-js_u6587_u4EF6_u7684_u4EE3_u7801"><span class="nav-number">3.4.</span> <span class="nav-text">修改bootstrap-paginator.js文件的代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u540E_u53F0_u670D_u52A1_u5668_u7AEF_u7684clojure_u4EE3_u7801"><span class="nav-number">3.5.</span> <span class="nav-text">后台服务器端的clojure代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6548_u679C"><span class="nav-number">4.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator">
+            <i class="fa fa-angle-double-down"></i>
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="icon-next-heart fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tornado</span>
+</div>
+<div class="powered-by">
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+      </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+  </div>
+
+  
+
+
+  
+
+
+
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+
+
+
+  
+  
+<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      var $indicator = $(indicator);
+      var opacity = action === 'show' ? 1 : 0;
+      $indicator.velocity ?
+        $indicator.velocity('stop').velocity({
+          opacity: opacity
+        }, { duration: 100 }) :
+        $indicator.stop().animate({
+          opacity: opacity
+        }, 100);
+    }
+
+  });
+</script>
+
+<script type="text/javascript" id="sidebar.nav">
+  $(document).ready(function () {
+    var html = $('html');
+    var TAB_ANIMATE_DURATION = 200;
+    var hasVelocity = $.isFunction(html.velocity);
+
+    $('.sidebar-nav li').on('click', function () {
+      var item = $(this);
+      var activeTabClassName = 'sidebar-nav-active';
+      var activePanelClassName = 'sidebar-panel-active';
+      if (item.hasClass(activeTabClassName)) {
+        return;
+      }
+
+      var currentTarget = $('.' + activePanelClassName);
+      var target = $('.' + item.data('target'));
+
+      hasVelocity ?
+        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
+            .addClass(activePanelClassName);
+        }) :
+        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
+          currentTarget.hide();
+          target
+            .stop()
+            .css({'opacity': 0, 'display': 'block'})
+            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
+              currentTarget.removeClass(activePanelClassName);
+              target.addClass(activePanelClassName);
+            });
+        });
+
+      item.siblings().removeClass(activeTabClassName);
+      item.addClass(activeTabClassName);
+    });
+
+    $('.post-toc a').on('click', function (e) {
+      e.preventDefault();
+      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
+      var offset = $(targetSelector).offset().top;
+      hasVelocity ?
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        }) :
+        $('html, body').stop().animate({
+          scrollTop: offset
+        }, 500);
+    });
+
+    // Expand sidebar on post detail page by default, when post has a toc.
+    NexT.motion.middleWares.sidebar = function () {
+      var $tocContent = $('.post-toc-content');
+
+      if (CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          NexT.utils.displaySidebar();
+        }
+      }
+    };
+  });
+</script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"caiyuyu"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+
+  
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/MathJax.js"></script>
+    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.4.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
+  
+
+
+  
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("QuNiVJ5k5w8l9DCPkx4m2lmH-gzGzoHsz", "JClNEbyMBx3FICHqwa6X8U6p");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+
+</body>
+</html>

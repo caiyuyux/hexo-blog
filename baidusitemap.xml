@@ -3,29 +3,31 @@
 
 
     
-    
-    
   <url>
-    <loc>http://blog.caiyuyu.net/2016/02/17/2016-02-17-%5B%E7%BE%8E%E6%96%87%E9%80%9F%E8%AE%B0%5DLife%20as%20Chopsticks/</loc>
-    <lastmod>2016-02-17T08:43:50.916Z</lastmod>
+    <loc>http://blog.caiyuyu.net/2016/04/22/2016-04-22-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DAjax%E5%AE%9E%E7%8E%B0bootstrap-paginator%E7%9A%84%E5%88%86%E9%A1%B5/</loc>
+    <lastmod>2016-04-22T11:41:26.012Z</lastmod>
     <data>
         <display>
-        <title>[美文速记]Life as Chopsticks</title>
-        <pubTime>2016-02-17T06:32:01.000Z</pubTime>
+        <title>[技术备忘]Ajax实现bootstrap-paginator的分页</title>
+        <pubTime>2016-04-22T10:41:20.000Z</pubTime>
         
-        <tag>English</tag>
+        <tag>ajax</tag>
          
-        <tag>recite</tag>
+        <tag>bootstrap</tag>
+         
+        <tag>paginator</tag>
          
          
            
              
-              <breadCrumb title="美文速记" url="http://blog.caiyuyu.net/categories/%E7%BE%8E%E6%96%87%E9%80%9F%E8%AE%B0/"/>
+              <breadCrumb title="技术备忘" url="http://blog.caiyuyu.net/categories/%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98/"/>
           
         </display>
     </data>
     </url>
 
+    
+    
     
   <url>
     <loc>http://blog.caiyuyu.net/2016/02/11/2016-02-11-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6/</loc>
