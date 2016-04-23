@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="ajax,bootstrap,paginator," />
+  <meta name="keywords" content="postgraduate," />
 
 
 
@@ -59,17 +59,17 @@
 
 
 
-<meta name="description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+<meta name="description" content="搞混了几次，稍作记录下。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[技术备忘]Ajax实现bootstrap-paginator的分页">
-<meta property="og:url" content="http://blog.caiyuyu.net/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/index.html">
+<meta property="og:title" content="[考研归纳]单射、满射和双射">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/index.html">
 <meta property="og:site_name" content="Tornado' blog">
-<meta property="og:description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+<meta property="og:description" content="搞混了几次，稍作记录下。">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-04-22/qq.png">
-<meta property="og:updated_time" content="2016-04-22T11:48:33.122Z">
+<meta property="og:updated_time" content="2016-04-23T02:15:57.959Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[技术备忘]Ajax实现bootstrap-paginator的分页">
-<meta name="twitter:description" content="网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？">
+<meta name="twitter:title" content="[考研归纳]单射、满射和双射">
+<meta name="twitter:description" content="搞混了几次，稍作记录下。">
 
 
 
@@ -87,7 +87,7 @@
   };
 </script>
 
-  <title> [技术备忘]Ajax实现bootstrap-paginator的分页 | Tornado' blog </title>
+  <title> [考研归纳]单射、满射和双射 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +284,7 @@
             
             
               
-                [技术备忘]Ajax实现bootstrap-paginator的分页
+                [考研归纳]单射、满射和双射
               
             
           </h1>
@@ -296,8 +296,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-22T18:41:20+08:00" content="2016-04-22">
-              2016-04-22
+            <time itemprop="dateCreated" datetime="2016-04-23T09:58:10+08:00" content="2016-04-23">
+              2016-04-23
             </time>
           </span>
 
@@ -310,8 +310,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
-                    <span itemprop="name">技术备忘</span>
+                  <a href="/categories/考研归纳/" itemprop="url" rel="index">
+                    <span itemprop="name">考研归纳</span>
                   </a>
                 </span>
 
@@ -326,8 +326,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" itemprop="commentsCount"></span>
+                <a href="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -337,7 +337,7 @@
 
           
           
-             <span id="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" class="leancloud_visitors" data-flag-title="[技术备忘]Ajax实现bootstrap-paginator的分页">
+             <span id="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/" class="leancloud_visitors" data-flag-title="[考研归纳]单射、满射和双射">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -357,8 +357,9 @@
       
 
       
-        <p>网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？<br><a id="more"></a></p>
-<h3 id="u4EC0_u4E48_u662F_u5206_u9875_uFF1F"><a href="#u4EC0_u4E48_u662F_u5206_u9875_uFF1F" class="headerlink" title="什么是分页？"></a>什么是分页？</h3><p>这个就不废话了，分页分客户端分页和服务端分页，对于数据量比较大的情况，无疑是服务端分页优选，更快更便捷，本文讲的就是服务端分页，当然也可以做成客户端的效果，看你怎么实现。</p>
+        <p>搞混了几次，稍作记录下。<br><a id="more"></a></p>
+<h3 id="u5B9A_u4E49"><a href="#u5B9A_u4E49" class="headerlink" title="定义"></a>定义</h3><p>设$$X、Y$$是两个非空集合，如果存在一个法则$$f$$，使得对$$X$$中每个元素$$x$$，按法则$$f$$，在$$Y$$中有唯一确定的元素$$y$$与之对应，则称$$f$$为从$$X$$到$$Y$$的映射，记作：<br>\(f:X-&gt;Y\)</p>
+<p>简单来说，有一点是需要注意的，就是$$X$$集合里面一定要跟$$Y$$集合里面有关系对应，$$Y$$中可以有“多余”的元素，即没有对应关系的。</p>
 <hr>
 <h3 id="Paginator__u662F_u4EC0_u4E48_uFF1F"><a href="#Paginator__u662F_u4EC0_u4E48_uFF1F" class="headerlink" title="Paginator 是什么？"></a>Paginator 是什么？</h3><p>Bootstrap Paginator 一款基于Bootstrap的js分页插件，至于什么是bootstrap是什么就不用说了，前端框架，用起来很方便，漂亮简洁，不用费心去找模板了。</p>
 <hr>
@@ -384,11 +385,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/ajax/" rel="tag">#ajax</a>
-          
-            <a href="/tags/bootstrap/" rel="tag">#bootstrap</a>
-          
-            <a href="/tags/paginator/" rel="tag">#paginator</a>
+            <a href="/tags/postgraduate/" rel="tag">#postgraduate</a>
           
         </div>
       
@@ -397,17 +394,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" rel="next" title="[阅读随笔]第一次亲密接触">
-                <i class="fa fa-chevron-left"></i> [阅读随笔]第一次亲密接触
+              <a href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" rel="next" title="[技术备忘]Ajax实现bootstrap-paginator的分页">
+                <i class="fa fa-chevron-left"></i> [技术备忘]Ajax实现bootstrap-paginator的分页
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/" rel="prev" title="[考研归纳]单射、满射和双射">
-                [考研归纳]单射、满射和双射 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -433,8 +426,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/"
-           data-title="[技术备忘]Ajax实现bootstrap-paginator的分页" data-url="http://blog.caiyuyu.net/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/">
+      <div class="ds-thread" data-thread-key="2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/"
+           data-title="[考研归纳]单射、满射和双射" data-url="http://blog.caiyuyu.net/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/">
       </div>
     
   </div>
@@ -550,7 +543,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4EC0_u4E48_u662F_u5206_u9875_uFF1F"><span class="nav-number">1.</span> <span class="nav-text">什么是分页？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paginator__u662F_u4EC0_u4E48_uFF1F"><span class="nav-number">2.</span> <span class="nav-text">Paginator 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5982_u4F55_u4F7F_u7528Paginator_uFF1F"><span class="nav-number">3.</span> <span class="nav-text">如何使用Paginator？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5BFC_u5165_u5E93_u6587_u4EF6"><span class="nav-number">3.1.</span> <span class="nav-text">导入库文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u524D_u7AEF_u754C_u9762_u7684html_u4EE3_u7801"><span class="nav-number">3.2.</span> <span class="nav-text">前端界面的html代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ajax_u548Cjquery_u4EE3_u7801"><span class="nav-number">3.3.</span> <span class="nav-text">Ajax和jquery代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539bootstrap-paginator-js_u6587_u4EF6_u7684_u4EE3_u7801"><span class="nav-number">3.4.</span> <span class="nav-text">修改bootstrap-paginator.js文件的代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u540E_u53F0_u670D_u52A1_u5668_u7AEF_u7684clojure_u4EE3_u7801"><span class="nav-number">3.5.</span> <span class="nav-text">后台服务器端的clojure代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6548_u679C"><span class="nav-number">4.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B9A_u4E49"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Paginator__u662F_u4EC0_u4E48_uFF1F"><span class="nav-number">2.</span> <span class="nav-text">Paginator 是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5982_u4F55_u4F7F_u7528Paginator_uFF1F"><span class="nav-number">3.</span> <span class="nav-text">如何使用Paginator？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5BFC_u5165_u5E93_u6587_u4EF6"><span class="nav-number">3.1.</span> <span class="nav-text">导入库文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u524D_u7AEF_u754C_u9762_u7684html_u4EE3_u7801"><span class="nav-number">3.2.</span> <span class="nav-text">前端界面的html代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Ajax_u548Cjquery_u4EE3_u7801"><span class="nav-number">3.3.</span> <span class="nav-text">Ajax和jquery代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4FEE_u6539bootstrap-paginator-js_u6587_u4EF6_u7684_u4EE3_u7801"><span class="nav-number">3.4.</span> <span class="nav-text">修改bootstrap-paginator.js文件的代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u540E_u53F0_u670D_u52A1_u5668_u7AEF_u7684clojure_u4EE3_u7801"><span class="nav-number">3.5.</span> <span class="nav-text">后台服务器端的clojure代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6548_u679C"><span class="nav-number">4.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
