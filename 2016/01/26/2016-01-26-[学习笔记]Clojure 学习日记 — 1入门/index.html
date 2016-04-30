@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="essay," />
+  <meta name="keywords" content="clojure," />
 
 
 
@@ -59,17 +59,16 @@
 
 
 
-<meta name="description">
+<meta name="description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[阅读随笔]第一次亲密接触">
-<meta property="og:url" content="http://blog.caiyuyu.net/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/index.html">
+<meta property="og:title" content="[学习笔记]Clojure 学习日记 — 1入门">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/index.html">
 <meta property="og:site_name" content="Tornado' blog">
-<meta property="og:description">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-02-11/第一次亲密接触.png">
-<meta property="og:updated_time" content="2016-04-23T03:04:44.220Z">
+<meta property="og:description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
+<meta property="og:updated_time" content="2016-04-30T09:59:05.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[阅读随笔]第一次亲密接触">
-<meta name="twitter:description">
+<meta name="twitter:title" content="[学习笔记]Clojure 学习日记 — 1入门">
+<meta name="twitter:description" content="这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。">
 
 
 
@@ -87,7 +86,7 @@
   };
 </script>
 
-  <title> [阅读随笔]第一次亲密接触 | Tornado' blog </title>
+  <title> [学习笔记]Clojure 学习日记 — 1入门 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -284,7 +283,7 @@
             
             
               
-                [阅读随笔]第一次亲密接触
+                [学习笔记]Clojure 学习日记 — 1入门
               
             
           </h1>
@@ -296,8 +295,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-11T23:46:42+08:00" content="2016-02-11">
-              2016-02-11
+            <time itemprop="dateCreated" datetime="2016-01-26T16:25:01+08:00" content="2016-01-26">
+              2016-01-26
             </time>
           </span>
 
@@ -310,8 +309,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/阅读随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">阅读随笔</span>
+                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">学习笔记</span>
                   </a>
                 </span>
 
@@ -326,8 +325,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" itemprop="commentsCount"></span>
+                <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -337,7 +336,7 @@
 
           
           
-             <span id="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" class="leancloud_visitors" data-flag-title="[阅读随笔]第一次亲密接触">
+             <span id="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" class="leancloud_visitors" data-flag-title="[学习笔记]Clojure 学习日记 — 1入门">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -357,26 +356,59 @@
       
 
       
-        <p><img src="/img/pics/2016-02-11/第一次亲密接触.png" alt=""></p>
+        <p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>
 <a id="more"></a>
-<p>无论多么美好浪漫的假设都只是一个假言命题，只要前件不成立，后件就没有讨论的意义了，正如故事起因的痞子蔡的那个plan：</p>
-<blockquote>
-<p>如果我有一千万，我就能买一栋房子。<br>我有一千万吗？没有。<br>所以我仍然没有房子。<br>如果我有翅膀，我就能飞。<br>我有翅膀吗？没有。<br>所以我也没办法飞。<br>如果把整个太平洋的水倒出，也浇不熄我对你爱情的火。<br>整个太平洋的水全部倒得出吗？不行。<br>所以我并不爱你。</p>
-</blockquote>
-<p>事实证明，这个夹杂着逻辑命题的浪漫宣言是很吸引小女生的，于是女主人公轻舞飞扬出场了，在网络上与痞子蔡来了一次美丽的邂逅。<br>轻舞飞扬活于自己世界，陶醉于自己的世界，很浪漫，很美：</p>
-<blockquote>
-<p>我轻轻地舞着，在拥挤的人群之中。<br>你投射过来异样的眼神。<br>诧异也好，欣赏也罢。<br>并不曾使我的舞步凌乱。<br>因为令我飞扬的，不是你注视的目光。<br>而是我年轻的心。</p>
-</blockquote>
-<p>在三点一刻的相伴中虽然见不到彼此，却依然可以很温馨的感受到双方内心，他们将情感藏于字里行间，一字一语都洋溢着默契与深情。</p>
-<p>当装痞子的痞子蔡和长发飞扬的轻舞飞扬在现实中的第一次相见，并没有影响到这段恋情，而是将之推上高峰，不出意外，彼此双方确实是自己命中注定的那个人。</p>
-<p>只可惜，美好的东西总是不长久的，随后，在电影院看电影、在麦当劳吃快餐乃至最后在跨年晚会洒香水雨，都可以分外感受到轻舞飞扬那颗捏得越来越紧的心。</p>
-<p>在医院中的再次重逢却不是应有的死气沉沉或是悲伤，轻舞飞扬还是那个轻舞飞扬，带着浅浅的笑容，像什么都没发生一般与痞子蔡说着话，直到最后。</p>
-<p>生活总得继续，活着的人只能越发珍惜现在和怀念过往，轻舞飞扬虽然走了，却还是活着痞子蔡的心中，每晚三点一刻准时上线陪伴着轻舞飞扬，</p>
-<p>于此同时，留下的还有那个被轻舞飞扬改过的plan：</p>
-<blockquote>
-<p>如果我还有一天寿命，那天我要做你女友。<br>我还有一天的命吗？没有。<br>所以，很可惜。我今生仍然不是你的女友。<br>如果我有翅膀，我要从天堂飞下来看你。<br>我有翅膀吗？没有。<br>所以，很遗憾。我从此无法再看到你。<br>如果把整个浴缸的水倒出，也浇不熄我对你爱情的火。<br>整个浴缸的水全部倒得出吗？可以。<br>所以，是的。我爱你</p>
-</blockquote>
-<p>故事结束了，但是我却不是很伤感，只是有点可惜，其实这样的感情很美好不是吗？没有遗憾。够了够了，斯人已逝，活着的人却还会记着她，永远永远!</p>
+<h3 id="u5B66_u4E60_u6559_u6750"><a href="#u5B66_u4E60_u6559_u6750" class="headerlink" title="学习教材"></a>学习教材</h3><p>嗯，废话不多说，教材用的是《Clojure Programming》，也就是俗称的动物书，听说比较全面，打基础不错。</p>
+<p>当然，是翻译版的，英语水平不够是硬伤呀。 可以点 <a href="http://leanote.com/api/file/getAttach?fileId=56a72482ab6441777600233a" target="_blank" rel="external">Clojure Programming.pdf</a> 下载英文版PDF文档。</p>
+<hr>
+<h3 id="Clojure_u7279_u70B9"><a href="#Clojure_u7279_u70B9" class="headerlink" title="Clojure特点"></a>Clojure特点</h3><ol>
+<li><p>基于JVM平台，lisp恶劣的生态圈和稳定的JVM一结合，赶脚是天造地设的一对。</p>
+</li>
+<li><p>函数式编程语言，不可否认，函数式编程确实可以锻炼你的思维。</p>
+</li>
+<li><p>天生适合进行并行、并发编程。</p>
+</li>
+<li><p>动态编程语言，可以交互式开发。</p>
+</li>
+</ol>
+<hr>
+<h3 id="Clojure_u7684_u540C_u50CF_u6027"><a href="#Clojure_u7684_u540C_u50CF_u6027" class="headerlink" title="Clojure的同像性"></a>Clojure的同像性</h3><p>同像性一般称为“代码即数据”，即是说clojure没有太多臃肿的代码片段，这也是元编程的前提。  </p>
+<p>从代码转换成AST(抽象语法树)是一门语言的核心，也是体现一门语言的表达能力的所在，</p>
+<p>但是你要作出这个转换一般的前提是你对这么语言有一定的理解，理解的程度和该门语言的表达能力成反比，但是具有同像性的语言是个例外，</p>
+<p>因为clojure的代码是直接用AST的数据结构来写的，就是说，你写下的clojure代码就是一个AST了，不需要特意去转换，</p>
+<p>这也意味着clojure拥有其他语言所不能及的优秀的表达能力。</p>
+<hr>
+<h3 id="Clojure_u8DD1_u8D77_u6765"><a href="#Clojure_u8DD1_u8D77_u6765" class="headerlink" title="Clojure跑起来"></a>Clojure跑起来</h3><h4 id="u5FC5_u5907jar_u5305"><a href="#u5FC5_u5907jar_u5305" class="headerlink" title="必备jar包"></a>必备jar包</h4><ol>
+<li><p>JRE；也就是java运行时，当然，有JDK肯定也是可以的。</p>
+</li>
+<li><p>clojure.jar；可以在官网下载，现在最新的是1.8。</p>
+</li>
+</ol>
+<h4 id="u7F16_u7A0B_u5DE5_u5177"><a href="#u7F16_u7A0B_u5DE5_u5177" class="headerlink" title="编程工具"></a>编程工具</h4><ol>
+<li><p>Emacs；神器来着，可惜我驾驭不了，号称天生适合开发lisp，不适合新手，套用大牛的话，因为学习曲线太陡峭，除非你是emacs大牛。</p>
+</li>
+<li><p>Eclipse；没用过，用了一段时间的myeclipse，已弃用。</p>
+</li>
+<li><p>IDEA；没得说，强烈推荐，对clojure的支持很好，不过注意，不用La Clojure插件，用cursive插件，同时支持Leiningen，可惜要付费，不过真的很值，可以试用看看先。</p>
+</li>
+<li><p>命令行；这个不太熟悉，之前很久搞过，好像是要用lein运行的，不过用命令行，想想都觉得累，大牛走开、走开。</p>
+</li>
+</ol>
+<hr>
+<h3 id="REPL_u662F_u4EC0_u4E48_u9B3C"><a href="#REPL_u662F_u4EC0_u4E48_u9B3C" class="headerlink" title="REPL是什么鬼"></a>REPL是什么鬼</h3><h4 id="u7B80_u5355_u4ECB_u7ECD"><a href="#u7B80_u5355_u4ECB_u7ECD" class="headerlink" title="简单介绍"></a>简单介绍</h4><p>即 Read(读入)-Eval(求值)-Print(打印)-Loop(循环)。</p>
+<p>其实很多语言都都有repl这个东东，就是俗称的解释器，解析代码用的，像java也有BeanShell。</p>
+<p>但是clojure的repl是有点不同的，clojure的repl在解析代码的时候有个编译的过程，会编译成JVM的字节码，即是说clojure不是像html那种边解析边执行的，它是要编译成字节码后才能执行的，只不过clojure在解释执行的时候顺便编译了，跟直接执行一个clojure源文件是一样的，这点其实我也有点懵。</p>
+<p>clojure有repl肯定是个不小的有点，因为这意味着clojure可以交互，可以在运行时更新现有或新的代码，类似phtyon，可以对比下java的web，更新代码都要重启服务器，如果是clojure来实现，就支持热部署。</p>
+<h4 id="u6572_u5165_u4EE3_u7801"><a href="#u6572_u5165_u4EE3_u7801" class="headerlink" title="敲入代码"></a>敲入代码</h4><p>运行REPL，看到如下界面</p>
+<p><code>user=&gt;</code></p>
+<p>这个clojure是有命名空间的概念，user表示你当前的命名空间，user是默认命名空间。</p>
+<p>我们定义一个函数average，可以传入一个数组求平均值。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> average    </span><br><span class="line">    <span class="collection">[numbers]</span></span><br><span class="line">    <span class="list">(/ <span class="list">(<span class="keyword"><span class="built_in">apply</span></span> + numbers)</span> <span class="list">(<span class="keyword"><span class="built_in">count</span></span> numbers)</span></span></span></span><br></pre></td></tr></table></figure></p>
+<p>然后调用代码得到结果<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">average</span> <span class="collection">[<span class="number">60</span> <span class="number">80</span> <span class="number">100</span> <span class="number">400</span>]</span></span><br><span class="line"><span class="comment">;=160</span></span></span><br></pre></td></tr></table></figure></p>
+<p>注意 <code>;=</code>  前缀表示函数结果输出，在函数式语言中，函数是头等公民，都具有一个返回值，160就是average的返回值，也就是我们要求的平均值结果。</p>
+<p>如果换成这样就变成这样<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">println</span> <span class="list">(<span class="keyword">average</span> <span class="collection">[<span class="number">60</span> <span class="number">80</span> <span class="number">100</span> <span class="number">499</span>]</span>)</span>)</span></span><br><span class="line"><span class="comment">;160</span></span><br><span class="line"><span class="comment">;=nil</span></span><br></pre></td></tr></table></figure></p>
+<p>先求值<code>average</code>得到160的结果，<code>println</code>函数打印结果为 ;160  </p>
+<p>但是这个打印的功能只是附加的，每个函数都要求值才是repl本身就有的，<code>println</code> 求值为空，</p>
+<p>即<code>nil</code> </p>
 
       
     </div>
@@ -385,7 +417,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/essay/" rel="tag">#essay</a>
+            <a href="/tags/clojure/" rel="tag">#clojure</a>
           
         </div>
       
@@ -394,16 +426,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/" rel="next" title="[基础知识]Java中传值和传引用">
-                <i class="fa fa-chevron-left"></i> [基础知识]Java中传值和传引用
+              <a href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/" rel="next" title="[学习笔记]Clojure 学习日记 — 0序言">
+                <i class="fa fa-chevron-left"></i> [学习笔记]Clojure 学习日记 — 0序言
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" rel="prev" title="[技术备忘]Ajax实现bootstrap-paginator的分页">
-                [技术备忘]Ajax实现bootstrap-paginator的分页 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" rel="prev" title="[学习笔记]Clojure 学习日记 — 2基础语法">
+                [学习笔记]Clojure 学习日记 — 2基础语法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -430,8 +462,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/"
-           data-title="[阅读随笔]第一次亲密接触" data-url="http://blog.caiyuyu.net/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/">
+      <div class="ds-thread" data-thread-key="2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/"
+           data-title="[学习笔记]Clojure 学习日记 — 1入门" data-url="http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/">
       </div>
     
   </div>
@@ -547,7 +579,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B66_u4E60_u6559_u6750"><span class="nav-number">1.</span> <span class="nav-text">学习教材</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u7279_u70B9"><span class="nav-number">2.</span> <span class="nav-text">Clojure特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u7684_u540C_u50CF_u6027"><span class="nav-number">3.</span> <span class="nav-text">Clojure的同像性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u8DD1_u8D77_u6765"><span class="nav-number">4.</span> <span class="nav-text">Clojure跑起来</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5FC5_u5907jar_u5305"><span class="nav-number">4.1.</span> <span class="nav-text">必备jar包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u7F16_u7A0B_u5DE5_u5177"><span class="nav-number">4.2.</span> <span class="nav-text">编程工具</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#REPL_u662F_u4EC0_u4E48_u9B3C"><span class="nav-number">5.</span> <span class="nav-text">REPL是什么鬼</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u7B80_u5355_u4ECB_u7ECD"><span class="nav-number">5.1.</span> <span class="nav-text">简单介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6572_u5165_u4EE3_u7801"><span class="nav-number">5.2.</span> <span class="nav-text">敲入代码</span></a></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">

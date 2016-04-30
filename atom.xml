@@ -4,7 +4,7 @@
   <subtitle><![CDATA[蘑菇不开花，你还爱它吗？]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-04-23T12:24:54.206Z</updated>
+  <updated>2016-04-30T11:12:04.469Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -13,6 +13,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[[二次元向]火影—15年完结纪念致我的雏田大小姐]]></title>
+    <link href="http://blog.caiyuyu.net/2016/04/27/2016-04-27-%5B%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91%5D%E7%81%AB%E5%BD%B1%E2%80%9415%E5%B9%B4%E5%AE%8C%E7%BB%93%E7%BA%AA%E5%BF%B5%E8%87%B4%E6%88%91%E7%9A%84%E9%9B%8F%E7%94%B0%E5%A4%A7%E5%B0%8F%E5%A7%90/"/>
+    <id>http://blog.caiyuyu.net/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/</id>
+    <published>2016-04-27T15:12:42.000Z</published>
+    <updated>2016-04-30T11:12:04.469Z</updated>
+    <content type="html"><![CDATA[<p><img src="/img/pics/2016-04-27/3.png" alt=""></p>
+<a id="more"></a>
+<p>我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  </p>
+<p>所以呢？我还记得当时刚刚看火影时的震撼，在看的过程中也确实带给我很多收获和享受，但是时至今日，火影对我来说，更多的是一种情怀的味道，是对小学中学的一个回味，而雏田是我最喜欢一个人，我之所以称之为“人”而非“人物”，是因为我不愿意单单将其停留在火影这个世界里面。</p>
+<p>雏田很可爱很可爱很可爱，重要的事情说三遍，雏田是个很柔弱、很容易害羞的小女生，动不动就脸红，手足无措的戳手指，然而她并不只是个花瓶，她是典型的外柔内刚，也有坚强的一面，执拗起来也会让你很头疼，哈，如果有这样的女生陪着会很轻松、很舒服。</p>
+<p>可惜，幸福的路上总是曲折的，雏田遇上了不解风情的鸣人，只能望着鸣人的背影，一直追逐着，也变得越来越坚强，但不够，雏田有了自己的想法，不满足于跟在喜欢的人的身后，她想与之肩并肩，很好，她成功了。</p>
+<p>鸣人是幸运的，因为有雏田一直等着他，雏田也是幸运的，因为她终于等来了鸣人的后知后觉；如果要用一句话来形容这段感情，那么我只能说：</p>
+<blockquote>
+<p>终于等到你，还好我没放弃。</p>
+</blockquote>
+<p><img src="/img/pics/2016-04-27/1.jpg" alt=""></p>
+<embed src="http://music.163.com/style/swf/widget.swf?sid=27836179&type=2&auto=1&width=278&height=32" width="298" height="52" allownetworking="all">
+
+
+
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><img src="/img/pics/2016-04-27/3.png" alt=""></p>]]>
+    
+    </summary>
+    
+      <category term="にじげん" scheme="http://blog.caiyuyu.net/tags/%E3%81%AB%E3%81%98%E3%81%92%E3%82%93/"/>
+    
+      <category term="二次元向" scheme="http://blog.caiyuyu.net/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[[考研归纳]由极限定义证明收敛值]]></title>
@@ -228,11 +261,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[[学习笔记]Clojure 学习日记 —— 3进阶语法]]></title>
-    <link href="http://blog.caiyuyu.net/2016/01/30/2016-01-30-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%E2%80%94%203%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/"/>
-    <id>http://blog.caiyuyu.net/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 —— 3进阶语法/</id>
+    <title><![CDATA[[学习笔记]Clojure 学习日记 — 3进阶语法]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/30/2016-01-30-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%203%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/"/>
+    <id>http://blog.caiyuyu.net/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/</id>
     <published>2016-01-30T05:42:29.000Z</published>
-    <updated>2016-02-11T16:35:39.367Z</updated>
+    <updated>2016-04-30T09:58:51.415Z</updated>
     <content type="html"><![CDATA[<p>嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。<br><a id="more"></a></p>
 <h3 id="Clojure_u7684_u7279_u6B8A_u5F62_u5F0F"><a href="#Clojure_u7684_u7279_u6B8A_u5F62_u5F0F" class="headerlink" title="Clojure的特殊形式"></a>Clojure的特殊形式</h3><p>单纯的字面量是不可能成为一门语言的，伴随而来的还有一些特别的东西，类似控制语句、函数等。<br>clojure当然也有这些东西，我们称之为特殊形式，clojure的简洁高效灵活的一部分原因也归结于此。</p>
 <h4 id="u963B_u6B62_u6C42_u503C_3Aquote"><a href="#u963B_u6B62_u6C42_u503C_3Aquote" class="headerlink" title="阻止求值:quote"></a>阻止求值:quote</h4><p>类似lisp的函数式语言突出的特点就是那一堆密密麻麻的小括号，clojure会将括号解析成一个形式，但是集合字面量中<code>list</code>类型是用小括号包起来的，自然不是一个形式，于是要在<code>(</code>前加个阻止求值符号<code>‘</code>，作用就是告诉repl这是个列表，阻止求值，类似的，也可以阻止对var求职上例子。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(+ 1 1)</span><br><span class="line">;=2</span><br><span class="line">`(+ 1 1)</span><br><span class="line">;=(+ 1 1）</span><br><span class="line">(def x [1])</span><br><span class="line">;=#'user/x</span><br><span class="line">x</span><br><span class="line">;=[1]</span><br><span class="line">'x</span><br><span class="line">;=x</span><br></pre></td></tr></table></figure></p>
@@ -283,11 +316,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[[学习笔记]Clojure 学习日记 —— 2基础语法]]></title>
-    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%E2%80%94%202%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
-    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 —— 2基础语法/</id>
+    <title><![CDATA[[学习笔记]Clojure 学习日记 — 2基础语法]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%202%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
+    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/</id>
     <published>2016-01-26T08:28:30.000Z</published>
-    <updated>2016-02-11T16:35:16.641Z</updated>
+    <updated>2016-04-30T09:58:58.966Z</updated>
     <content type="html"><![CDATA[<p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br><a id="more"></a></p>
 <h3 id="u5B57_u7B26_u4E32"><a href="#u5B57_u7B26_u4E32" class="headerlink" title="字符串"></a>字符串</h3><p>跟java的字符串一样，不过天然支持多行。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello there"</span></span><br><span class="line"><span class="comment">;="hello there"</span></span><br><span class="line"><span class="string">"multiline strings</span><br><span class="line">are very handy"</span></span><br><span class="line"><span class="comment">;="multiline strings\nare very handy"</span></span><br></pre></td></tr></table></figure></p>
 <hr>
@@ -320,11 +353,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[[学习笔记]Clojure 学习日记 —— 1入门]]></title>
-    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%E2%80%94%201%E5%85%A5%E9%97%A8/"/>
-    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 —— 1入门/</id>
+    <title><![CDATA[[学习笔记]Clojure 学习日记 — 1入门]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%201%E5%85%A5%E9%97%A8/"/>
+    <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/</id>
     <published>2016-01-26T08:25:01.000Z</published>
-    <updated>2016-02-11T16:33:03.291Z</updated>
+    <updated>2016-04-30T09:59:05.383Z</updated>
     <content type="html"><![CDATA[<p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>
 <a id="more"></a>
 <h3 id="u5B66_u4E60_u6559_u6750"><a href="#u5B66_u4E60_u6559_u6750" class="headerlink" title="学习教材"></a>学习教材</h3><p>嗯，废话不多说，教材用的是《Clojure Programming》，也就是俗称的动物书，听说比较全面，打基础不错。</p>
@@ -391,11 +424,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[[学习笔记]Clojure 学习日记 —— 0序言]]></title>
-    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
-    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 —— 0序言/</id>
+    <title><![CDATA[[学习笔记]Clojure 学习日记 — 0序言]]></title>
+    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
+    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/</id>
     <published>2016-01-20T15:11:35.000Z</published>
-    <updated>2016-02-11T16:35:00.212Z</updated>
+    <updated>2016-04-30T09:59:16.843Z</updated>
     <content type="html"><![CDATA[<p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>
 <a id="more"></a>
 <h3 id="lisp_u4ECB_u7ECD"><a href="#lisp_u4ECB_u7ECD" class="headerlink" title="lisp介绍"></a>lisp介绍</h3><p>说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  </p>
