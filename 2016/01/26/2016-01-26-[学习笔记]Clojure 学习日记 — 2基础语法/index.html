@@ -18,6 +18,7 @@
 
 
 
+  <meta name="google-site-verification" content="NvVVZis0RAljijmnSO6d8npxpO4v7mV3AlvmStcv8KQ" />
 
 
 
@@ -27,18 +28,46 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="clojure," />
@@ -52,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -61,13 +90,13 @@
 
 <meta name="description" content="唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[学习笔记]Clojure 学习日记 — 2基础语法">
+<meta property="og:title" content="Clojure 学习日记 — 2基础语法">
 <meta property="og:url" content="http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/index.html">
 <meta property="og:site_name" content="Tornado' blog">
 <meta property="og:description" content="唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。">
-<meta property="og:updated_time" content="2016-04-30T09:58:58.966Z">
+<meta property="og:updated_time" content="2016-05-12T11:21:25.752Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[学习笔记]Clojure 学习日记 — 2基础语法">
+<meta name="twitter:title" content="Clojure 学习日记 — 2基础语法">
 <meta name="twitter:description" content="唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。">
 
 
@@ -86,7 +115,7 @@
   };
 </script>
 
-  <title> [学习笔记]Clojure 学习日记 — 2基础语法 | Tornado' blog </title>
+  <title> Clojure 学习日记 — 2基础语法 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,15 +133,7 @@
 </script>
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?bebab2a5ea5fe2339f2c538cb6e5df50";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+
 
 
 
@@ -153,13 +174,13 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -169,19 +190,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -189,9 +200,29 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbooks">
+          <a href="/guestbooks" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -199,28 +230,18 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
-            
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
 
       
-      
-      
         <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
+          
+            <a href="#" class="st-search-show-outputs">
+          
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
@@ -244,7 +265,7 @@
     e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
   })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install', '4zuJpK6UJFFWBqDY3LZe','2.0.0');
+  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
 </script>
 
 
@@ -283,7 +304,9 @@
             
             
               
-                [学习笔记]Clojure 学习日记 — 2基础语法
+                
+                    [学习笔记]Clojure 学习日记 — 2基础语法
+                  
               
             
           </h1>
@@ -336,7 +359,7 @@
 
           
           
-             <span id="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" class="leancloud_visitors" data-flag-title="[学习笔记]Clojure 学习日记 — 2基础语法">
+             <span id="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" class="leancloud_visitors" data-flag-title="Clojure 学习日记 — 2基础语法">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -344,6 +367,8 @@
                <span class="post-meta-item-text">阅读次数 </span>
                <span class="leancloud-visitors-count"></span>
               </span>
+          
+
           
         </div>
       </header>
@@ -357,24 +382,37 @@
 
       
         <p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br><a id="more"></a></p>
-<h3 id="u5B57_u7B26_u4E32"><a href="#u5B57_u7B26_u4E32" class="headerlink" title="字符串"></a>字符串</h3><p>跟java的字符串一样，不过天然支持多行。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello there"</span></span><br><span class="line"><span class="comment">;="hello there"</span></span><br><span class="line"><span class="string">"multiline strings</span><br><span class="line">are very handy"</span></span><br><span class="line"><span class="comment">;="multiline strings\nare very handy"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><p>跟java的字符串一样，不过天然支持多行。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"hello there"</span></span><br><span class="line"><span class="comment">;="hello there"</span></span><br><span class="line"><span class="string">"multiline strings</span><br><span class="line">are very handy"</span></span><br><span class="line"><span class="comment">;="multiline strings\nare very handy"</span></span><br></pre></td></tr></table></figure></p>
 <hr>
-<h3 id="u5E03_u5C14_u503C"><a href="#u5E03_u5C14_u503C" class="headerlink" title="布尔值"></a>布尔值</h3><p>类似java，true和false。<br>空值；这个有点不同，为nil，类似java的null，python的none。<br>字符；clojure看起来有点怪，没有用单引号包起来，不过跟java的字符差不多。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\c</span><br><span class="line">;=\c</span><br></pre></td></tr></table></figure></p>
+<h3 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h3><p>类似java，true和false。<br>空值；这个有点不同，为nil，类似java的null，python的none。<br>字符；clojure看起来有点怪，没有用单引号包起来，不过跟java的字符差不多。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\c</span><br><span class="line">;=\c</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h3 id="u5173_u952E_u5B57"><a href="#u5173_u952E_u5B57" class="headerlink" title="关键字"></a>关键字</h3><p>类似概念，直接看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> person <span class="collection">&#123;<span class="attribute">:name</span> <span class="string">"Sandra Cruz"</span></span><br><span class="line">             <span class="attribute">:City</span> <span class="string">"Portland, ME"</span></span><br><span class="line">             :<span class="attribute">:lod</span> <span class="string">"Demo"</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;=#'user/person</span></span><br><span class="line"><span class="list">(<span class="attribute">:city</span> person)</span></span><br><span class="line"><span class="comment">;="Portland, ME"</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>类似概念，直接看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> person &#123;<span class="symbol">:name</span> <span class="string">"Sandra Cruz"</span></span><br><span class="line">             <span class="symbol">:City</span> <span class="string">"Portland, ME"</span></span><br><span class="line">             :<span class="symbol">:lod</span> <span class="string">"Demo"</span>&#125;)</span><br><span class="line"><span class="comment">;=#'user/person</span></span><br><span class="line">(<span class="symbol">:city</span> person)</span><br><span class="line"><span class="comment">;="Portland, ME"</span></span><br></pre></td></tr></table></figure></p>
 <p>关键字是要冒号开头的，双冒号开头表示所属当前命名空间，<br>如果双冒号开头又包含了/，表示所属特定命名空间，<br>这点有点懵，我估计是翻译的不好，我实际验证下。<br><code>:name</code> 表示只能在当前命名空间用<code>(:name person)</code>取到值。<br><code>::lod</code> 表示你可以在当前命名空间用<code>(::lod person)</code>取到值。<br>同时在所有命名空间，可以用<code>(:user/lod person)</code>取到值。</p>
 <hr>
-<h3 id="u8FDB_u5236"><a href="#u8FDB_u5236" class="headerlink" title="进制"></a>进制</h3><p> 十六进制：<code>0xff</code>表示255；<br> 八进制：<code>040</code>表示32；<br> 任意进制；<code>BrN</code>，N为数字，B为进制，<code>16rff</code>表示255，最高支持36进制。</p>
+<h3 id="进制"><a href="#进制" class="headerlink" title="进制"></a>进制</h3><p> 十六进制：<code>0xff</code>表示255；<br> 八进制：<code>040</code>表示32；<br> 任意进制；<code>BrN</code>，N为数字，B为进制，<code>16rff</code>表示255，最高支持36进制。</p>
 <hr>
-<h3 id="u7CBE_u5EA6"><a href="#u7CBE_u5EA6" class="headerlink" title="精度"></a>精度</h3><p> clojure支持任意精度的数字。</p>
+<h3 id="精度"><a href="#精度" class="headerlink" title="精度"></a>精度</h3><p> clojure支持任意精度的数字。</p>
 <hr>
-<h3 id="u6B63_u5219_u8868_u8FBE_u5F0F"><a href="#u6B63_u5219_u8868_u8FBE_u5F0F" class="headerlink" title="正则表达式"></a>正则表达式</h3><p> clojure用以<code>#</code>开头的字符串当作正则表达式，在字符串中不需要加反斜杠转义。</p>
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><p> clojure用以<code>#</code>开头的字符串当作正则表达式，在字符串中不需要加反斜杠转义。</p>
 <hr>
-<h3 id="u6CE8_u91CA"><a href="#u6CE8_u91CA" class="headerlink" title="注释"></a>注释</h3><p>支持俩种注释，以分号<code>;</code>开头的单行注释还有以<code>#_</code>开头的形式级别的注释，可以直接注释一个形式。</p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p>支持俩种注释，以分号<code>;</code>开头的单行注释还有以<code>#_</code>开头的形式级别的注释，可以直接注释一个形式。</p>
 <hr>
-<h3 id="u7A7A_u683C_u548C_u9017_u53F7"><a href="#u7A7A_u683C_u548C_u9017_u53F7" class="headerlink" title="空格和逗号"></a>空格和逗号</h3><p>空格和逗号基本上是等价的，一般用逗号在希望提高代码可读性的时候使用，比如<code>map</code>里面<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword">create-user</span> <span class="collection">&#123;<span class="attribute">:name</span> new-username, <span class="attribute">:email</span> email)</span></span></span><br></pre></td></tr></table></figure></p>
+<h3 id="空格和逗号"><a href="#空格和逗号" class="headerlink" title="空格和逗号"></a>空格和逗号</h3><p>空格和逗号基本上是等价的，一般用逗号在希望提高代码可读性的时候使用，比如<code>map</code>里面<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name">create-user</span> &#123;<span class="symbol">:name</span> new-username, <span class="symbol">:email</span> email)</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h3 id="u96C6_u5408_u5B57_u9762_u91CF"><a href="#u96C6_u5408_u5B57_u9762_u91CF" class="headerlink" title="集合字面量"></a>集合字面量</h3><p> 字面量这个看下来很高大上的词其实不是新概念，就相当于我们的数据形式，有四种。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`(a b :name 12.5)      ;list</span><br><span class="line">['a 'b :name 12.5]     ;vector</span><br><span class="line">&#123;:name "Chas" :age 31&#125; ;map</span><br><span class="line">#&#123;1 2 3&#125;               ;set</span><br></pre></td></tr></table></figure></p>
+<h3 id="集合字面量"><a href="#集合字面量" class="headerlink" title="集合字面量"></a>集合字面量</h3><p> 字面量这个看下来很高大上的词其实不是新概念，就相当于我们的数据形式，有四种。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">`(a b :name 12.5)      ;list</span><br><span class="line">['a 'b :name 12.5]     ;vector</span><br><span class="line">&#123;:name "Chas" :age 31&#125; ;map</span><br><span class="line">#&#123;1 2 3&#125;               ;set</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -392,16 +430,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" rel="next" title="[学习笔记]Clojure 学习日记 — 1入门">
-                <i class="fa fa-chevron-left"></i> [学习笔记]Clojure 学习日记 — 1入门
+              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" rel="next" title="Clojure 学习日记 — 1入门">
+                <i class="fa fa-chevron-left"></i> Clojure 学习日记 — 1入门
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" rel="prev" title="[学习笔记]Clojure 学习日记 — 3进阶语法">
-                [学习笔记]Clojure 学习日记 — 3进阶语法 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" rel="prev" title="Clojure 学习日记 — 3进阶语法">
+                Clojure 学习日记 — 3进阶语法 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -482,19 +520,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -511,18 +553,20 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/yinyizhixian" target="_blank">
+                <a href="https://github.com/yinyizhixian" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/TornadoFeitian" target="_blank">
+                <a href="https://twitter.com/TornadoFeitian" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -532,27 +576,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B57_u7B26_u4E32"><span class="nav-number">1.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5E03_u5C14_u503C"><span class="nav-number">2.</span> <span class="nav-text">布尔值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5173_u952E_u5B57"><span class="nav-number">3.</span> <span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FDB_u5236"><span class="nav-number">4.</span> <span class="nav-text">进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7CBE_u5EA6"><span class="nav-number">5.</span> <span class="nav-text">精度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6B63_u5219_u8868_u8FBE_u5F0F"><span class="nav-number">6.</span> <span class="nav-text">正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6CE8_u91CA"><span class="nav-number">7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u7A7A_u683C_u548C_u9017_u53F7"><span class="nav-number">8.</span> <span class="nav-text">空格和逗号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u96C6_u5408_u5B57_u9762_u91CF"><span class="nav-number">9.</span> <span class="nav-text">集合字面量</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">1.</span> <span class="nav-text">字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#布尔值"><span class="nav-number">2.</span> <span class="nav-text">布尔值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关键字"><span class="nav-number">3.</span> <span class="nav-text">关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进制"><span class="nav-number">4.</span> <span class="nav-text">进制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#精度"><span class="nav-number">5.</span> <span class="nav-text">精度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#正则表达式"><span class="nav-number">6.</span> <span class="nav-text">正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">7.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#空格和逗号"><span class="nav-number">8.</span> <span class="nav-text">空格和逗号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合字面量"><span class="nav-number">9.</span> <span class="nav-text">集合字面量</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -572,10 +609,11 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tornado</span>
 </div>
+
 <div class="powered-by">
   Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
@@ -587,229 +625,85 @@
   </a>
 </div>
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-    <!--add function-->
-    function setIframeHeight(iframe) {
-    if (iframe) {
-        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-        if (iframeWin.document.body) {
-            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-        }
-    }
-}
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -822,7 +716,7 @@
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = '2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/';
-      var disqus_title = '[学习笔记]Clojure 学习日记 — 2基础语法';
+      var disqus_title = 'Clojure 学习日记 — 2基础语法';
       var disqus_url = 'http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/';
 
       function run_disqus_script(disqus_script){
@@ -844,6 +738,136 @@
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -862,14 +886,9 @@
       }
     });
   </script>
-
-  
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/MathJax.js"></script>
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
-  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-  
   
 
   
@@ -933,6 +952,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -965,6 +990,7 @@
 
 
 
+  
 
 </body>
 </html>

@@ -18,6 +18,7 @@
 
 
 
+  <meta name="google-site-verification" content="NvVVZis0RAljijmnSO6d8npxpO4v7mV3AlvmStcv8KQ" />
 
 
 
@@ -27,21 +28,49 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="IDEA,git,maven," />
+  <meta name="keywords" content="git,IDEA,maven," />
 
 
 
@@ -52,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -61,7 +90,7 @@
 
 <meta name="description" content="不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[技术备忘]IDEA 下的 maven+git 开发">
+<meta property="og:title" content="IDEA 下的 maven+git 开发">
 <meta property="og:url" content="http://blog.caiyuyu.net/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/index.html">
 <meta property="og:site_name" content="Tornado' blog">
 <meta property="og:description" content="不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。">
@@ -78,10 +107,11 @@
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-01-20/idea10.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-01-20/idea11.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-01-20/idea12.png">
-<meta property="og:updated_time" content="2016-02-11T16:34:36.211Z">
+<meta property="og:updated_time" content="2016-05-12T11:21:58.169Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[技术备忘]IDEA 下的 maven+git 开发">
+<meta name="twitter:title" content="IDEA 下的 maven+git 开发">
 <meta name="twitter:description" content="不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。">
+<meta name="twitter:image" content="http://blog.caiyuyu.net/img/pics/2016-01-20/maven.png">
 
 
 
@@ -99,7 +129,7 @@
   };
 </script>
 
-  <title> [技术备忘]IDEA 下的 maven+git 开发 | Tornado' blog </title>
+  <title> IDEA 下的 maven+git 开发 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -117,15 +147,7 @@
 </script>
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?bebab2a5ea5fe2339f2c538cb6e5df50";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+
 
 
 
@@ -166,13 +188,13 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -182,19 +204,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -202,9 +214,29 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbooks">
+          <a href="/guestbooks" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -212,28 +244,18 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
-            
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
 
       
-      
-      
         <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
+          
+            <a href="#" class="st-search-show-outputs">
+          
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
@@ -257,7 +279,7 @@
     e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
   })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install', '4zuJpK6UJFFWBqDY3LZe','2.0.0');
+  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
 </script>
 
 
@@ -296,7 +318,9 @@
             
             
               
-                [技术备忘]IDEA 下的 maven+git 开发
+                
+                    [技术备忘]IDEA 下的 maven+git 开发
+                  
               
             
           </h1>
@@ -349,7 +373,7 @@
 
           
           
-             <span id="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" class="leancloud_visitors" data-flag-title="[技术备忘]IDEA 下的 maven+git 开发">
+             <span id="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" class="leancloud_visitors" data-flag-title="IDEA 下的 maven+git 开发">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -357,6 +381,8 @@
                <span class="post-meta-item-text">阅读次数 </span>
                <span class="leancloud-visitors-count"></span>
               </span>
+          
+
           
         </div>
       </header>
@@ -370,13 +396,13 @@
 
       
         <p>不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。<br><a id="more"></a></p>
-<h3 id="u4E3A_u4EC0_u4E48_u8981_u7528maven_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528maven_uFF1F" class="headerlink" title="为什么要用maven？"></a>为什么要用maven？</h3><p>maven是一个项目管理工具，基于Java平台，主要用于项目构建，依赖管理等。<br>可以说在企业开发中这个是必不可少的，这样说可能有些空泛，给你们列点实际点的。  </p>
+<h3 id="为什么要用maven？"><a href="#为什么要用maven？" class="headerlink" title="为什么要用maven？"></a>为什么要用maven？</h3><p>maven是一个项目管理工具，基于Java平台，主要用于项目构建，依赖管理等。<br>可以说在企业开发中这个是必不可少的，这样说可能有些空泛，给你们列点实际点的。  </p>
 <blockquote>
 <p><code>1. 在进行ssh开发的导jar包的时候是不是很痛苦，经常会遇到jar包冲突的情况？</code><br><code>2. 团队开发还必须统一下开发环境，考虑用idea还是myeclipse，因为其不同的项目文件？</code><br><code>3. 团队开发是不是很纠结，共享代码要复制整个jar包库？</code>  </p>
 </blockquote>
 <p>嗯，是不是若有所思了呢？<br>那就好，接下来我们用maven来解决这些问题  </p>
 <hr>
-<h3 id="u5B89_u88C5maven_u548C_u914D_u7F6E_u73AF_u5883_u53D8_u91CF"><a href="#u5B89_u88C5maven_u548C_u914D_u7F6E_u73AF_u5883_u53D8_u91CF" class="headerlink" title="安装maven和配置环境变量"></a>安装maven和配置环境变量</h3><p>因为我的电脑并没有手动装maven，用的是myeclipse集成的maven，<br>大概看了下网上的教程，基本无脑安装，各位可以自行安装，<br>要注意的一点是如果需要用到命令行的就记得添加环境变量，<br>我是没有添加的，因为idea插件对maven支持的很好，不需要我们做什么命令行操作了。  </p>
+<h3 id="安装maven和配置环境变量"><a href="#安装maven和配置环境变量" class="headerlink" title="安装maven和配置环境变量"></a>安装maven和配置环境变量</h3><p>因为我的电脑并没有手动装maven，用的是myeclipse集成的maven，<br>大概看了下网上的教程，基本无脑安装，各位可以自行安装，<br>要注意的一点是如果需要用到命令行的就记得添加环境变量，<br>我是没有添加的，因为idea插件对maven支持的很好，不需要我们做什么命令行操作了。  </p>
 <ul>
 <li><a href="http://maven.apache.org/" target="_blank" rel="external">maven官网</a>  </li>
 <li><a href="http://tutorialspoint.com/maven/" target="_blank" rel="external">maven教程网</a>  </li>
@@ -384,19 +410,19 @@
 <p>上面的maven官网就不用说什么了，在这里下载，至于这个教程网，介绍的比较详细，可以参考下  </p>
 <p><img src="/img/pics/2016-01-20/maven.png" alt="down"></p>
 <hr>
-<h3 id="u521B_u5EFAgit_u9879_u76EE"><a href="#u521B_u5EFAgit_u9879_u76EE" class="headerlink" title="创建git项目"></a>创建git项目</h3><p>在这里我使用的是coding这个代码托管平台，在这里创建项目，其他的平台也可以，这个没什么区别  </p>
+<h3 id="创建git项目"><a href="#创建git项目" class="headerlink" title="创建git项目"></a>创建git项目</h3><p>在这里我使用的是coding这个代码托管平台，在这里创建项目，其他的平台也可以，这个没什么区别  </p>
 <p><img src="/img/pics/2016-01-20/maven2.png" alt="down">  </p>
 <p><img src="/img/pics/2016-01-20/maven3.png" alt="down">  </p>
 <p>复制下https的git访问链，等下要用到。  </p>
 <hr>
-<h3 id="u5728IDEA_u5E94_u7528git_u9879_u76EE"><a href="#u5728IDEA_u5E94_u7528git_u9879_u76EE" class="headerlink" title="在IDEA应用git项目"></a>在IDEA应用git项目</h3><h4 id="u5BFC_u5165git_u9879_u76EE"><a href="#u5BFC_u5165git_u9879_u76EE" class="headerlink" title="导入git项目"></a>导入git项目</h4><p><img src="/img/pics/2016-01-20/idea.png" alt="down">  </p>
+<h3 id="在IDEA应用git项目"><a href="#在IDEA应用git项目" class="headerlink" title="在IDEA应用git项目"></a>在IDEA应用git项目</h3><h4 id="导入git项目"><a href="#导入git项目" class="headerlink" title="导入git项目"></a>导入git项目</h4><p><img src="/img/pics/2016-01-20/idea.png" alt="down">  </p>
 <p><img src="/img/pics/2016-01-20/idea2.png" alt="down">  </p>
 <p>将我们刚才复制的git链粘贴进去，然后ok，这个项目就是git项目了，你可以pull or push来进行更新。  </p>
-<h4 id="u6DFB_u52A0-gitignore"><a href="#u6DFB_u52A0-gitignore" class="headerlink" title="添加.gitignore"></a>添加.gitignore</h4><p>如我们所知，idea的项目的根目录有个.idea的文件夹，myeclipse有.setting文件夹，<br>这些IDE的配置文件肯定不能上传到托管平台的，所以在.gitignore里面要加入  </p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="header"># Maven</span></span><br><span class="line">target/</span><br><span class="line">*.ser</span><br><span class="line">*.ec</span><br><span class="line"></span><br><span class="line"><span class="header"># IntelliJ Idea</span></span><br><span class="line">.idea/</span><br><span class="line">out/</span><br><span class="line">*.ipr</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line"></span><br><span class="line"><span class="header"># Eclipse</span></span><br><span class="line">.classpath</span><br><span class="line">.project</span><br><span class="line">.settings/</span><br><span class="line">.metadata/</span><br></pre></td></tr></table></figure>
+<h4 id="添加-gitignore"><a href="#添加-gitignore" class="headerlink" title="添加.gitignore"></a>添加.gitignore</h4><p>如我们所知，idea的项目的根目录有个.idea的文件夹，myeclipse有.setting文件夹，<br>这些IDE的配置文件肯定不能上传到托管平台的，所以在.gitignore里面要加入  </p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># Maven</span></span><br><span class="line">target/</span><br><span class="line">*.ser</span><br><span class="line">*.ec</span><br><span class="line"></span><br><span class="line"><span class="section"># IntelliJ Idea</span></span><br><span class="line">.idea/</span><br><span class="line">out/</span><br><span class="line">*.ipr</span><br><span class="line">*.iws</span><br><span class="line">*.iml</span><br><span class="line"></span><br><span class="line"><span class="section"># Eclipse</span></span><br><span class="line">.classpath</span><br><span class="line">.project</span><br><span class="line">.settings/</span><br><span class="line">.metadata/</span><br></pre></td></tr></table></figure>
 <p>这样这些配置文件就被git忽略掉了，记得，在idea中要确保.gitignore的颜色是绿色的，<br>才表示加入到git中未提交的，红色是没有加入，蓝色是修改过的，如下图右键点击文件可以加入。  </p>
 <p><img src="/img/pics/2016-01-20/idea3.png" alt="down">  </p>
-<h4 id="u5728IDEA_u4E2D_u6DFB_u52A0maven_u652F_u6301"><a href="#u5728IDEA_u4E2D_u6DFB_u52A0maven_u652F_u6301" class="headerlink" title="在IDEA中添加maven支持"></a>在IDEA中添加maven支持</h4><p>右键项目，有个<code>Add Framework support</code>，点击进去可以看到如下  </p>
+<h4 id="在IDEA中添加maven支持"><a href="#在IDEA中添加maven支持" class="headerlink" title="在IDEA中添加maven支持"></a>在IDEA中添加maven支持</h4><p>右键项目，有个<code>Add Framework support</code>，点击进去可以看到如下  </p>
 <p><img src="/img/pics/2016-01-20/idea4.png" alt="down">  </p>
 <p>选择maven后结束，这样就把这个项目变成maven项目了<br>可以看到项目多出了一个项目骨架及<code>pom.xml</code>文件<br>记得加入git中，这样生成的骨架是默认的，如果需要就在<code>pom.xml</code>中添加支持，自行创建文件夹  </p>
 <p>这里我以添加ssh框架支持做个小例子  </p>
@@ -408,7 +434,7 @@
 <p><img src="/img/pics/2016-01-20/idea8.png" alt="down">  </p>
 <p>如果要查看jar包冲突，可以点击这个去查看排除，有冲突会提示，只要<code>pom.xml</code>写得对一般没问题，这里就不多说了。  </p>
 <p><img src="/img/pics/2016-01-20/idea9.png" alt="down">  </p>
-<h4 id="u6DFB_u52A0webapp_u6587_u4EF6_u5939"><a href="#u6DFB_u52A0webapp_u6587_u4EF6_u5939" class="headerlink" title="添加webapp文件夹"></a>添加webapp文件夹</h4><p>前面已经说了，我们添加的骨架只是默认的，一般web的maven项目在<code>/src/main</code>下有个<code>webapp</code>目录，<br>里面存放<code>web.xml</code>等文件，没关系，我们可以自行创建文件夹，创建完<code>webapp</code>可以看到图标发生变化，<br>标明这是个web目录，如果没有变也没关系，可能是默认设置有误，我们可以去项目设置那里去设置，如下  </p>
+<h4 id="添加webapp文件夹"><a href="#添加webapp文件夹" class="headerlink" title="添加webapp文件夹"></a>添加webapp文件夹</h4><p>前面已经说了，我们添加的骨架只是默认的，一般web的maven项目在<code>/src/main</code>下有个<code>webapp</code>目录，<br>里面存放<code>web.xml</code>等文件，没关系，我们可以自行创建文件夹，创建完<code>webapp</code>可以看到图标发生变化，<br>标明这是个web目录，如果没有变也没关系，可能是默认设置有误，我们可以去项目设置那里去设置，如下  </p>
 <p><img src="/img/pics/2016-01-20/idea10.png" alt="down">  </p>
 <p><img src="/img/pics/2016-01-20/idea11.png" alt="down">  </p>
 <p><img src="/img/pics/2016-01-20/idea12.png" alt="down">  </p>
@@ -417,7 +443,20 @@
 </blockquote>
 <p>然后好了，基本上就是这样了，接下来就是ssh配置文件的添加，类似添加<code>web.xml</code>，然后添加服务器运行，完了。  </p>
 <p>水平所限，欢迎指点交流，谢谢。  </p>
-<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://www.youmeek.com/intellij-idea-part-xviii-maven/" target="_blank" rel="external">Judas.n的教程</a><br><a href="http://blog.csdn.net/gol_phing/article/details/49331845" target="_blank" rel="external">Golphing的博客</a></p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://www.youmeek.com/intellij-idea-part-xviii-maven/" target="_blank" rel="external">Judas.n的教程</a><br><a href="http://blog.csdn.net/gol_phing/article/details/49331845" target="_blank" rel="external">Golphing的博客</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -426,9 +465,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/IDEA/" rel="tag">#IDEA</a>
-          
             <a href="/tags/git/" rel="tag">#git</a>
+          
+            <a href="/tags/IDEA/" rel="tag">#IDEA</a>
           
             <a href="/tags/maven/" rel="tag">#maven</a>
           
@@ -439,16 +478,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="next" title="[技术备忘]Windows下 Emacs+Markdown 的使用">
-                <i class="fa fa-chevron-left"></i> [技术备忘]Windows下 Emacs+Markdown 的使用
+              <a href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="next" title="Windows下 Emacs+Markdown 的使用">
+                <i class="fa fa-chevron-left"></i> Windows下 Emacs+Markdown 的使用
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/" rel="prev" title="[学习笔记]Clojure 学习日记 — 0序言">
-                [学习笔记]Clojure 学习日记 — 0序言 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/" rel="prev" title="Clojure 学习日记 — 0序言">
+                Clojure 学习日记 — 0序言 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -529,19 +568,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -558,18 +601,20 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/yinyizhixian" target="_blank">
+                <a href="https://github.com/yinyizhixian" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/TornadoFeitian" target="_blank">
+                <a href="https://twitter.com/TornadoFeitian" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -579,27 +624,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3A_u4EC0_u4E48_u8981_u7528maven_uFF1F"><span class="nav-number">1.</span> <span class="nav-text">为什么要用maven？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5B89_u88C5maven_u548C_u914D_u7F6E_u73AF_u5883_u53D8_u91CF"><span class="nav-number">2.</span> <span class="nav-text">安装maven和配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFAgit_u9879_u76EE"><span class="nav-number">3.</span> <span class="nav-text">创建git项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u5728IDEA_u5E94_u7528git_u9879_u76EE"><span class="nav-number">4.</span> <span class="nav-text">在IDEA应用git项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u5BFC_u5165git_u9879_u76EE"><span class="nav-number">4.1.</span> <span class="nav-text">导入git项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6DFB_u52A0-gitignore"><span class="nav-number">4.2.</span> <span class="nav-text">添加.gitignore</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5728IDEA_u4E2D_u6DFB_u52A0maven_u652F_u6301"><span class="nav-number">4.3.</span> <span class="nav-text">在IDEA中添加maven支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6DFB_u52A0webapp_u6587_u4EF6_u5939"><span class="nav-number">4.4.</span> <span class="nav-text">添加webapp文件夹</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要用maven？"><span class="nav-number">1.</span> <span class="nav-text">为什么要用maven？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装maven和配置环境变量"><span class="nav-number">2.</span> <span class="nav-text">安装maven和配置环境变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建git项目"><span class="nav-number">3.</span> <span class="nav-text">创建git项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#在IDEA应用git项目"><span class="nav-number">4.</span> <span class="nav-text">在IDEA应用git项目</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#导入git项目"><span class="nav-number">4.1.</span> <span class="nav-text">导入git项目</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加-gitignore"><span class="nav-number">4.2.</span> <span class="nav-text">添加.gitignore</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#在IDEA中添加maven支持"><span class="nav-number">4.3.</span> <span class="nav-text">在IDEA中添加maven支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加webapp文件夹"><span class="nav-number">4.4.</span> <span class="nav-text">添加webapp文件夹</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">5.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -619,10 +657,11 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tornado</span>
 </div>
+
 <div class="powered-by">
   Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
@@ -634,229 +673,85 @@
   </a>
 </div>
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-    <!--add function-->
-    function setIframeHeight(iframe) {
-    if (iframe) {
-        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-        if (iframeWin.document.body) {
-            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-        }
-    }
-}
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -869,7 +764,7 @@
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = '2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/';
-      var disqus_title = '[技术备忘]IDEA 下的 maven+git 开发';
+      var disqus_title = 'IDEA 下的 maven+git 开发';
       var disqus_url = 'http://blog.caiyuyu.net/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/';
 
       function run_disqus_script(disqus_script){
@@ -891,6 +786,136 @@
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -909,14 +934,9 @@
       }
     });
   </script>
-
-  
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/MathJax.js"></script>
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
-  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-  
   
 
   
@@ -980,6 +1000,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1012,6 +1038,7 @@
 
 
 
+  
 
 </body>
 </html>

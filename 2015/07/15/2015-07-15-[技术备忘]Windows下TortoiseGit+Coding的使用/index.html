@@ -18,6 +18,7 @@
 
 
 
+  <meta name="google-site-verification" content="NvVVZis0RAljijmnSO6d8npxpO4v7mV3AlvmStcv8KQ" />
 
 
 
@@ -27,18 +28,46 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="git," />
@@ -52,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -61,7 +90,7 @@
 
 <meta name="description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
+<meta property="og:title" content="Windows下 TortoiseGit+Coding 的使用">
 <meta property="og:url" content="http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/index.html">
 <meta property="og:site_name" content="Tornado' blog">
 <meta property="og:description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
@@ -87,10 +116,11 @@
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/c.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/v3.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/c2.png">
-<meta property="og:updated_time" content="2016-02-11T16:33:50.929Z">
+<meta property="og:updated_time" content="2016-05-12T11:22:20.142Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
+<meta name="twitter:title" content="Windows下 TortoiseGit+Coding 的使用">
 <meta name="twitter:description" content="git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。">
+<meta name="twitter:image" content="http://blog.caiyuyu.net/img/pics/2015-07-15/gitdown.png">
 
 
 
@@ -108,7 +138,7 @@
   };
 </script>
 
-  <title> [技术备忘]Windows下 TortoiseGit+Coding 的使用 | Tornado' blog </title>
+  <title> Windows下 TortoiseGit+Coding 的使用 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -126,15 +156,7 @@
 </script>
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?bebab2a5ea5fe2339f2c538cb6e5df50";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+
 
 
 
@@ -175,13 +197,13 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -191,19 +213,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -211,9 +223,29 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbooks">
+          <a href="/guestbooks" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -221,28 +253,18 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
-            
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
 
       
-      
-      
         <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
+          
+            <a href="#" class="st-search-show-outputs">
+          
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
@@ -266,7 +288,7 @@
     e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
   })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install', '4zuJpK6UJFFWBqDY3LZe','2.0.0');
+  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
 </script>
 
 
@@ -305,7 +327,9 @@
             
             
               
-                [技术备忘]Windows下 TortoiseGit+Coding 的使用
+                
+                    [技术备忘]Windows下 TortoiseGit+Coding 的使用
+                  
               
             
           </h1>
@@ -358,7 +382,7 @@
 
           
           
-             <span id="/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/" class="leancloud_visitors" data-flag-title="[技术备忘]Windows下 TortoiseGit+Coding 的使用">
+             <span id="/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/" class="leancloud_visitors" data-flag-title="Windows下 TortoiseGit+Coding 的使用">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -366,6 +390,8 @@
                <span class="post-meta-item-text">阅读次数 </span>
                <span class="leancloud-visitors-count"></span>
               </span>
+          
+
           
         </div>
       </header>
@@ -380,32 +406,32 @@
       
         <p>git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。</p>
 <a id="more"></a>
-<h3 id="u4E3A_u4EC0_u4E48_u8981_u7528Git"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528Git" class="headerlink" title="为什么要用Git"></a>为什么要用Git</h3><p>简单来说，Git就是一个版本控制系统，它可以保存我们对代码的每次修改，也可以创建多个分支，必要时可以返回修改。</p>
+<h3 id="为什么要用Git"><a href="#为什么要用Git" class="headerlink" title="为什么要用Git"></a>为什么要用Git</h3><p>简单来说，Git就是一个版本控制系统，它可以保存我们对代码的每次修改，也可以创建多个分支，必要时可以返回修改。</p>
 <p>那么Git比我们熟知的svn又有哪些优点呢？经验所限，我只能大概说出几点。</p>
 <p><code>1.Git会在自己电脑本地创建一个本地仓库</code><br>为什么说这一点好呢？和svn不同的是，git因为本机带有一个本地仓库，所有修改操作都要先提交到本机，然后再推送出去。<br>这也意味着git可以缓存多个版本，而svn只能缓存一个，所以git相当于svn的客户端+svn的服务器端。<br>咋一看没什么实际的用处，假设你现在现在不能联网，与团队的其他人数据无法交互，同时这段时间你又对代码做了很大的修改，这也意味着git可以保存<br>每一模块修改的版本，如果需要恢复会很方便，如果是svn，只能返回到你大量修改前，相当于你做了大量的无用功。</p>
 <p><code>2.Git支持的代码托管平台比较多</code><br>好像开源中国的Git@OSC支持svn，这点不确定，没用过，这也从侧面反映了svn的托管平台确实少。<br>git的就多了,基本上有名的托管平台都是支持的。<br>像大名鼎鼎的<code>gitHub</code>,支持无限的公有项目和私有项目<code>gitlab</code>,还有国内速度极快的<code>coding</code>等等，这个很多，有兴趣可以自己找下。</p>
 <p>据说git可是Linus用C耗费两周写出来的，各种狂霸酷炫拽有木有，<br>具体教程可以参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的教程</a>，写得很不错。</p>
-<h3 id="u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177"><a href="#u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177" class="headerlink" title="下载及安装所需工具"></a>下载及安装所需工具</h3><h4 id="u4E0B_u8F7Dgit_for_windows"><a href="#u4E0B_u8F7Dgit_for_windows" class="headerlink" title="下载git for windows"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">git for windows</a></h4><p>进入git的官网,选择windows版本下载，</p>
+<h3 id="下载及安装所需工具"><a href="#下载及安装所需工具" class="headerlink" title="下载及安装所需工具"></a>下载及安装所需工具</h3><h4 id="下载git-for-windows"><a href="#下载git-for-windows" class="headerlink" title="下载git for windows"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">git for windows</a></h4><p>进入git的官网,选择windows版本下载，</p>
 <p><img src="/img/pics/2015-07-15/gitdown.png" alt="git"></p>
 <p><img src="/img/pics/2015-07-15/gitDown2.png" alt="git"></p>
-<h4 id="u4E0B_u8F7DTortoiseGit"><a href="#u4E0B_u8F7DTortoiseGit" class="headerlink" title="下载TortoiseGit"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">TortoiseGit</a></h4><p>习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。<br>选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。</p>
+<h4 id="下载TortoiseGit"><a href="#下载TortoiseGit" class="headerlink" title="下载TortoiseGit"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">TortoiseGit</a></h4><p>习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。<br>选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。</p>
 <p><img src="/img/pics/2015-07-15/TortoiseGit.png" alt="tortoiseGit"></p>
 <p><img src="/img/pics/2015-07-15/TortoiseGit2.png" alt="tortoiseGit"></p>
-<h4 id="u5B89_u88C5git"><a href="#u5B89_u88C5git" class="headerlink" title="安装git"></a>安装git</h4><p>把第一、三、四个一级复选框都勾上，因为我们用小乌龟做图形界面，所以不需要安装git gui<br><img src="/img/pics/2015-07-15/installGit.png" alt="installGit"></p>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><p>把第一、三、四个一级复选框都勾上，因为我们用小乌龟做图形界面，所以不需要安装git gui<br><img src="/img/pics/2015-07-15/installGit.png" alt="installGit"></p>
 <p> 下面选择use git from the windows command prompt<br> 选择这个会将git配置到path里面<br><img src="/img/pics/2015-07-15/installGit2.png" alt="installGit"></p>
 <p>这个是选择回车换行的格式，默认第一个即可，检出时转换为Windows风格,提交时转换为Linux风格<br><img src="/img/pics/2015-07-15/installGit3.png" alt="installGit"></p>
 <p>接下来应该没什么问题了，结束。</p>
-<h4 id="u5B89_u88C5TortoiseGit"><a href="#u5B89_u88C5TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h4><p>小乌龟安装更简单了，默认，直接下一步，结束。</p>
+<h4 id="安装TortoiseGit"><a href="#安装TortoiseGit" class="headerlink" title="安装TortoiseGit"></a>安装TortoiseGit</h4><p>小乌龟安装更简单了，默认，直接下一步，结束。</p>
 <p><img src="/img/pics/2015-07-15/installTortoise.png" alt="tortoiseGit"></p>
 <p><img src="/img/pics/2015-07-15/installTortoise2.png" alt="tortoiseGit"></p>
-<h3 id="u6CE8_u518Ccoding-net_u8D26_u53F7"><a href="#u6CE8_u518Ccoding-net_u8D26_u53F7" class="headerlink" title="注册coding.net账号"></a>注册coding.net账号</h3><p>由于我们选择在coding创建远程仓库，所以注册一个<a href="https://coding.net" target="_blank" rel="external">coding.net</a>的账号是必须滴。</p>
+<h3 id="注册coding-net账号"><a href="#注册coding-net账号" class="headerlink" title="注册coding.net账号"></a>注册coding.net账号</h3><p>由于我们选择在coding创建远程仓库，所以注册一个<a href="https://coding.net" target="_blank" rel="external">coding.net</a>的账号是必须滴。</p>
 <p><img src="/img/pics/2015-07-15/coding.png" alt="coding"></p>
 <p>需要一个邮箱和独一存在的用户名，或者说是个性后缀，都可以。<br>由于我已经注册过，下面的邮箱和用户名显示已存在，这个没什么可说的，自己注册个。</p>
 <p><img src="/img/pics/2015-07-15/coding2.png" alt="coding"></p>
-<h3 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E" class="headerlink" title="创建本地仓库并配置"></a>创建本地仓库并配置</h3><h4 id="u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939"><a href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939" class="headerlink" title="创建本地仓库文件夹"></a>创建本地仓库文件夹</h4><p>在你对应的工作空间创建一个空的文件夹<code>test_demo</code><br>右键<code>test_demo</code>文件夹，选择Git Create repository here。<br>第一次会弹出git init的对话框，不要勾选make it bare，ok。<br>这样就选择这个文件夹作为你的本地仓库，这个文件夹也是你的项目。每次修改代码会先提交到这个地方，然后再从这里推送到远程仓库。</p>
-<h4 id="u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6"><a href="#u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6" class="headerlink" title="配置git日志标识"></a>配置git日志标识</h4><p>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>一栏选择setting，在弹出的窗口点击左边的git节点，<br>填入name和email，这个只是作为你的这个项目的本地机器的日志标识，关系并不大，可以随便填。</p>
+<h3 id="创建本地仓库并配置"><a href="#创建本地仓库并配置" class="headerlink" title="创建本地仓库并配置"></a>创建本地仓库并配置</h3><h4 id="创建本地仓库文件夹"><a href="#创建本地仓库文件夹" class="headerlink" title="创建本地仓库文件夹"></a>创建本地仓库文件夹</h4><p>在你对应的工作空间创建一个空的文件夹<code>test_demo</code><br>右键<code>test_demo</code>文件夹，选择Git Create repository here。<br>第一次会弹出git init的对话框，不要勾选make it bare，ok。<br>这样就选择这个文件夹作为你的本地仓库，这个文件夹也是你的项目。每次修改代码会先提交到这个地方，然后再从这里推送到远程仓库。</p>
+<h4 id="配置git日志标识"><a href="#配置git日志标识" class="headerlink" title="配置git日志标识"></a>配置git日志标识</h4><p>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>一栏选择setting，在弹出的窗口点击左边的git节点，<br>填入name和email，这个只是作为你的这个项目的本地机器的日志标识，关系并不大，可以随便填。</p>
 <p><img src="/img/pics/2015-07-15/setGit.png" alt="setting"></p>
-<h4 id="u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F"><a href="#u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F" class="headerlink" title="配置访问方式"></a>配置访问方式</h4><p>假如在远程仓库上，你创建了一个项目，<br>一般有三种访问方式<br>1) HTTPS：读写仓库加密通道，有单次上传限制。<br>2) SSH：读写仓库加密通道，无单次上传限制，需先在设置公钥，完成配对验证。<br>3) Git：只读，并且只对公开项目有效。</p>
+<h4 id="配置访问方式"><a href="#配置访问方式" class="headerlink" title="配置访问方式"></a>配置访问方式</h4><p>假如在远程仓库上，你创建了一个项目，<br>一般有三种访问方式<br>1) HTTPS：读写仓库加密通道，有单次上传限制。<br>2) SSH：读写仓库加密通道，无单次上传限制，需先在设置公钥，完成配对验证。<br>3) Git：只读，并且只对公开项目有效。</p>
 <blockquote>
 <p><code>如果要使用ssh方式访问</code><br>ssh方式是一种加密的访问方式，使用这种方式我们需要在本机机器生成一串公钥，然后在托管平台上进行绑定授权。<br>我们安装小乌龟会附带安装一些组件，找到<code>Puttygen</code>这个程序打开，点击Generate按钮，接着你会发现随着你鼠标在<code>Puttygen</code>窗口滑动，进度条会滚动并最终生成一串公钥<br><img src="/img/pics/2015-07-15/setGit2.png" alt="setting"><br><code>ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIB+gadTNAA3iID1l5rg0qEhn5YySxANkYS6pQykbvdq8p
 V70dIFrsN2QCxoVz7W0NZydgFSAwGc4TYWKCSJUKVqgg+2Sf2mFc5LwaHwOX+NilA6SwH2NEOd1lUmr
@@ -426,7 +452,7 @@ MgV7HJ8f4OhL4Ivwoqw/ZRPfBURfuHpVSXol5T4XuqMS00G0w== rsa-key-20150715</code><br>�
 <p><img src="/img/pics/2015-07-15/v2.png" alt="init"></p>
 <p>在url那栏把刚才copy的访问链接粘贴下去，<code>putty key</code>，ssh访问需要导入私钥路径，https则不需要，<code>remote</code>标记这个这条访问链，随便填。填好后点击<code>Add new / save</code>。<br>ok后接着下一步，出现下面这个。</p>
 <p>成功了，就会提示<code>Success</code>，不成功的话就检查下信息是否有误或者前面哪个操作出现问题，再试一次。</p>
-<h3 id="u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE"><a href="#u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE" class="headerlink" title="初始化项目及推送项目"></a>初始化项目及推送项目</h3><p>这样配置的东西都搞定了，不过由于我们本地仓库是空的，需要从远程仓库<code>pull</code>下来初始化一下。<br>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>里面选择<code>pull</code>，<code>Success</code>后可以看到项目里面多了个<code>readme.md</code>文件。</p>
+<h3 id="初始化项目及推送项目"><a href="#初始化项目及推送项目" class="headerlink" title="初始化项目及推送项目"></a>初始化项目及推送项目</h3><p>这样配置的东西都搞定了，不过由于我们本地仓库是空的，需要从远程仓库<code>pull</code>下来初始化一下。<br>右键<code>test_demo</code>文件夹，在<code>TortoiseGit</code>里面选择<code>pull</code>，<code>Success</code>后可以看到项目里面多了个<code>readme.md</code>文件。</p>
 <p>接下来在项目里面随便建立一个<code>test.php</code>文件，刚建立可以看到图标是一个问号，表明还没加入到本地仓库。右键这个文件，在<code>TortoiseGit</code>里面选择<code>add</code>，会弹出一个对话框，我们直接提交到本地仓库，点击<code>commit</code>按钮</p>
 <p><img src="/img/pics/2015-07-15/c.png" alt="init"></p>
 <p>会弹出一个确定操作的窗口，可以看到你对什么文件进行提交，我们勾选<code>test.php</code>文件，在<code>message</code>修改操作信息，这个是必填的。</p>
@@ -437,8 +463,21 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 <p>当看到<code>test.php</code>文件图标变成绿色对勾时，就证明提交成功了。</p>
 <p>接着往coding.net推送，我们可以选择整个项目，也可以选择单个文件推送，<br>右键<code>test_demo</code>，在<code>TortoiseGit</code>里面选择<code>push</code>，没什么意外都是直接ok。<br><code>success</code>后打开<code>coding.net</code>看下动态，可以看到最新的推送信息。至此完成。</p>
 <p><img src="/img/pics/2015-07-15/c2.png" alt="init"></p>
-<h3 id="u60F3_u8BF4_u7684_u8BDD"><a href="#u60F3_u8BF4_u7684_u8BDD" class="headerlink" title="想说的话"></a>想说的话</h3><p>首先非常感谢各位耐心的看到了最后，第一次写博文，可能会存在很多不足，希望各位路过的大牛不吝赐教，如果对于文章有什么疑惑或者建议的，也希望你们在下面的多玩评论里面留下你们的脚印，谢谢。</p>
-<h3 id="u53C2_u8003"><a href="#u53C2_u8003" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/ethan_xue/article/details/7749639" target="_blank" rel="external">ethan_xue</a><br><a href="http://www.cnblogs.com/Bonker/p/3441781.html" target="_blank" rel="external">Bonker</a><br><a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">铁锚</a></p>
+<h3 id="想说的话"><a href="#想说的话" class="headerlink" title="想说的话"></a>想说的话</h3><p>首先非常感谢各位耐心的看到了最后，第一次写博文，可能会存在很多不足，希望各位路过的大牛不吝赐教，如果对于文章有什么疑惑或者建议的，也希望你们在下面的多玩评论里面留下你们的脚印，谢谢。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://blog.csdn.net/ethan_xue/article/details/7749639" target="_blank" rel="external">ethan_xue</a><br><a href="http://www.cnblogs.com/Bonker/p/3441781.html" target="_blank" rel="external">Bonker</a><br><a href="http://blog.csdn.net/renfufei/article/details/41647875" target="_blank" rel="external">铁锚</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -460,8 +499,8 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="prev" title="[技术备忘]Windows下 Emacs+Markdown 的使用">
-                [技术备忘]Windows下 Emacs+Markdown 的使用 <i class="fa fa-chevron-right"></i>
+              <a href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="prev" title="Windows下 Emacs+Markdown 的使用">
+                Windows下 Emacs+Markdown 的使用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -542,19 +581,23 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -571,18 +614,20 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/yinyizhixian" target="_blank">
+                <a href="https://github.com/yinyizhixian" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/TornadoFeitian" target="_blank">
+                <a href="https://twitter.com/TornadoFeitian" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -592,27 +637,20 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3A_u4EC0_u4E48_u8981_u7528Git"><span class="nav-number">1.</span> <span class="nav-text">为什么要用Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E0B_u8F7D_u53CA_u5B89_u88C5_u6240_u9700_u5DE5_u5177"><span class="nav-number">2.</span> <span class="nav-text">下载及安装所需工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E0B_u8F7Dgit_for_windows"><span class="nav-number">2.1.</span> <span class="nav-text">下载git for windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4E0B_u8F7DTortoiseGit"><span class="nav-number">2.2.</span> <span class="nav-text">下载TortoiseGit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5git"><span class="nav-number">2.3.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B89_u88C5TortoiseGit"><span class="nav-number">2.4.</span> <span class="nav-text">安装TortoiseGit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u6CE8_u518Ccoding-net_u8D26_u53F7"><span class="nav-number">3.</span> <span class="nav-text">注册coding.net账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u5E76_u914D_u7F6E"><span class="nav-number">4.</span> <span class="nav-text">创建本地仓库并配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u521B_u5EFA_u672C_u5730_u4ED3_u5E93_u6587_u4EF6_u5939"><span class="nav-number">4.1.</span> <span class="nav-text">创建本地仓库文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6Egit_u65E5_u5FD7_u6807_u8BC6"><span class="nav-number">4.2.</span> <span class="nav-text">配置git日志标识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u914D_u7F6E_u8BBF_u95EE_u65B9_u5F0F"><span class="nav-number">4.3.</span> <span class="nav-text">配置访问方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u521D_u59CB_u5316_u9879_u76EE_u53CA_u63A8_u9001_u9879_u76EE"><span class="nav-number">5.</span> <span class="nav-text">初始化项目及推送项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u60F3_u8BF4_u7684_u8BDD"><span class="nav-number">6.</span> <span class="nav-text">想说的话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要用Git"><span class="nav-number">1.</span> <span class="nav-text">为什么要用Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载及安装所需工具"><span class="nav-number">2.</span> <span class="nav-text">下载及安装所需工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载git-for-windows"><span class="nav-number">2.1.</span> <span class="nav-text">下载git for windows</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载TortoiseGit"><span class="nav-number">2.2.</span> <span class="nav-text">下载TortoiseGit</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装git"><span class="nav-number">2.3.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装TortoiseGit"><span class="nav-number">2.4.</span> <span class="nav-text">安装TortoiseGit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注册coding-net账号"><span class="nav-number">3.</span> <span class="nav-text">注册coding.net账号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地仓库并配置"><span class="nav-number">4.</span> <span class="nav-text">创建本地仓库并配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#创建本地仓库文件夹"><span class="nav-number">4.1.</span> <span class="nav-text">创建本地仓库文件夹</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置git日志标识"><span class="nav-number">4.2.</span> <span class="nav-text">配置git日志标识</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置访问方式"><span class="nav-number">4.3.</span> <span class="nav-text">配置访问方式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#初始化项目及推送项目"><span class="nav-number">5.</span> <span class="nav-text">初始化项目及推送项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#想说的话"><span class="nav-number">6.</span> <span class="nav-text">想说的话</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">7.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -632,10 +670,11 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tornado</span>
 </div>
+
 <div class="powered-by">
   Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
@@ -647,229 +686,85 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
   </a>
 </div>
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-    <!--add function-->
-    function setIframeHeight(iframe) {
-    if (iframe) {
-        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-        if (iframeWin.document.body) {
-            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-        }
-    }
-}
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -882,7 +777,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = '2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/';
-      var disqus_title = '[技术备忘]Windows下 TortoiseGit+Coding 的使用';
+      var disqus_title = 'Windows下 TortoiseGit+Coding 的使用';
       var disqus_url = 'http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/';
 
       function run_disqus_script(disqus_script){
@@ -904,6 +799,136 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -922,14 +947,9 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
       }
     });
   </script>
-
-  
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/MathJax.js"></script>
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
-  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-  
   
 
   
@@ -993,6 +1013,12 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -1025,6 +1051,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
 
 
+  
 
 </body>
 </html>

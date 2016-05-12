@@ -18,6 +18,7 @@
 
 
 
+  <meta name="google-site-verification" content="NvVVZis0RAljijmnSO6d8npxpO4v7mV3AlvmStcv8KQ" />
 
 
 
@@ -27,18 +28,46 @@
 
 
 
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"/>
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,400italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
 
 
 
 <link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="clojure," />
@@ -52,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=0.5.0" />
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
 
 
 
@@ -61,13 +90,13 @@
 
 <meta name="description" content="嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[学习笔记]Clojure 学习日记 — 3进阶语法">
+<meta property="og:title" content="Clojure 学习日记 — 3进阶语法">
 <meta property="og:url" content="http://blog.caiyuyu.net/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/index.html">
 <meta property="og:site_name" content="Tornado' blog">
 <meta property="og:description" content="嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。">
-<meta property="og:updated_time" content="2016-04-30T09:58:51.415Z">
+<meta property="og:updated_time" content="2016-05-12T11:21:13.125Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[学习笔记]Clojure 学习日记 — 3进阶语法">
+<meta name="twitter:title" content="Clojure 学习日记 — 3进阶语法">
 <meta name="twitter:description" content="嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。">
 
 
@@ -86,7 +115,7 @@
   };
 </script>
 
-  <title> [学习笔记]Clojure 学习日记 — 3进阶语法 | Tornado' blog </title>
+  <title> Clojure 学习日记 — 3进阶语法 | Tornado' blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,15 +133,7 @@
 </script>
 
 
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?bebab2a5ea5fe2339f2c538cb6e5df50";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
+
 
 
 
@@ -153,13 +174,13 @@
   
 
   
-    <ul id="menu" class="menu menu-left">
+    <ul id="menu" class="menu">
       
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-home fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
           </a>
@@ -169,19 +190,9 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-th fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-tags fa-fw"></i> <br />
-            
-            标签
           </a>
         </li>
       
@@ -189,9 +200,29 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
-              <i class="menu-item-icon fa fa-archive fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbooks">
+          <a href="/guestbooks" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -199,28 +230,18 @@
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
-              <i class="menu-item-icon fa fa-user fa-fw"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
             关于
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-guestbook">
-          <a href="/guestbook" rel="section">
-            
-              <i class="menu-item-icon fa fa-heartbeat fa-fw"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
 
       
-      
-      
         <li class="menu-item menu-item-search">
-          <a href="#" class="st-search-show-outputs">
+          
+            <a href="#" class="st-search-show-outputs">
+          
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
@@ -244,7 +265,7 @@
     e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
   })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-  _st('install', '4zuJpK6UJFFWBqDY3LZe','2.0.0');
+  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
 </script>
 
 
@@ -283,7 +304,9 @@
             
             
               
-                [学习笔记]Clojure 学习日记 — 3进阶语法
+                
+                    [学习笔记]Clojure 学习日记 — 3进阶语法
+                  
               
             
           </h1>
@@ -336,7 +359,7 @@
 
           
           
-             <span id="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" class="leancloud_visitors" data-flag-title="[学习笔记]Clojure 学习日记 — 3进阶语法">
+             <span id="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" class="leancloud_visitors" data-flag-title="Clojure 学习日记 — 3进阶语法">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -344,6 +367,8 @@
                <span class="post-meta-item-text">阅读次数 </span>
                <span class="leancloud-visitors-count"></span>
               </span>
+          
+
           
         </div>
       </header>
@@ -357,42 +382,55 @@
 
       
         <p>嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。<br><a id="more"></a></p>
-<h3 id="Clojure_u7684_u7279_u6B8A_u5F62_u5F0F"><a href="#Clojure_u7684_u7279_u6B8A_u5F62_u5F0F" class="headerlink" title="Clojure的特殊形式"></a>Clojure的特殊形式</h3><p>单纯的字面量是不可能成为一门语言的，伴随而来的还有一些特别的东西，类似控制语句、函数等。<br>clojure当然也有这些东西，我们称之为特殊形式，clojure的简洁高效灵活的一部分原因也归结于此。</p>
-<h4 id="u963B_u6B62_u6C42_u503C_3Aquote"><a href="#u963B_u6B62_u6C42_u503C_3Aquote" class="headerlink" title="阻止求值:quote"></a>阻止求值:quote</h4><p>类似lisp的函数式语言突出的特点就是那一堆密密麻麻的小括号，clojure会将括号解析成一个形式，但是集合字面量中<code>list</code>类型是用小括号包起来的，自然不是一个形式，于是要在<code>(</code>前加个阻止求值符号<code>‘</code>，作用就是告诉repl这是个列表，阻止求值，类似的，也可以阻止对var求职上例子。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(+ 1 1)</span><br><span class="line">;=2</span><br><span class="line">`(+ 1 1)</span><br><span class="line">;=(+ 1 1）</span><br><span class="line">(def x [1])</span><br><span class="line">;=#'user/x</span><br><span class="line">x</span><br><span class="line">;=[1]</span><br><span class="line">'x</span><br><span class="line">;=x</span><br></pre></td></tr></table></figure></p>
+<h3 id="Clojure的特殊形式"><a href="#Clojure的特殊形式" class="headerlink" title="Clojure的特殊形式"></a>Clojure的特殊形式</h3><p>单纯的字面量是不可能成为一门语言的，伴随而来的还有一些特别的东西，类似控制语句、函数等。<br>clojure当然也有这些东西，我们称之为特殊形式，clojure的简洁高效灵活的一部分原因也归结于此。</p>
+<h4 id="阻止求值-quote"><a href="#阻止求值-quote" class="headerlink" title="阻止求值:quote"></a>阻止求值:quote</h4><p>类似lisp的函数式语言突出的特点就是那一堆密密麻麻的小括号，clojure会将括号解析成一个形式，但是集合字面量中<code>list</code>类型是用小括号包起来的，自然不是一个形式，于是要在<code>(</code>前加个阻止求值符号<code>‘</code>，作用就是告诉repl这是个列表，阻止求值，类似的，也可以阻止对var求职上例子。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(+ 1 1)</span><br><span class="line">;=2</span><br><span class="line">`(+ 1 1)</span><br><span class="line">;=(+ 1 1）</span><br><span class="line">(def x [1])</span><br><span class="line">;=#'user/x</span><br><span class="line">x</span><br><span class="line">;=[1]</span><br><span class="line">'x</span><br><span class="line">;=x</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u4EE3_u7801_u5757_3Ado"><a href="#u4EE3_u7801_u5757_3Ado" class="headerlink" title="代码块:do"></a>代码块:do</h4><p>do会依次求值你传进来的所有表达式，并将最后一个表达式的结果作为do的返回值，其他表达式的结果就丢弃掉<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">do</span></span> </span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> <span class="number">1</span> <span class="number">1</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">*</span></span> <span class="number">3</span> <span class="number">4</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">*</span></span> <span class="number">5</span> <span class="number">6</span>)</span>)</span></span><br><span class="line"><span class="comment">;=30</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="代码块-do"><a href="#代码块-do" class="headerlink" title="代码块:do"></a>代码块:do</h4><p>do会依次求值你传进来的所有表达式，并将最后一个表达式的结果作为do的返回值，其他表达式的结果就丢弃掉<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">do</span></span> </span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> <span class="number">1</span> <span class="number">1</span>)</span><br><span class="line">    (<span class="name"><span class="builtin-name">*</span></span> <span class="number">3</span> <span class="number">4</span>)</span><br><span class="line">    (<span class="name"><span class="builtin-name">*</span></span> <span class="number">5</span> <span class="number">6</span>))</span><br><span class="line"><span class="comment">;=30</span></span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u5B9A_u4E49var_3Adef"><a href="#u5B9A_u4E49var_3Adef" class="headerlink" title="定义var:def"></a>定义var:def</h4><p>可以暂时这么理解吧，<code>def</code>是对一个变量的声明，类似我们学过的<code>int</code>或是<code>double</code>但是<code>def</code>可以声明任何类型，甚至一个函数，一个形式，而且，有<code>def</code>定义的var并不是变量，这点要切记，不要理解错误，在后续的学习会有进一步的解释。</p>
+<h4 id="定义var-def"><a href="#定义var-def" class="headerlink" title="定义var:def"></a>定义var:def</h4><p>可以暂时这么理解吧，<code>def</code>是对一个变量的声明，类似我们学过的<code>int</code>或是<code>double</code>但是<code>def</code>可以声明任何类型，甚至一个函数，一个形式，而且，有<code>def</code>定义的var并不是变量，这点要切记，不要理解错误，在后续的学习会有进一步的解释。</p>
 <hr>
-<h4 id="u672C_u5730_u7ED1_u5B9A_3Alet"><a href="#u672C_u5730_u7ED1_u5B9A_3Alet" class="headerlink" title="本地绑定:let"></a>本地绑定:let</h4><p><code>let</code>结构跟前面说过的<code>do</code>结构有点类似，而实际上，在<code>let</code>里面隐式的调用了<code>do</code>函数，可能在clojure源码那里可以看到，所以跟<code>do</code>有点相像，比如:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[x <span class="number">1</span>]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> <span class="number">1</span> <span class="number">1</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">*</span></span> <span class="number">3</span> <span class="number">4</span>)</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">*</span></span> <span class="number">5</span> <span class="number">6</span>)</span>)</span></span><br><span class="line"><span class="comment">;=30</span></span><br></pre></td></tr></table></figure></p>
-<p>也是在形式里面包含诸多表达式，并以最后一个作为<code>let</code>返回值，有些不一样的就是紧跟<code>let</code>后面的用<code>[]</code>包起来的绑定数组，这个绑定数组里面的东西是成对出现的，可以暂时理解成赋值，后面一个对前面一个赋值，如果对后面一个值不需要保留，在前面可以用<code>_</code>代替，表示丢弃。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[x <span class="number">1</span></span><br><span class="line">      y <span class="number">2</span></span><br><span class="line">      _ <span class="number">3</span>]</span></span><br><span class="line">  <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x y)</span>)</span></span><br><span class="line"><span class="comment">;=3</span></span><br></pre></td></tr></table></figure></p>
-<p><code>let</code>的绑定数组里面这种类似赋值的操作我们称为绑定。<br>既然说到赋值，那伴随而来的肯定有取值，一般的取值可以直接使用var标识符来取得，但是对于集合类型的var取值我们成为解构，可以通过如下进行取值。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> v <span class="collection">[<span class="number">43</span> <span class="string">"foo"</span> <span class="number">99.3</span>]</span>)</span></span><br><span class="line"><span class="comment">;=#'user/v</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">first</span></span> v)</span></span><br><span class="line"><span class="comment">;=43</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">nth</span></span> v <span class="number">2</span>)</span></span><br><span class="line"><span class="comment">;=99.3</span></span><br><span class="line"><span class="list">(<span class="keyword">v</span> <span class="number">2</span>)</span></span><br><span class="line"><span class="comment">;=99.3</span></span><br><span class="line"><span class="list">(<span class="keyword">.get</span> v <span class="number">1</span>)</span></span><br><span class="line"><span class="comment">;="foo"</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">second</span></span> v)</span></span><br><span class="line"><span class="comment">;="foo"</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">last</span></span> v)</span></span><br><span class="line"><span class="comment">;=99.3</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="本地绑定-let"><a href="#本地绑定-let" class="headerlink" title="本地绑定:let"></a>本地绑定:let</h4><p><code>let</code>结构跟前面说过的<code>do</code>结构有点类似，而实际上，在<code>let</code>里面隐式的调用了<code>do</code>函数，可能在clojure源码那里可以看到，所以跟<code>do</code>有点相像，比如:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [x <span class="number">1</span>]</span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> <span class="number">1</span> <span class="number">1</span>)</span><br><span class="line">    (<span class="name"><span class="builtin-name">*</span></span> <span class="number">3</span> <span class="number">4</span>)</span><br><span class="line">    (<span class="name"><span class="builtin-name">*</span></span> <span class="number">5</span> <span class="number">6</span>))</span><br><span class="line"><span class="comment">;=30</span></span><br></pre></td></tr></table></figure></p>
+<p>也是在形式里面包含诸多表达式，并以最后一个作为<code>let</code>返回值，有些不一样的就是紧跟<code>let</code>后面的用<code>[]</code>包起来的绑定数组，这个绑定数组里面的东西是成对出现的，可以暂时理解成赋值，后面一个对前面一个赋值，如果对后面一个值不需要保留，在前面可以用<code>_</code>代替，表示丢弃。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [x <span class="number">1</span></span><br><span class="line">      y <span class="number">2</span></span><br><span class="line">      _ <span class="number">3</span>]</span><br><span class="line">  (<span class="name"><span class="builtin-name">+</span></span> x y))</span><br><span class="line"><span class="comment">;=3</span></span><br></pre></td></tr></table></figure></p>
+<p><code>let</code>的绑定数组里面这种类似赋值的操作我们称为绑定。<br>既然说到赋值，那伴随而来的肯定有取值，一般的取值可以直接使用var标识符来取得，但是对于集合类型的var取值我们成为解构，可以通过如下进行取值。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> v [<span class="number">43</span> <span class="string">"foo"</span> <span class="number">99.3</span>])</span><br><span class="line"><span class="comment">;=#'user/v</span></span><br><span class="line">(<span class="name"><span class="builtin-name">first</span></span> v)</span><br><span class="line"><span class="comment">;=43</span></span><br><span class="line">(<span class="name"><span class="builtin-name">nth</span></span> v <span class="number">2</span>)</span><br><span class="line"><span class="comment">;=99.3</span></span><br><span class="line">(<span class="name">v</span> <span class="number">2</span>)</span><br><span class="line"><span class="comment">;=99.3</span></span><br><span class="line">(<span class="name">.get</span> v <span class="number">1</span>)</span><br><span class="line"><span class="comment">;="foo"</span></span><br><span class="line">(<span class="name"><span class="builtin-name">second</span></span> v)</span><br><span class="line"><span class="comment">;="foo"</span></span><br><span class="line">(<span class="name"><span class="builtin-name">last</span></span> v)</span><br><span class="line"><span class="comment">;=99.3</span></span><br></pre></td></tr></table></figure></p>
 <p>这里插入一段解构是因为这个东西跟<code>let</code>绑定有关系，解构这个特性是由<code>let</code>提供的，和<code>let</code>结合使用可以大大体现出语言的灵活性。</p>
-<p><code>let</code>解构支持俩种类型的解构,<br>顺序解构是对集合里面的元素依次绑定的一个新的var中，可以嵌套，也可以使用<code>_</code>充当占位符对元素忽略，也可以用<code>&amp;</code>元素来保持解构剩下的元素，可以用<code>:as</code>来保持被解构的集合，具体看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> v <span class="collection">[<span class="number">33</span> <span class="string">"rr"</span> <span class="collection">[<span class="number">4</span> <span class="number">5</span>]</span>]</span>)</span></span><br><span class="line"><span class="comment">;='user/v</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">[x _ <span class="collection">[y z]</span>]</span> v]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x y z)</span>)</span></span><br><span class="line"><span class="comment">;=42</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">[x _ &amp; rest]</span> v]</span></span><br><span class="line">    rest)</span></span><br><span class="line"><span class="comment">;=([4 5])</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">[x _ <span class="collection">[y z]</span> <span class="attribute">:as</span> a]</span> v]</span></span><br><span class="line">    a)</span></span><br><span class="line"><span class="comment">;=[33 "rr" [4 5]]</span></span><br></pre></td></tr></table></figure></p>
-<p>另外一种是map解构，不过map解构对应元素是通过key来确定的，不是通过顺序。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> m <span class="collection">&#123;<span class="attribute">:a</span> <span class="number">5</span>, <span class="attribute">:b</span> <span class="number">6</span></span><br><span class="line">        <span class="attribute">:c</span> <span class="collection">[<span class="number">7</span> <span class="number">8</span> <span class="number">9</span>]</span></span><br><span class="line">        <span class="attribute">:d</span> <span class="collection">&#123;<span class="attribute">:e</span> <span class="number">10</span>, <span class="attribute">:f</span> <span class="number">5</span>&#125;</span></span><br><span class="line">        <span class="string">"foo"</span> <span class="number">3</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;='user/m</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">&#123;f <span class="string">"foo"</span></span><br><span class="line">       a <span class="attribute">:a</span></span><br><span class="line">       b <span class="attribute">:b</span></span><br><span class="line">       <span class="collection">&#123;e <span class="attribute">:e</span>&#125;</span> <span class="attribute">:d</span>&#125;</span> m]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> f a b e)</span>)</span></span><br><span class="line"><span class="comment">;=24</span></span><br></pre></td></tr></table></figure></p>
-<p>还有一点，就是<code>:or</code>这个东东，如果要解构的key在集合中没有对应的元素那就会为之提供默认值，这个差点被绕晕了，它和<code>or</code>函数是完全不一样的，书上的例子差点误导我，应该不是我理解能力的问题，确实没有说清楚。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> m <span class="collection">&#123;<span class="attribute">:a</span> <span class="number">3</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;='user/m</span></span><br><span class="line"><span class="comment">;;下面俩个意义完全不一样</span></span><br><span class="line"><span class="comment">;;第一个，在解构的过程 :or 会检查，如果没有则进行绑定</span></span><br><span class="line"><span class="comment">;;绑定完k的值为50</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">&#123;k <span class="attribute">:u</span>, a <span class="attribute">:a</span>,</span><br><span class="line">        <span class="attribute">:or</span> <span class="collection">&#123;k <span class="number">50</span>&#125;</span>&#125;</span> m]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> k a)</span>)</span></span><br><span class="line"><span class="comment">;=53</span></span><br><span class="line"><span class="comment">;;第二个，在解构的时候并没有任何操作，解构绑定完k的值为nil</span></span><br><span class="line"><span class="comment">;;之所以是这个结果，是因为下面还有一个绑定</span></span><br><span class="line"><span class="comment">;;使用了 or 函数，当前面的值为 false 或 nill 会跳到下个值，使得k为50</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">&#123;k <span class="attribute">:u</span>, a <span class="attribute">:a</span>&#125;</span> m</span><br><span class="line">       k <span class="list">(<span class="keyword"><span class="built_in">or</span></span> k <span class="number">50</span>)</span>]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">+</span></span> k a)</span>)</span></span><br><span class="line"><span class="comment">;=53</span></span><br></pre></td></tr></table></figure></p>
-<p>还有一点，就是关键字<code>:key</code>、<code>:strs</code>、<code>:syms</code>的使用，简化代码，使代码美观，java那种臃肿的代码是clojure不能接受的。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> ch <span class="collection">&#123;<span class="attribute">:a</span> <span class="string">"a"</span>, <span class="attribute">:b</span> <span class="string">"b"</span>, <span class="attribute">:c</span> <span class="string">"c"</span>&#125;</span>)</span></span><br><span class="line"><span class="comment">;=#'user/ch</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">&#123;<span class="attribute">:keys</span> <span class="collection">[a b c]</span>&#125;</span> ch]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">format</span></span> <span class="string">"%s %s %s."</span> a b c)</span>)</span></span><br><span class="line"><span class="comment">;map的key值如果为关键字使用 :keys</span></span><br><span class="line"><span class="comment">;map的key值如果为字符串使用 :strs</span></span><br><span class="line"><span class="comment">;map的key值如果为符号使用 :styms</span></span><br><span class="line"><span class="comment">;="a b c."</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">; :keys 与 &amp; 结合使用</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">def</span></span> user-info <span class="collection">[<span class="string">"robert"</span> <span class="number">2016</span> <span class="attribute">:name</span> <span class="string">"Tom"</span> <span class="attribute">:city</span> <span class="string">"Huilai"</span>]</span>)</span></span><br><span class="line"><span class="comment">;#'user/user-info</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">let</span></span> <span class="collection">[<span class="collection">[username year &amp; <span class="collection">&#123;<span class="attribute">:keys</span> <span class="collection">[name city]</span>&#125;</span>]</span> user-info]</span></span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">format</span></span> <span class="string">"%s is in %s"</span> name city)</span>)</span></span><br><span class="line"><span class="comment">;="Tom is in Huilai"</span></span><br></pre></td></tr></table></figure>
+<p><code>let</code>解构支持俩种类型的解构,<br>顺序解构是对集合里面的元素依次绑定的一个新的var中，可以嵌套，也可以使用<code>_</code>充当占位符对元素忽略，也可以用<code>&amp;</code>元素来保持解构剩下的元素，可以用<code>:as</code>来保持被解构的集合，具体看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> v [<span class="number">33</span> <span class="string">"rr"</span> [<span class="number">4</span> <span class="number">5</span>]])</span><br><span class="line"><span class="comment">;='user/v</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [[x _ [y z]] v]</span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> x y z))</span><br><span class="line"><span class="comment">;=42</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [[x _ &amp; rest] v]</span><br><span class="line">    rest)</span><br><span class="line"><span class="comment">;=([4 5])</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [[x _ [y z] <span class="symbol">:as</span> a] v]</span><br><span class="line">    a)</span><br><span class="line"><span class="comment">;=[33 "rr" [4 5]]</span></span><br></pre></td></tr></table></figure></p>
+<p>另外一种是map解构，不过map解构对应元素是通过key来确定的，不是通过顺序。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> m &#123;<span class="symbol">:a</span> <span class="number">5</span>, <span class="symbol">:b</span> <span class="number">6</span></span><br><span class="line">        <span class="symbol">:c</span> [<span class="number">7</span> <span class="number">8</span> <span class="number">9</span>]</span><br><span class="line">        <span class="symbol">:d</span> &#123;<span class="symbol">:e</span> <span class="number">10</span>, <span class="symbol">:f</span> <span class="number">5</span>&#125;</span><br><span class="line">        <span class="string">"foo"</span> <span class="number">3</span>&#125;)</span><br><span class="line"><span class="comment">;='user/m</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [&#123;f <span class="string">"foo"</span></span><br><span class="line">       a <span class="symbol">:a</span></span><br><span class="line">       b <span class="symbol">:b</span></span><br><span class="line">       &#123;e <span class="symbol">:e</span>&#125; <span class="symbol">:d</span>&#125; m]</span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> f a b e))</span><br><span class="line"><span class="comment">;=24</span></span><br></pre></td></tr></table></figure></p>
+<p>还有一点，就是<code>:or</code>这个东东，如果要解构的key在集合中没有对应的元素那就会为之提供默认值，这个差点被绕晕了，它和<code>or</code>函数是完全不一样的，书上的例子差点误导我，应该不是我理解能力的问题，确实没有说清楚。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> m &#123;<span class="symbol">:a</span> <span class="number">3</span>&#125;)</span><br><span class="line"><span class="comment">;='user/m</span></span><br><span class="line"><span class="comment">;;下面俩个意义完全不一样</span></span><br><span class="line"><span class="comment">;;第一个，在解构的过程 :or 会检查，如果没有则进行绑定</span></span><br><span class="line"><span class="comment">;;绑定完k的值为50</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [&#123;k <span class="symbol">:u</span>, a <span class="symbol">:a</span>,</span><br><span class="line">        <span class="symbol">:or</span> &#123;k <span class="number">50</span>&#125;&#125; m]</span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> k a))</span><br><span class="line"><span class="comment">;=53</span></span><br><span class="line"><span class="comment">;;第二个，在解构的时候并没有任何操作，解构绑定完k的值为nil</span></span><br><span class="line"><span class="comment">;;之所以是这个结果，是因为下面还有一个绑定</span></span><br><span class="line"><span class="comment">;;使用了 or 函数，当前面的值为 false 或 nill 会跳到下个值，使得k为50</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [&#123;k <span class="symbol">:u</span>, a <span class="symbol">:a</span>&#125; m</span><br><span class="line">       k (<span class="name"><span class="builtin-name">or</span></span> k <span class="number">50</span>)]</span><br><span class="line">    (<span class="name"><span class="builtin-name">+</span></span> k a))</span><br><span class="line"><span class="comment">;=53</span></span><br></pre></td></tr></table></figure></p>
+<p>还有一点，就是关键字<code>:key</code>、<code>:strs</code>、<code>:syms</code>的使用，简化代码，使代码美观，java那种臃肿的代码是clojure不能接受的。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">def</span></span> ch &#123;<span class="symbol">:a</span> <span class="string">"a"</span>, <span class="symbol">:b</span> <span class="string">"b"</span>, <span class="symbol">:c</span> <span class="string">"c"</span>&#125;)</span><br><span class="line"><span class="comment">;=#'user/ch</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [&#123;<span class="symbol">:keys</span> [a b c]&#125; ch]</span><br><span class="line">    (<span class="name"><span class="builtin-name">format</span></span> <span class="string">"%s %s %s."</span> a b c))</span><br><span class="line"><span class="comment">;map的key值如果为关键字使用 :keys</span></span><br><span class="line"><span class="comment">;map的key值如果为字符串使用 :strs</span></span><br><span class="line"><span class="comment">;map的key值如果为符号使用 :styms</span></span><br><span class="line"><span class="comment">;="a b c."</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">; :keys 与 &amp; 结合使用</span></span><br><span class="line">(<span class="name"><span class="builtin-name">def</span></span> user-info [<span class="string">"robert"</span> <span class="number">2016</span> <span class="symbol">:name</span> <span class="string">"Tom"</span> <span class="symbol">:city</span> <span class="string">"Huilai"</span>])</span><br><span class="line"><span class="comment">;#'user/user-info</span></span><br><span class="line">(<span class="name"><span class="builtin-name">let</span></span> [[username year &amp; &#123;<span class="symbol">:keys</span> [name city]&#125;] user-info]</span><br><span class="line">    (<span class="name"><span class="builtin-name">format</span></span> <span class="string">"%s is in %s"</span> name city))</span><br><span class="line"><span class="comment">;="Tom is in Huilai"</span></span><br></pre></td></tr></table></figure>
 <hr>
-<h4 id="u5B9A_u4E49_u51FD_u6570_3Afn"><a href="#u5B9A_u4E49_u51FD_u6570_3Afn" class="headerlink" title="定义函数:fn"></a>定义函数:fn</h4><p>在学其他语言已经有函数的概念了，在clojure函数<code>fn</code>也隐式到包含了<code>let</code>，也有个绑定数组，功能效果与<code>let</code>类似。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="list">(<span class="keyword"><span class="built_in">fn</span></span> <span class="collection">[x]</span> <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x <span class="number">10</span>)</span>)</span> <span class="number">2</span>)</span></span><br><span class="line"><span class="comment">;=12</span></span><br></pre></td></tr></table></figure></p>
-<p>但是这样调用太麻烦，而且不能重复，所以要定义一个<code>var</code>来引用，<code>defn</code>是一个封装了<code>def</code>和<code>fn</code>功能的宏。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> FD <span class="collection">[x]</span> <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x <span class="number">10</span>)</span>)</span></span><br><span class="line"><span class="comment">;=#'user/FD</span></span><br><span class="line"><span class="list">(<span class="keyword">FD</span> <span class="number">2</span>)</span></span><br><span class="line"><span class="comment">;=12</span></span><br><span class="line"><span class="list">(<span class="keyword">FD</span> <span class="number">3</span>)</span></span><br><span class="line"><span class="comment">;=13</span></span><br></pre></td></tr></table></figure></p>
-<p>当然，函数在clojure中很重要，用好函数可以大大增强在clojure的灵活性和简洁性，主要是在传参和复用这里灵活应用。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">;可变参数</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> f1</span><br><span class="line">    <span class="list">(<span class="collection">[x]</span> <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x <span class="number">1</span>)</span>)</span></span><br><span class="line">    <span class="list">(<span class="collection">[x y]</span> <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x y)</span>)</span></span><br><span class="line">    <span class="list">(<span class="collection">[x y z]</span> <span class="list">(<span class="keyword"><span class="built_in">+</span></span> x y z)</span>)</span>)</span></span><br><span class="line"><span class="comment">;=#'user/f1</span></span><br><span class="line"><span class="list">(<span class="keyword">f1</span> <span class="number">1</span>)</span></span><br><span class="line"><span class="comment">;=2</span></span><br><span class="line"><span class="list">(<span class="keyword">f1</span> <span class="number">1</span> <span class="number">2</span>)</span></span><br><span class="line"><span class="comment">;=3</span></span><br><span class="line"><span class="list">(<span class="keyword">f1</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span>)</span></span><br><span class="line"><span class="comment">;=6</span></span><br><span class="line"><span class="comment">;可变参数+&amp;</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> f2 </span><br><span class="line">  <span class="collection">[&amp; r]</span> r)</span><span class="comment">;r为list</span></span><br><span class="line"><span class="list">(<span class="keyword">f2</span> <span class="number">2</span> <span class="number">4</span>)</span><span class="comment">;因为函数定义有 &amp; ，所以多个参数传进去是用list包起来的</span></span><br><span class="line"><span class="comment">;=(2 4)</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> f2 </span><br><span class="line">  <span class="collection">[&amp; <span class="collection">[r]</span>]</span> r)</span><span class="comment">;r为vector</span></span><br><span class="line"><span class="list">(<span class="keyword">f2</span> <span class="collection">[<span class="number">2</span> <span class="number">4</span> <span class="number">5</span>]</span>)</span><span class="comment">;只传进去一个vector类型参数</span></span><br><span class="line"><span class="comment">;=[2 4 5]</span></span><br><span class="line"><span class="list">(<span class="keyword">f2</span> <span class="number">2</span> <span class="number">4</span> <span class="number">5</span>)</span><span class="comment">;如果传进去多个参数</span></span><br><span class="line"><span class="comment">;=2;这个结果很奇怪</span></span><br><span class="line"><span class="comment">;我猜是这样的，函数定义接受参数的类型为vector，你如果传参是一个vector，那就通过，</span></span><br><span class="line"><span class="comment">;直接绑定，如果不是一个vector，那 (2 4 5) 是不能强转为 [2 4 5] 的，所有传的参数不会包成一个list，而是只传进去一个参数，后面的抛弃，而且传进去的参数会被强转为关键字</span></span><br><span class="line"><span class="comment">;可变参数+默认值+&amp;</span></span><br><span class="line"><span class="comment">;默认值不限于&amp;参数</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> f2 </span><br><span class="line">    <span class="collection">[&amp; p]</span> <span class="list">(<span class="keyword"><span class="built_in">or</span></span> p <span class="string">"p is nil"</span>)</span>)</span><span class="comment">;注意，如果 &amp; 前面有几个固定参数，那调用函数也是要有几个固定参数的</span></span><br><span class="line"><span class="list">(<span class="keyword">f2</span>)</span></span><br><span class="line"><span class="comment">;="p is nil"</span></span><br><span class="line"><span class="comment">;可变参数+解构+&amp;</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> m</span><br><span class="line">  <span class="collection">[u &amp; <span class="collection">&#123;<span class="attribute">:keys</span> <span class="collection">[a b]</span>&#125;</span>]</span></span><br><span class="line">  <span class="collection">&#123;<span class="attribute">:u</span> u, <span class="attribute">:a</span> a, <span class="attribute">:b</span> b&#125;</span>)</span></span><br><span class="line"><span class="list">(<span class="keyword">m</span> <span class="string">"username"</span> <span class="attribute">:a</span> <span class="string">"aaa"</span> <span class="attribute">:b</span> <span class="string">"bbb"</span>)</span></span><br><span class="line"><span class="comment">;=&#123;:u "username", :a "aaa", :b "bbb"&#125;</span></span><br><span class="line"><span class="comment">;&amp;后面支持解构，排除掉第一个元素后剩下的元素以map形式传进去，同时剩下的元素必须成对存在，有key值和value值。</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="定义函数-fn"><a href="#定义函数-fn" class="headerlink" title="定义函数:fn"></a>定义函数:fn</h4><p>在学其他语言已经有函数的概念了，在clojure函数<code>fn</code>也隐式到包含了<code>let</code>，也有个绑定数组，功能效果与<code>let</code>类似。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">((<span class="name"><span class="builtin-name">fn</span></span> [x] (<span class="name"><span class="builtin-name">+</span></span> x <span class="number">10</span>)) <span class="number">2</span>)</span><br><span class="line"><span class="comment">;=12</span></span><br></pre></td></tr></table></figure></p>
+<p>但是这样调用太麻烦，而且不能重复，所以要定义一个<code>var</code>来引用，<code>defn</code>是一个封装了<code>def</code>和<code>fn</code>功能的宏。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> FD [x] (<span class="name"><span class="builtin-name">+</span></span> x <span class="number">10</span>))</span><br><span class="line"><span class="comment">;=#'user/FD</span></span><br><span class="line">(<span class="name">FD</span> <span class="number">2</span>)</span><br><span class="line"><span class="comment">;=12</span></span><br><span class="line">(<span class="name">FD</span> <span class="number">3</span>)</span><br><span class="line"><span class="comment">;=13</span></span><br></pre></td></tr></table></figure></p>
+<p>当然，函数在clojure中很重要，用好函数可以大大增强在clojure的灵活性和简洁性，主要是在传参和复用这里灵活应用。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">;可变参数</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> f1</span><br><span class="line">    ([x] (<span class="name"><span class="builtin-name">+</span></span> x <span class="number">1</span>))</span><br><span class="line">    ([x y] (<span class="name"><span class="builtin-name">+</span></span> x y))</span><br><span class="line">    ([x y z] (<span class="name"><span class="builtin-name">+</span></span> x y z)))</span><br><span class="line"><span class="comment">;=#'user/f1</span></span><br><span class="line">(<span class="name">f1</span> <span class="number">1</span>)</span><br><span class="line"><span class="comment">;=2</span></span><br><span class="line">(<span class="name">f1</span> <span class="number">1</span> <span class="number">2</span>)</span><br><span class="line"><span class="comment">;=3</span></span><br><span class="line">(<span class="name">f1</span> <span class="number">1</span> <span class="number">2</span> <span class="number">3</span>)</span><br><span class="line"><span class="comment">;=6</span></span><br><span class="line"><span class="comment">;可变参数+&amp;</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> f2 </span><br><span class="line">  [&amp; r] r)<span class="comment">;r为list</span></span><br><span class="line">(<span class="name">f2</span> <span class="number">2</span> <span class="number">4</span>)<span class="comment">;因为函数定义有 &amp; ，所以多个参数传进去是用list包起来的</span></span><br><span class="line"><span class="comment">;=(2 4)</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> f2 </span><br><span class="line">  [&amp; [r]] r)<span class="comment">;r为vector</span></span><br><span class="line">(<span class="name">f2</span> [<span class="number">2</span> <span class="number">4</span> <span class="number">5</span>])<span class="comment">;只传进去一个vector类型参数</span></span><br><span class="line"><span class="comment">;=[2 4 5]</span></span><br><span class="line">(<span class="name">f2</span> <span class="number">2</span> <span class="number">4</span> <span class="number">5</span>)<span class="comment">;如果传进去多个参数</span></span><br><span class="line"><span class="comment">;=2;这个结果很奇怪</span></span><br><span class="line"><span class="comment">;我猜是这样的，函数定义接受参数的类型为vector，你如果传参是一个vector，那就通过，</span></span><br><span class="line"><span class="comment">;直接绑定，如果不是一个vector，那 (2 4 5) 是不能强转为 [2 4 5] 的，所有传的参数不会包成一个list，而是只传进去一个参数，后面的抛弃，而且传进去的参数会被强转为关键字</span></span><br><span class="line"><span class="comment">;可变参数+默认值+&amp;</span></span><br><span class="line"><span class="comment">;默认值不限于&amp;参数</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> f2 </span><br><span class="line">    [&amp; p] (<span class="name"><span class="builtin-name">or</span></span> p <span class="string">"p is nil"</span>))<span class="comment">;注意，如果 &amp; 前面有几个固定参数，那调用函数也是要有几个固定参数的</span></span><br><span class="line">(<span class="name">f2</span>)</span><br><span class="line"><span class="comment">;="p is nil"</span></span><br><span class="line"><span class="comment">;可变参数+解构+&amp;</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> m</span><br><span class="line">  [u &amp; &#123;<span class="symbol">:keys</span> [a b]&#125;]</span><br><span class="line">  &#123;<span class="symbol">:u</span> u, <span class="symbol">:a</span> a, <span class="symbol">:b</span> b&#125;)</span><br><span class="line">(<span class="name">m</span> <span class="string">"username"</span> <span class="symbol">:a</span> <span class="string">"aaa"</span> <span class="symbol">:b</span> <span class="string">"bbb"</span>)</span><br><span class="line"><span class="comment">;=&#123;:u "username", :a "aaa", :b "bbb"&#125;</span></span><br><span class="line"><span class="comment">;&amp;后面支持解构，排除掉第一个元素后剩下的元素以map形式传进去，同时剩下的元素必须成对存在，有key值和value值。</span></span><br></pre></td></tr></table></figure></p>
 <p>函数字面量是使用<code>#()</code>语法来定义一个匿名函数，主要用于一些简单的函数，这种匿名函数不支持嵌套，函数体有多个表达式的时候要显式使用<code>do</code>语法。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">(fn [x y]</span><br><span class="line">    (println (str x \^ y))</span><br><span class="line">    (Math/pow x y))</span><br><span class="line">#(do (println (str %1 \^ %2))</span><br><span class="line">     (Math/pow %1 %2))</span><br><span class="line">(fn [x &amp; rest]</span><br><span class="line">    (- x (apply + rest)))</span><br><span class="line">#(- % (apply + %&amp;))</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u6761_u4EF6_u5224_u65AD_3Aif"><a href="#u6761_u4EF6_u5224_u65AD_3Aif" class="headerlink" title="条件判断:if"></a>条件判断:if</h4><p>这个简单，<code>if</code>把任何非<code>nil</code>或<code>false</code>的值判断为<code>true</code>，直接看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="string">"a"</span> \t)</span></span><br><span class="line"><span class="comment">;=\t</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="literal">nil</span> <span class="string">"une"</span> \f)</span></span><br><span class="line"><span class="comment">;=\f</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="literal">false</span> \t)</span></span><br><span class="line"><span class="comment">;=nil</span></span><br><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> type-of-number <span class="collection">[n]</span></span><br><span class="line">           <span class="list">(<span class="keyword"><span class="built_in">cond</span></span> <span class="list">(<span class="keyword"><span class="built_in">&gt;</span></span> n <span class="number">0</span>)</span> <span class="string">"positive number"</span></span><br><span class="line">                 <span class="list">(<span class="keyword"><span class="built_in">&lt;</span></span> n <span class="number">0</span>)</span> <span class="string">"negative number"</span></span><br><span class="line">                 <span class="attribute">:else</span> <span class="string">"zero"</span>)</span>)</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="条件判断-if"><a href="#条件判断-if" class="headerlink" title="条件判断:if"></a>条件判断:if</h4><p>这个简单，<code>if</code>把任何非<code>nil</code>或<code>false</code>的值判断为<code>true</code>，直接看例子。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">if</span></span> <span class="string">"a"</span> \t)</span><br><span class="line"><span class="comment">;=\t</span></span><br><span class="line">(<span class="name"><span class="builtin-name">if</span></span> <span class="literal">nil</span> <span class="string">"une"</span> \f)</span><br><span class="line"><span class="comment">;=\f</span></span><br><span class="line">(<span class="name"><span class="builtin-name">if</span></span> <span class="literal">false</span> \t)</span><br><span class="line"><span class="comment">;=nil</span></span><br><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> type-of-number [n]</span><br><span class="line">           (<span class="name"><span class="builtin-name">cond</span></span> (<span class="name"><span class="builtin-name">&gt;</span></span> n <span class="number">0</span>) <span class="string">"positive number"</span></span><br><span class="line">                 (<span class="name"><span class="builtin-name">&lt;</span></span> n <span class="number">0</span>) <span class="string">"negative number"</span></span><br><span class="line">                 <span class="symbol">:else</span> <span class="string">"zero"</span>))</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u5FAA_u73AF_3Aloop__u548C_recur"><a href="#u5FAA_u73AF_3Aloop__u548C_recur" class="headerlink" title="循环:loop 和 recur"></a>循环:loop 和 recur</h4><p>说下<code>recur</code>，听着就觉得强大，<code>recur</code>是一个非常底层的循环和递归控制操作，通常循环用<code>doseq</code>、<code>for</code>等循环控制，但是<code>recur</code>操作不消耗堆栈空间，操作数字性能很好，所以要适当的使用<code>recur</code><br>使用<code>recur</code>要有个<code>loop</code>头，好将程序转到<code>loop</code>头。<br><code>loop</code>隐式使用<code>let</code>，所以有个绑定数组。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">loop</span></span> <span class="collection">[x <span class="number">5</span>]</span></span><br><span class="line">  <span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword"><span class="built_in">neg?</span></span> x)</span></span><br><span class="line">    x</span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">recur</span></span> <span class="list">(<span class="keyword"><span class="built_in">dec</span></span> x)</span>)</span>)</span>)</span></span><br><span class="line"><span class="comment">;=-1</span></span><br></pre></td></tr></table></figure></p>
-<p> loop 头也可以是一个函数定义，那这样就是递归了， recur 会将所带的值绑定到函数的参数上去。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="list">(<span class="keyword"><span class="built_in">defn</span></span> d <span class="collection">[x]</span></span><br><span class="line">  <span class="list">(<span class="keyword"><span class="built_in">if</span></span> <span class="list">(<span class="keyword"><span class="built_in">neg?</span></span> x)</span></span><br><span class="line">    x</span><br><span class="line">    <span class="list">(<span class="keyword"><span class="built_in">recur</span></span> <span class="list">(<span class="keyword"><span class="built_in">dec</span></span> x)</span>)</span>)</span>)</span></span><br><span class="line"><span class="list">(<span class="keyword">d</span> <span class="number">4</span>)</span></span><br><span class="line"><span class="comment">;=-1</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="循环-loop-和-recur"><a href="#循环-loop-和-recur" class="headerlink" title="循环:loop 和 recur"></a>循环:loop 和 recur</h4><p>说下<code>recur</code>，听着就觉得强大，<code>recur</code>是一个非常底层的循环和递归控制操作，通常循环用<code>doseq</code>、<code>for</code>等循环控制，但是<code>recur</code>操作不消耗堆栈空间，操作数字性能很好，所以要适当的使用<code>recur</code><br>使用<code>recur</code>要有个<code>loop</code>头，好将程序转到<code>loop</code>头。<br><code>loop</code>隐式使用<code>let</code>，所以有个绑定数组。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">loop</span></span> [x <span class="number">5</span>]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">neg?</span></span> x)</span><br><span class="line">    x</span><br><span class="line">    (<span class="name"><span class="builtin-name">recur</span></span> (<span class="name"><span class="builtin-name">dec</span></span> x))))</span><br><span class="line"><span class="comment">;=-1</span></span><br></pre></td></tr></table></figure></p>
+<p> loop 头也可以是一个函数定义，那这样就是递归了， recur 会将所带的值绑定到函数的参数上去。<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="name"><span class="builtin-name">defn</span></span> d [x]</span><br><span class="line">  (<span class="name"><span class="builtin-name">if</span></span> (<span class="name"><span class="builtin-name">neg?</span></span> x)</span><br><span class="line">    x</span><br><span class="line">    (<span class="name"><span class="builtin-name">recur</span></span> (<span class="name"><span class="builtin-name">dec</span></span> x))))</span><br><span class="line">(<span class="name">d</span> <span class="number">4</span>)</span><br><span class="line"><span class="comment">;=-1</span></span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u5F15_u7528var_3Avar"><a href="#u5F15_u7528var_3Avar" class="headerlink" title="引用var:var"></a>引用var:var</h4><p>这个暂时没感觉什么太大的用处，先做个记录。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(def x 5)</span><br><span class="line">;=#'user/x</span><br><span class="line">x</span><br><span class="line">;=5</span><br><span class="line">(var x)</span><br><span class="line">;=#'user/x</span><br><span class="line">;reader的语法糖也可以求值成var这个特殊形式</span><br><span class="line">#'x</span><br><span class="line">;=#'user/x</span><br></pre></td></tr></table></figure></p>
+<h4 id="引用var-var"><a href="#引用var-var" class="headerlink" title="引用var:var"></a>引用var:var</h4><p>这个暂时没感觉什么太大的用处，先做个记录。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">(def x 5)</span><br><span class="line">;=#'user/x</span><br><span class="line">x</span><br><span class="line">;=5</span><br><span class="line">(var x)</span><br><span class="line">;=#'user/x</span><br><span class="line">;reader的语法糖也可以求值成var这个特殊形式</span><br><span class="line">#'x</span><br><span class="line">;=#'user/x</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u548Cjava_u7684_u4E92_u64CD_u4F5C_3A-_u548Cnew"><a href="#u548Cjava_u7684_u4E92_u64CD_u4F5C_3A-_u548Cnew" class="headerlink" title="和java的互操作:.和new"></a>和java的互操作:.和new</h4><p>尽量使用clojure的语法糖形式，特殊形式尽量不用。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">;java代码</span><br><span class="line">"hello".substring(1, 3)</span><br><span class="line">Math.pow(2, 10)</span><br><span class="line">;clojure语法糖</span><br><span class="line">(.substring "hello" 1 3)</span><br><span class="line">(Math/pow 2 10)</span><br><span class="line">;特殊形式</span><br><span class="line">(. "hello" substring 1 3)</span><br><span class="line">(.Math pow 2 10)</span><br></pre></td></tr></table></figure></p>
+<h4 id="和java的互操作-和new"><a href="#和java的互操作-和new" class="headerlink" title="和java的互操作:.和new"></a>和java的互操作:.和new</h4><p>尽量使用clojure的语法糖形式，特殊形式尽量不用。<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">;java代码</span><br><span class="line">"hello".substring(1, 3)</span><br><span class="line">Math.pow(2, 10)</span><br><span class="line">;clojure语法糖</span><br><span class="line">(.substring "hello" 1 3)</span><br><span class="line">(Math/pow 2 10)</span><br><span class="line">;特殊形式</span><br><span class="line">(. "hello" substring 1 3)</span><br><span class="line">(.Math pow 2 10)</span><br></pre></td></tr></table></figure></p>
 <hr>
-<h4 id="u5F02_u5E38_u5904_u7406_3Atry_u548Cthrow"><a href="#u5F02_u5E38_u5904_u7406_3Atry_u548Cthrow" class="headerlink" title="异常处理:try和throw"></a>异常处理:try和throw</h4><p>后面讲</p>
+<h4 id="异常处理-try和throw"><a href="#异常处理-try和throw" class="headerlink" title="异常处理:try和throw"></a>异常处理:try和throw</h4><p>后面讲</p>
 <hr>
-<h4 id="u72B6_u6001_u4FEE_u6539_3Aset_21"><a href="#u72B6_u6001_u4FEE_u6539_3Aset_21" class="headerlink" title="状态修改:set!"></a>状态修改:set!</h4><p>后面讲</p>
+<h4 id="状态修改-set"><a href="#状态修改-set" class="headerlink" title="状态修改:set!"></a>状态修改:set!</h4><p>后面讲</p>
 <hr>
-<h4 id="u9501_u7684_u539F_u8BED_3Amonitor-enter_u548Cmonitor-exit"><a href="#u9501_u7684_u539F_u8BED_3Amonitor-enter_u548Cmonitor-exit" class="headerlink" title="锁的原语:monitor-enter和monitor-exit"></a>锁的原语:monitor-enter和monitor-exit</h4><p>后面讲</p>
+<h4 id="锁的原语-monitor-enter和monitor-exit"><a href="#锁的原语-monitor-enter和monitor-exit" class="headerlink" title="锁的原语:monitor-enter和monitor-exit"></a>锁的原语:monitor-enter和monitor-exit</h4><p>后面讲</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
 
       
     </div>
@@ -410,16 +448,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" rel="next" title="[学习笔记]Clojure 学习日记 — 2基础语法">
-                <i class="fa fa-chevron-left"></i> [学习笔记]Clojure 学习日记 — 2基础语法
+              <a href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" rel="next" title="Clojure 学习日记 — 2基础语法">
+                <i class="fa fa-chevron-left"></i> Clojure 学习日记 — 2基础语法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/" rel="prev" title="[基础知识]Java中传值和传引用">
-                [基础知识]Java中传值和传引用 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/" rel="prev" title="Java中传值和传引用">
+                Java中传值和传引用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -500,19 +538,23 @@
             </a>
           </div>
 
-          <div class="site-state-item site-state-categories">
-            <a href="/categories">
-              <span class="site-state-item-count">6</span>
-              <span class="site-state-item-name">分类</span>
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">分类</span>
               </a>
-          </div>
+            </div>
+          
 
-          <div class="site-state-item site-state-tags">
-            <a href="/tags">
-              <span class="site-state-item-count">14</span>
-              <span class="site-state-item-name">标签</span>
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">标签</span>
               </a>
-          </div>
+            </div>
+          
 
         </nav>
 
@@ -529,18 +571,20 @@
           
             
               <span class="links-of-author-item">
-                <a href="https://github.com/yinyizhixian" target="_blank">
+                <a href="https://github.com/yinyizhixian" target="_blank" title="GitHub">
                   
-                    <i class="fa fa-github"></i> GitHub
+                    <i class="fa fa-fw fa-github"></i>
                   
+                  GitHub
                 </a>
               </span>
             
               <span class="links-of-author-item">
-                <a href="https://twitter.com/TornadoFeitian" target="_blank">
+                <a href="https://twitter.com/TornadoFeitian" target="_blank" title="Twitter">
                   
-                    <i class="fa fa-twitter"></i> Twitter
+                    <i class="fa fa-fw fa-twitter"></i>
                   
+                  Twitter
                 </a>
               </span>
             
@@ -550,27 +594,20 @@
         
         
 
-        <div class="links-of-author motion-element">
-          
-        </div>
+        
+        
 
       </section>
 
       
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc-indicator-top post-toc-indicator">
-            <i class="fa fa-angle-double-up"></i>
-          </div>
           <div class="post-toc">
             
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure_u7684_u7279_u6B8A_u5F62_u5F0F"><span class="nav-number">1.</span> <span class="nav-text">Clojure的特殊形式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#u963B_u6B62_u6C42_u503C_3Aquote"><span class="nav-number">1.1.</span> <span class="nav-text">阻止求值:quote</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u4EE3_u7801_u5757_3Ado"><span class="nav-number">1.2.</span> <span class="nav-text">代码块:do</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B9A_u4E49var_3Adef"><span class="nav-number">1.3.</span> <span class="nav-text">定义var:def</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u672C_u5730_u7ED1_u5B9A_3Alet"><span class="nav-number">1.4.</span> <span class="nav-text">本地绑定:let</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5B9A_u4E49_u51FD_u6570_3Afn"><span class="nav-number">1.5.</span> <span class="nav-text">定义函数:fn</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u6761_u4EF6_u5224_u65AD_3Aif"><span class="nav-number">1.6.</span> <span class="nav-text">条件判断:if</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5FAA_u73AF_3Aloop__u548C_recur"><span class="nav-number">1.7.</span> <span class="nav-text">循环:loop 和 recur</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5F15_u7528var_3Avar"><span class="nav-number">1.8.</span> <span class="nav-text">引用var:var</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u548Cjava_u7684_u4E92_u64CD_u4F5C_3A-_u548Cnew"><span class="nav-number">1.9.</span> <span class="nav-text">和java的互操作:.和new</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u5F02_u5E38_u5904_u7406_3Atry_u548Cthrow"><span class="nav-number">1.10.</span> <span class="nav-text">异常处理:try和throw</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u72B6_u6001_u4FEE_u6539_3Aset_21"><span class="nav-number">1.11.</span> <span class="nav-text">状态修改:set!</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#u9501_u7684_u539F_u8BED_3Amonitor-enter_u548Cmonitor-exit"><span class="nav-number">1.12.</span> <span class="nav-text">锁的原语:monitor-enter和monitor-exit</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Clojure的特殊形式"><span class="nav-number">1.</span> <span class="nav-text">Clojure的特殊形式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#阻止求值-quote"><span class="nav-number">1.1.</span> <span class="nav-text">阻止求值:quote</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块-do"><span class="nav-number">1.2.</span> <span class="nav-text">代码块:do</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义var-def"><span class="nav-number">1.3.</span> <span class="nav-text">定义var:def</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#本地绑定-let"><span class="nav-number">1.4.</span> <span class="nav-text">本地绑定:let</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#定义函数-fn"><span class="nav-number">1.5.</span> <span class="nav-text">定义函数:fn</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#条件判断-if"><span class="nav-number">1.6.</span> <span class="nav-text">条件判断:if</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#循环-loop-和-recur"><span class="nav-number">1.7.</span> <span class="nav-text">循环:loop 和 recur</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引用var-var"><span class="nav-number">1.8.</span> <span class="nav-text">引用var:var</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#和java的互操作-和new"><span class="nav-number">1.9.</span> <span class="nav-text">和java的互操作:.和new</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#异常处理-try和throw"><span class="nav-number">1.10.</span> <span class="nav-text">异常处理:try和throw</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#状态修改-set"><span class="nav-number">1.11.</span> <span class="nav-text">状态修改:set!</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#锁的原语-monitor-enter和monitor-exit"><span class="nav-number">1.12.</span> <span class="nav-text">锁的原语:monitor-enter和monitor-exit</span></a></li></ol></li></ol></div>
             
-          </div>
-          <div class="post-toc-indicator-bottom post-toc-indicator">
-            <i class="fa fa-angle-double-down"></i>
           </div>
         </section>
       
@@ -590,10 +627,11 @@
   &copy; 
   <span itemprop="copyrightYear">2016</span>
   <span class="with-love">
-    <i class="icon-next-heart fa fa-heart"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Tornado</span>
 </div>
+
 <div class="powered-by">
   Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
@@ -605,229 +643,85 @@
   </a>
 </div>
 
+        
 
+        
       </div>
     </footer>
 
-    <div class="back-to-top"></div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
 
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
 
   
 
 
 
+  
   <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
+  
   <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
+  
   <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=0.5.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=0.5.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
 
 
 
   
   
-<script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
 
-<script type="text/javascript" id="sidebar.toc.highlight">
-  $(document).ready(function () {
-    var tocSelector = '.post-toc';
-    var $tocSelector = $(tocSelector);
-    var activeCurrentSelector = '.active-current';
 
-    $tocSelector
-      .on('activate.bs.scrollspy', function () {
-        var $currentActiveElement = $(tocSelector + ' .active').last();
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
 
-        removeCurrentActiveClass();
-        $currentActiveElement.addClass('active-current');
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
 
-        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
-      })
-      .on('clear.bs.scrollspy', function () {
-        removeCurrentActiveClass();
-      });
 
-    function removeCurrentActiveClass () {
-      $(tocSelector + ' ' + activeCurrentSelector)
-        .removeClass(activeCurrentSelector.substring(1));
-    }
 
-    function processTOC () {
-      getTOCMaxHeight();
-      toggleTOCOverflowIndicators();
-    }
-
-    function getTOCMaxHeight () {
-      var height = $('.sidebar').height() -
-                   $tocSelector.position().top -
-                   $('.post-toc-indicator-bottom').height();
-
-      $tocSelector.css('height', height);
-
-      return height;
-    }
-
-    function toggleTOCOverflowIndicators () {
-      tocOverflowIndicator(
-        '.post-toc-indicator-top',
-        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
-      );
-
-      tocOverflowIndicator(
-        '.post-toc-indicator-bottom',
-        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
-      )
-    }
-
-    $(document).on('sidebar.motion.complete', function () {
-      processTOC();
-    });
-
-    $('body').scrollspy({ target: tocSelector });
-    $(window).on('resize', function () {
-      if ( $('.sidebar').hasClass('sidebar-active') ) {
-        processTOC();
-      }
-    });
-
-    onScroll($tocSelector);
-
-    function onScroll (element) {
-      element.on('mousewheel DOMMouseScroll', function (event) {
-          var oe = event.originalEvent;
-          var delta = oe.wheelDelta || -oe.detail;
-
-          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
-          event.preventDefault();
-
-          toggleTOCOverflowIndicators();
-      });
-    }
-
-    function tocOverflowIndicator (indicator, action) {
-      var $indicator = $(indicator);
-      var opacity = action === 'show' ? 1 : 0;
-      $indicator.velocity ?
-        $indicator.velocity('stop').velocity({
-          opacity: opacity
-        }, { duration: 100 }) :
-        $indicator.stop().animate({
-          opacity: opacity
-        }, 100);
-    }
-
-    <!--add function-->
-    function setIframeHeight(iframe) {
-    if (iframe) {
-        var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
-        if (iframeWin.document.body) {
-            iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
-        }
-    }
-}
-
-  });
-</script>
-
-<script type="text/javascript" id="sidebar.nav">
-  $(document).ready(function () {
-    var html = $('html');
-    var TAB_ANIMATE_DURATION = 200;
-    var hasVelocity = $.isFunction(html.velocity);
-
-    $('.sidebar-nav li').on('click', function () {
-      var item = $(this);
-      var activeTabClassName = 'sidebar-nav-active';
-      var activePanelClassName = 'sidebar-panel-active';
-      if (item.hasClass(activeTabClassName)) {
-        return;
-      }
-
-      var currentTarget = $('.' + activePanelClassName);
-      var target = $('.' + item.data('target'));
-
-      hasVelocity ?
-        currentTarget.velocity('transition.slideUpOut', TAB_ANIMATE_DURATION, function () {
-          target
-            .velocity('stop')
-            .velocity('transition.slideDownIn', TAB_ANIMATE_DURATION)
-            .addClass(activePanelClassName);
-        }) :
-        currentTarget.animate({ opacity: 0 }, TAB_ANIMATE_DURATION, function () {
-          currentTarget.hide();
-          target
-            .stop()
-            .css({'opacity': 0, 'display': 'block'})
-            .animate({ opacity: 1 }, TAB_ANIMATE_DURATION, function () {
-              currentTarget.removeClass(activePanelClassName);
-              target.addClass(activePanelClassName);
-            });
-        });
-
-      item.siblings().removeClass(activeTabClassName);
-      item.addClass(activeTabClassName);
-    });
-
-    $('.post-toc a').on('click', function (e) {
-      e.preventDefault();
-      var targetSelector = NexT.utils.escapeSelector(this.getAttribute('href'));
-      var offset = $(targetSelector).offset().top;
-      hasVelocity ?
-        html.velocity('stop').velocity('scroll', {
-          offset: offset  + 'px',
-          mobileHA: false
-        }) :
-        $('html, body').stop().animate({
-          scrollTop: offset
-        }, 500);
-    });
-
-    // Expand sidebar on post detail page by default, when post has a toc.
-    NexT.motion.middleWares.sidebar = function () {
-      var $tocContent = $('.post-toc-content');
-
-      if (CONFIG.sidebar === 'post') {
-        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
-          NexT.utils.displaySidebar();
-        }
-      }
-    };
-  });
-</script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
 
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=0.5.0"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
 
 
 
@@ -840,7 +734,7 @@
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = '2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/';
-      var disqus_title = '[学习笔记]Clojure 学习日记 — 3进阶语法';
+      var disqus_title = 'Clojure 学习日记 — 3进阶语法';
       var disqus_url = 'http://blog.caiyuyu.net/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/';
 
       function run_disqus_script(disqus_script){
@@ -862,6 +756,136 @@
 
   
   
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').mousedown(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+  
   <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
       tex2jax: {
@@ -880,14 +904,9 @@
       }
     });
   </script>
-
-  
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/MathJax.js"></script>
-    <script type="text/javascript" src="http://cdn.staticfile.org/mathjax/2.5.0/config/TeX-AMS-MML_HTMLorMML.js"></script>
-  
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
 
-  
   
 
   
@@ -951,6 +970,12 @@
             });
           } else {
             var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
             newcounter.set("title", title);
             newcounter.set("url", url);
             newcounter.set("time", 1);
@@ -983,6 +1008,7 @@
 
 
 
+  
 
 </body>
 </html>
