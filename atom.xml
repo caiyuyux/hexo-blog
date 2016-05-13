@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-05-12T11:19:20.109Z</updated>
+  <updated>2016-05-12T17:08:09.370Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -19,8 +19,8 @@
     <title>实现一个带预览的Markdown编辑器</title>
     <link href="http://blog.caiyuyu.net/2016/05/11/2016-05-11-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5D%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%B8%A6%E9%A2%84%E8%A7%88%E7%9A%84Markdown%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     <id>http://blog.caiyuyu.net/2016/05/11/2016-05-11-[技术备忘]实现一个带预览的Markdown编辑器/</id>
-    <published>2016-05-10T17:02:31.000Z</published>
-    <updated>2016-05-12T11:19:20.109Z</updated>
+    <published>2016-05-10T16:00:00.000Z</published>
+    <updated>2016-05-12T17:08:09.370Z</updated>
     
     <content type="html">&lt;p&gt;在一个小项目需要实现到这个，虽然不是很难，但是没接触过相关知识的可能一头雾水，索性讲下，主要库的运用。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -59,8 +59,8 @@
     <title>乡村教师</title>
     <link href="http://blog.caiyuyu.net/2016/05/03/2016-05-03-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E4%B9%A1%E6%9D%91%E6%95%99%E5%B8%88/"/>
     <id>http://blog.caiyuyu.net/2016/05/03/2016-05-03-[阅读随笔]乡村教师/</id>
-    <published>2016-05-03T03:43:51.000Z</published>
-    <updated>2016-05-12T11:19:47.437Z</updated>
+    <published>2016-05-02T16:00:00.000Z</published>
+    <updated>2016-05-12T17:08:01.290Z</updated>
     
     <content type="html">&lt;p&gt;刘大的短篇，从来不知道在科幻的背景下“教师”一词可以表现得如此震撼人心。&lt;/p&gt;
 &lt;p&gt;怎么说呢？如果不是在科幻的大背景下，那这篇小说讲述的就是普普通通的、以赞颂教师蜡炬成灰精神的故事，但在这里，科幻的恢弘和细腻的人文相得益彰，从更高的位置、更高的文明层次来解读“教师”，你会被震撼到，我们从来没有意识到，我们的生命与文明竟如此的不可思议。&lt;/p&gt;
@@ -91,8 +91,8 @@
     <title>由极限定义证明收敛值</title>
     <link href="http://blog.caiyuyu.net/2016/05/01/2016-05-01-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E7%94%B1%E6%9E%81%E9%99%90%E5%AE%9A%E4%B9%89%E8%AF%81%E6%98%8E%E6%94%B6%E6%95%9B%E5%80%BC/"/>
     <id>http://blog.caiyuyu.net/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/</id>
-    <published>2016-05-01T03:22:10.000Z</published>
-    <updated>2016-05-12T14:20:12.743Z</updated>
+    <published>2016-04-30T16:00:00.000Z</published>
+    <updated>2016-05-12T17:07:52.306Z</updated>
     
     <content type="html">&lt;p&gt;有点虚，这个知识点确实比较偏，也不好做，只在课本见过，没办法，记下背下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;数列定义的极限证明&quot;&gt;&lt;a href=&quot;#数列定义的极限证明&quot; class=&quot;headerlink&quot; title=&quot;数列定义的极限证明&quot;&gt;&lt;/a&gt;数列定义的极限证明&lt;/h3&gt;&lt;p&gt;根据数列极限的定义证明 $\lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$&lt;/p&gt;
@@ -140,8 +140,8 @@
     <title>火影—15年完结纪念致我的雏田大小姐</title>
     <link href="http://blog.caiyuyu.net/2016/04/27/2016-04-27-%5B%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91%5D%E7%81%AB%E5%BD%B1%E2%80%9415%E5%B9%B4%E5%AE%8C%E7%BB%93%E7%BA%AA%E5%BF%B5%E8%87%B4%E6%88%91%E7%9A%84%E9%9B%8F%E7%94%B0%E5%A4%A7%E5%B0%8F%E5%A7%90/"/>
     <id>http://blog.caiyuyu.net/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/</id>
-    <published>2016-04-27T15:12:42.000Z</published>
-    <updated>2016-05-12T11:20:14.757Z</updated>
+    <published>2016-04-26T16:00:00.000Z</published>
+    <updated>2016-05-12T17:04:12.484Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  &lt;/p&gt;
@@ -178,8 +178,8 @@
     <title>单射、满射和双射</title>
     <link href="http://blog.caiyuyu.net/2016/04/23/2016-04-23-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E5%8D%95%E5%B0%84%E3%80%81%E6%BB%A1%E5%B0%84%E5%92%8C%E5%8F%8C%E5%B0%84/"/>
     <id>http://blog.caiyuyu.net/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/</id>
-    <published>2016-04-23T01:58:10.000Z</published>
-    <updated>2016-05-12T11:20:26.599Z</updated>
+    <published>2016-04-22T16:00:00.000Z</published>
+    <updated>2016-05-12T17:07:31.122Z</updated>
     
     <content type="html">&lt;p&gt;搞混了几次，稍作记录下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;p&gt;设$X、Y$是两个非空集合，如果存在一个法则$f$，使得对$X$中每个元素$x$，按法则$f$，在$Y$中有唯一确定的元素$y$与之对应，则称$f$为从$X$到$Y$的映射，记作: $f:X \to Y$&lt;/p&gt;
@@ -208,8 +208,8 @@
     <title>Ajax实现bootstrap-paginator的分页</title>
     <link href="http://blog.caiyuyu.net/2016/04/22/2016-04-22-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DAjax%E5%AE%9E%E7%8E%B0bootstrap-paginator%E7%9A%84%E5%88%86%E9%A1%B5/"/>
     <id>http://blog.caiyuyu.net/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/</id>
-    <published>2016-04-22T10:41:20.000Z</published>
-    <updated>2016-05-12T11:20:37.541Z</updated>
+    <published>2016-04-21T16:00:00.000Z</published>
+    <updated>2016-05-12T17:07:23.075Z</updated>
     
     <content type="html">&lt;p&gt;网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;什么是分页？&quot;&gt;&lt;a href=&quot;#什么是分页？&quot; class=&quot;headerlink&quot; title=&quot;什么是分页？&quot;&gt;&lt;/a&gt;什么是分页？&lt;/h3&gt;&lt;p&gt;这个就不废话了，分页分客户端分页和服务端分页，对于数据量比较大的情况，无疑是服务端分页优选，更快更便捷，本文讲的就是服务端分页，当然也可以做成客户端的效果，看你怎么实现。&lt;/p&gt;
@@ -253,8 +253,8 @@
     <title>第一次亲密接触</title>
     <link href="http://blog.caiyuyu.net/2016/02/11/2016-02-11-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BA%B2%E5%AF%86%E6%8E%A5%E8%A7%A6/"/>
     <id>http://blog.caiyuyu.net/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/</id>
-    <published>2016-02-11T15:46:42.000Z</published>
-    <updated>2016-05-12T11:20:50.916Z</updated>
+    <published>2016-02-10T16:00:00.000Z</published>
+    <updated>2016-05-12T17:07:13.873Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-02-11/第一次亲密接触.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;无论多么美好浪漫的假设都只是一个假言命题，只要前件不成立，后件就没有讨论的意义了。&lt;/p&gt;
@@ -297,8 +297,8 @@
     <title>Java中传值和传引用</title>
     <link href="http://blog.caiyuyu.net/2016/02/05/2016-02-05-%5B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%5DJava%E4%B8%AD%E4%BC%A0%E5%80%BC%E5%92%8C%E4%BC%A0%E5%BC%95%E7%94%A8/"/>
     <id>http://blog.caiyuyu.net/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/</id>
-    <published>2016-02-05T14:41:10.000Z</published>
-    <updated>2016-05-12T11:21:02.829Z</updated>
+    <published>2016-02-04T16:00:00.000Z</published>
+    <updated>2016-05-12T17:07:06.565Z</updated>
     
     <content type="html">&lt;p&gt;老虎老鼠，傻傻分不清楚。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;传值和传引用的概念在C++的时候确实是个问题，什么指针什么引用搞得很头疼；&lt;br&gt;Java还好，没有指针了。&lt;br&gt;Java的数据类型如下，先看下。&lt;br&gt;&lt;img src=&quot;/img/pics/2016-02-05/2011100711181651.jpg&quot; alt=&quot;down&quot;&gt;  &lt;/p&gt;
 &lt;h3 id=&quot;基础数据类型是传值&quot;&gt;&lt;a href=&quot;#基础数据类型是传值&quot; class=&quot;headerlink&quot; title=&quot;基础数据类型是传值&quot;&gt;&lt;/a&gt;基础数据类型是传值&lt;/h3&gt;&lt;p&gt;这个没什么可说的，看例子。&lt;br&gt;&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;Test&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        a = &lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;in Test function: a = &quot;&lt;/span&gt;+a);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;before Test function: a = &quot;&lt;/span&gt;+a);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        test(a);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;after Test function: a = &quot;&lt;/span&gt;+a);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//before Test function: a = 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//in Test function: a = 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//after Test function: a = 1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -370,8 +370,8 @@
     <title>Clojure 学习日记 — 3进阶语法</title>
     <link href="http://blog.caiyuyu.net/2016/01/30/2016-01-30-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%203%E8%BF%9B%E9%98%B6%E8%AF%AD%E6%B3%95/"/>
     <id>http://blog.caiyuyu.net/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/</id>
-    <published>2016-01-30T05:42:29.000Z</published>
-    <updated>2016-05-12T11:21:13.125Z</updated>
+    <published>2016-01-29T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:58.921Z</updated>
     
     <content type="html">&lt;p&gt;嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Clojure的特殊形式&quot;&gt;&lt;a href=&quot;#Clojure的特殊形式&quot; class=&quot;headerlink&quot; title=&quot;Clojure的特殊形式&quot;&gt;&lt;/a&gt;Clojure的特殊形式&lt;/h3&gt;&lt;p&gt;单纯的字面量是不可能成为一门语言的，伴随而来的还有一些特别的东西，类似控制语句、函数等。&lt;br&gt;clojure当然也有这些东西，我们称之为特殊形式，clojure的简洁高效灵活的一部分原因也归结于此。&lt;/p&gt;
@@ -429,8 +429,8 @@
     <title>Clojure 学习日记 — 2基础语法</title>
     <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%202%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/"/>
     <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/</id>
-    <published>2016-01-26T08:28:30.000Z</published>
-    <updated>2016-05-12T11:21:25.752Z</updated>
+    <published>2016-01-25T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:52.122Z</updated>
     
     <content type="html">&lt;p&gt;唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;字符串&quot;&gt;&lt;a href=&quot;#字符串&quot; class=&quot;headerlink&quot; title=&quot;字符串&quot;&gt;&lt;/a&gt;字符串&lt;/h3&gt;&lt;p&gt;跟java的字符串一样，不过天然支持多行。&lt;br&gt;&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&quot;hello there&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;;=&quot;hello there&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&quot;multiline strings&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;are very handy&quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;;=&quot;multiline strings\nare very handy&quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -470,8 +470,8 @@
     <title>Clojure 学习日记 — 1入门</title>
     <link href="http://blog.caiyuyu.net/2016/01/26/2016-01-26-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%201%E5%85%A5%E9%97%A8/"/>
     <id>http://blog.caiyuyu.net/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/</id>
-    <published>2016-01-26T08:25:01.000Z</published>
-    <updated>2016-05-12T11:21:37.061Z</updated>
+    <published>2016-01-25T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:43.499Z</updated>
     
     <content type="html">&lt;p&gt;这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -542,59 +542,11 @@
   </entry>
   
   <entry>
-    <title>Clojure 学习日记 — 0序言</title>
-    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
-    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/</id>
-    <published>2016-01-20T15:11:35.000Z</published>
-    <updated>2016-05-12T14:19:18.228Z</updated>
-    
-    <content type="html">&lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;lisp介绍&quot;&gt;&lt;a href=&quot;#lisp介绍&quot; class=&quot;headerlink&quot; title=&quot;lisp介绍&quot;&gt;&lt;/a&gt;lisp介绍&lt;/h3&gt;&lt;p&gt;说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  &lt;/p&gt;
-&lt;p&gt;lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，&lt;br&gt;而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 &lt;/p&gt;
-&lt;p&gt;现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，&lt;br&gt;到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来&lt;/li&gt;
-&lt;li&gt;lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了&lt;/li&gt;
-&lt;li&gt;lisp是一种研究型、实验室语言，应用不广，无法推广。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。&lt;br&gt;综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;clojure介绍&quot;&gt;&lt;a href=&quot;#clojure介绍&quot; class=&quot;headerlink&quot; title=&quot;clojure介绍&quot;&gt;&lt;/a&gt;clojure介绍&lt;/h3&gt;&lt;p&gt;虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。&lt;br&gt;2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  &lt;/li&gt;
-&lt;li&gt;可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  &lt;/li&gt;
-&lt;li&gt;clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  &lt;/li&gt;
-&lt;li&gt;clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;综上所述，clojure的这个坑我是掉定了，我也愿意！  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;关于本文&quot;&gt;&lt;a href=&quot;#关于本文&quot; class=&quot;headerlink&quot; title=&quot;关于本文&quot;&gt;&lt;/a&gt;关于本文&lt;/h3&gt;&lt;p&gt;2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，&lt;br&gt;索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
-    
-  </entry>
-  
-  <entry>
     <title>IDEA 下的 maven+git 开发</title>
     <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DIDEA%E4%B8%8B%E7%9A%84maven+git%E5%BC%80%E5%8F%91/"/>
     <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/</id>
-    <published>2016-01-20T04:23:11.000Z</published>
-    <updated>2016-05-12T11:21:58.169Z</updated>
+    <published>2016-01-19T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:19.763Z</updated>
     
     <content type="html">&lt;p&gt;不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;为什么要用maven？&quot;&gt;&lt;a href=&quot;#为什么要用maven？&quot; class=&quot;headerlink&quot; title=&quot;为什么要用maven？&quot;&gt;&lt;/a&gt;为什么要用maven？&lt;/h3&gt;&lt;p&gt;maven是一个项目管理工具，基于Java平台，主要用于项目构建，依赖管理等。&lt;br&gt;可以说在企业开发中这个是必不可少的，这样说可能有些空泛，给你们列点实际点的。  &lt;/p&gt;
@@ -665,11 +617,59 @@
   </entry>
   
   <entry>
+    <title>Clojure 学习日记 — 0序言</title>
+    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
+    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/</id>
+    <published>2016-01-19T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:30.595Z</updated>
+    
+    <content type="html">&lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;lisp介绍&quot;&gt;&lt;a href=&quot;#lisp介绍&quot; class=&quot;headerlink&quot; title=&quot;lisp介绍&quot;&gt;&lt;/a&gt;lisp介绍&lt;/h3&gt;&lt;p&gt;说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  &lt;/p&gt;
+&lt;p&gt;lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，&lt;br&gt;而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 &lt;/p&gt;
+&lt;p&gt;现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，&lt;br&gt;到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来&lt;/li&gt;
+&lt;li&gt;lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了&lt;/li&gt;
+&lt;li&gt;lisp是一种研究型、实验室语言，应用不广，无法推广。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。&lt;br&gt;综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;clojure介绍&quot;&gt;&lt;a href=&quot;#clojure介绍&quot; class=&quot;headerlink&quot; title=&quot;clojure介绍&quot;&gt;&lt;/a&gt;clojure介绍&lt;/h3&gt;&lt;p&gt;虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。&lt;br&gt;2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  &lt;/li&gt;
+&lt;li&gt;可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  &lt;/li&gt;
+&lt;li&gt;clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  &lt;/li&gt;
+&lt;li&gt;clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;综上所述，clojure的这个坑我是掉定了，我也愿意！  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;关于本文&quot;&gt;&lt;a href=&quot;#关于本文&quot; class=&quot;headerlink&quot; title=&quot;关于本文&quot;&gt;&lt;/a&gt;关于本文&lt;/h3&gt;&lt;p&gt;2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，&lt;br&gt;索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Windows下 Emacs+Markdown 的使用</title>
     <link href="http://blog.caiyuyu.net/2015/08/29/2015-08-27-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DWindows%E4%B8%8BEmacs+Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://blog.caiyuyu.net/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/</id>
-    <published>2015-08-29T05:23:22.000Z</published>
-    <updated>2016-05-12T11:22:09.254Z</updated>
+    <published>2015-08-28T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:06.803Z</updated>
     
     <content type="html">&lt;p&gt;emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;解决什么问题？&quot;&gt;&lt;a href=&quot;#解决什么问题？&quot; class=&quot;headerlink&quot; title=&quot;解决什么问题？&quot;&gt;&lt;/a&gt;解决什么问题？&lt;/h3&gt;&lt;p&gt;简单的来说，本文解决的是你在emacs下使用 &lt;code&gt;C+c C+c p&lt;/code&gt; 指令预览markdown文件发生的错误，类似如下。&lt;/p&gt;
@@ -747,8 +747,8 @@
     <title>Windows下 TortoiseGit+Coding 的使用</title>
     <link href="http://blog.caiyuyu.net/2015/07/15/2015-07-15-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DWindows%E4%B8%8BTortoiseGit+Coding%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/</id>
-    <published>2015-07-15T14:06:36.000Z</published>
-    <updated>2016-05-12T11:22:20.142Z</updated>
+    <published>2015-07-14T16:00:00.000Z</published>
+    <updated>2016-05-12T17:05:57.523Z</updated>
     
     <content type="html">&lt;p&gt;git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
