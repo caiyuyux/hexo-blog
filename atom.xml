@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-05-12T17:08:09.370Z</updated>
+  <updated>2016-05-14T10:44:11.285Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>活着</title>
+    <link href="http://blog.caiyuyu.net/2016/05/14/2016-05-14-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E6%B4%BB%E7%9D%80/"/>
+    <id>http://blog.caiyuyu.net/2016/05/14/2016-05-14-[阅读随笔]活着/</id>
+    <published>2016-05-13T16:00:00.000Z</published>
+    <updated>2016-05-14T10:44:11.285Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-05-14/download.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见可见一斑。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;这个故事围绕着主人公福贵展开，从少时的纨绔到败家后的各种艰辛，描绘了生活的各种无奈，不是什么特别新颖的题材，但是余华特有的表现手法将这一切刻画得很真实。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;人是为了活着本身而活着，而不是为了活着以外的任何事物而活着。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这句冷冰冰的话很经典，甚至上升到哲学的高度，我不懂，我只知道：哪怕最后所有人都死了只剩福贵一人他也选择活着，是一个无奈到极点的行为，他已经毫无牵挂，所以他可以如余华所言那般单纯的活法，反之则不同了。&lt;/p&gt;
+&lt;p&gt;在接凤霞回家时，福贵说过：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;就算全家都饿死也不送凤霞回去。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我看到这里的时候笑了，是呀，死有什么可怕的，怕的是冰冷到极致的绝情。&lt;/p&gt;
+&lt;p&gt;凤霞死了之后，家珍的反应吓了我一跳，没哭没喊，甚至没什么情绪反应，是一种哀莫大于心死的绝望；所幸，死前也想相通了，生活就是这么多苦难，一辈子也就这么过去了，该知足了，然后一个小小美好的期望：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下辈子还要一起过。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实我这本书里面有个片段感触挺大的，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;凤霞你不要忘记我是你爹&lt;br&gt;你也不要忘记我是凤霞。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;就好像是这种感觉：凤霞和福贵之间有条线连结，只要他们彼此不要忘记对方就依然存在，线在羁绊就在，生活于世，哪怕这个世界多么可怕，你也并不是一个人呀。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;img src=&quot;/img/pics/2016-05-14/download.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见可见一斑。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="阅读随笔" scheme="http://blog.caiyuyu.net/categories/%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="essay" scheme="http://blog.caiyuyu.net/tags/essay/"/>
+    
+  </entry>
   
   <entry>
     <title>实现一个带预览的Markdown编辑器</title>
@@ -141,9 +186,9 @@
     <link href="http://blog.caiyuyu.net/2016/04/27/2016-04-27-%5B%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91%5D%E7%81%AB%E5%BD%B1%E2%80%9415%E5%B9%B4%E5%AE%8C%E7%BB%93%E7%BA%AA%E5%BF%B5%E8%87%B4%E6%88%91%E7%9A%84%E9%9B%8F%E7%94%B0%E5%A4%A7%E5%B0%8F%E5%A7%90/"/>
     <id>http://blog.caiyuyu.net/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/</id>
     <published>2016-04-26T16:00:00.000Z</published>
-    <updated>2016-05-13T10:08:38.373Z</updated>
+    <updated>2016-05-13T11:26:41.715Z</updated>
     
-    <content type="html">&lt;p&gt;&lt;img src=&quot;http://blog.caiyuyu.net/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  &lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;所以呢？我还记得当时刚刚看火影时的震撼，在看的过程中也确实带给我很多收获和享受，但是时至今日，火影对我来说，更多的是一种情怀的味道，是对小学中学的一个回味，而雏田是我最喜欢一个人，我之所以称之为“人”而非“人物”，是因为我不愿意单单将其停留在火影这个世界里面。&lt;/p&gt;
@@ -153,7 +198,7 @@
 &lt;blockquote&gt;
 &lt;p&gt;终于等到你，还好我没放弃。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&quot;http://blog.caiyuyu.net/img/pics/2016-04-27/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pics/2016-04-27/1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=27836179&amp;type=2&amp;auto=1&amp;width=278&amp;height=32&quot; width=&quot;298&quot; height=&quot;52&quot; allownetworking=&quot;all&quot;&gt;
 
 
@@ -162,7 +207,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;http://blog.caiyuyu.net/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  &lt;/p&gt;
     
     </summary>
