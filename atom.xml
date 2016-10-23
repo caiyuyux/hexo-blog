@@ -137,19 +137,19 @@
     <link href="http://blog.caiyuyu.net/2016/05/01/2016-05-01-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E7%94%B1%E6%9E%81%E9%99%90%E5%AE%9A%E4%B9%89%E8%AF%81%E6%98%8E%E6%94%B6%E6%95%9B%E5%80%BC/"/>
     <id>http://blog.caiyuyu.net/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/</id>
     <published>2016-04-30T16:00:00.000Z</published>
-    <updated>2016-05-12T17:07:52.306Z</updated>
+    <updated>2016-07-03T14:37:02.680Z</updated>
     
-    <content type="html">&lt;p&gt;有点虚，这个知识点确实比较偏，也不好做，只在课本见过，没办法，记下背下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;最怕考定义的题，没办法，记下背下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;数列定义的极限证明&quot;&gt;&lt;a href=&quot;#数列定义的极限证明&quot; class=&quot;headerlink&quot; title=&quot;数列定义的极限证明&quot;&gt;&lt;/a&gt;数列定义的极限证明&lt;/h3&gt;&lt;p&gt;根据数列极限的定义证明 $\lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;证明&lt;/em&gt;：  &lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$$|X_ n-a|=|{3n+1 \over 2n+1}-{3 \over 2}|={1 \over 2(2n+1)}&amp;lt;{1 \over 4n} $$&lt;br&gt;$$要使|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt;  \varepsilon，  只要{1 \over 4n}&amp;lt;  \varepsilon$$&lt;br&gt;$$即n&amp;gt;{1 \over 4  \varepsilon}，所以 \forall \varepsilon &amp;gt;0，取N=[{1 \over 4 \varepsilon}]$$&lt;br&gt;$$当n&amp;gt;N 时$$&lt;br&gt;$$就有|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt; \varepsilon，即 \lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$$&lt;/p&gt;
+&lt;p&gt;$$|X_ n-a|=|{3n+1 \over 2n+1}-{3 \over 2}|={1 \over 2(2n+1)}&amp;lt;{1 \over 4n} $$&lt;br&gt;$$要使|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt;  \varepsilon，  只要{1 \over 4n}&amp;lt;  \varepsilon$$&lt;br&gt;$$即n&amp;gt;{1 \over 4  \varepsilon}，所以 \forall \varepsilon &amp;gt;0，取N=[{1 \over 4 \varepsilon}]$$&lt;br&gt;$$当n&amp;gt;N 时$$&lt;br&gt;$$|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt; \varepsilon，即 \lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;函数定义的极限证明&quot;&gt;&lt;a href=&quot;#函数定义的极限证明&quot; class=&quot;headerlink&quot; title=&quot;函数定义的极限证明&quot;&gt;&lt;/a&gt;函数定义的极限证明&lt;/h3&gt;&lt;p&gt;根据函数极限的定义证明 $\lim_{x \to 1}{2x-1}=1$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;证明&lt;/em&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$$|f(x)-A|=|(2x-1)-1|=2|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt;\varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta={\varepsilon \over 2}$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$使得|(2x-1)-1|&amp;lt;\varepsilon，即\lim_{x \to 1}{2x-1}=1$$&lt;/p&gt;
+&lt;p&gt;$$|f(x)-A|=|(2x-1)-1|=2|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt;\varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta={\varepsilon \over 2}$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$得|(2x-1)-1|&amp;lt;\varepsilon，即\lim_{x \to 1}{2x-1}=1$$&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;详细讲解与分析&quot;&gt;&lt;a href=&quot;#详细讲解与分析&quot; class=&quot;headerlink&quot; title=&quot;详细讲解与分析&quot;&gt;&lt;/a&gt;详细讲解与分析&lt;/h3&gt;&lt;p&gt;给出一道例题，根据函数极限的定义证明 $\lim_{x \to 1}{x^2-1 \over x-1}=2$&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;证明配讲解&lt;/em&gt;&lt;/p&gt;
@@ -159,10 +159,10 @@
 &lt;/blockquote&gt;
 &lt;p&gt;这里把公式化简一下，如果最后的公式比较复杂，出现平方、多个自变量或者常数项的情况，如上面第一题的${1 \over 2(2n+1)}$，就考虑把${1 \over 4n+2}$放缩成${1 \over 4n}$；&lt;/p&gt;
 &lt;p&gt;不放的话上面$N$就变成$N=[{1 \over 4\varepsilon}-{1 \over 2}]$，不好看嘛，不放缩也是可以的，而且这种定义证明题对于放缩的程度好像也没什么要求，不要太离谱了就行；&lt;/p&gt;
-&lt;p&gt;然后回来这道，这道不放缩，上面得出结果是$|x-1|$，在后面补上$&amp;lt; \varepsilon$，因为这里要确定是 $\varepsilon$的范围，有$0&amp;lt;|x-1|&amp;lt; \varepsilon$，所以直接确定范围，$\varepsilon&amp;gt;0$；&lt;/p&gt;
-&lt;p&gt;然后再得出一个中间变量 $\delta$(数列是N)，那$\delta$的值怎么确定呢？上面已经得出一个表达式，$|x-1|&amp;lt; \varepsilon$，不等号前面已经不可再化，所有直接 $\delta=\varepsilon$，如果是$2|x-1|&amp;lt;\varepsilon$，就需要取$\delta={\varepsilon \over 2}$，得到$|x-1|&amp;lt; \delta$。&lt;/p&gt;
+&lt;p&gt;然后回来这道，这道不放缩，上面得出结果是$|x-1|$，在后面补上$&amp;lt; \varepsilon$;&lt;/p&gt;
+&lt;p&gt;然后再确定一个中间变量 $\delta$(数列是N,需要作取整处理)，那$\delta$的值怎么确定呢？上面已经得出一个表达式，$|x-1|&amp;lt; \varepsilon$，不等号前面已经不可再化，所有直接 $\delta=\varepsilon$，如果是$2|x-1|&amp;lt;\varepsilon$，就需要取$\delta={\varepsilon \over 2}$，得到$|x-1|&amp;lt; \delta$。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt; \varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta= \varepsilon$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$使得|({x^2-1 \over x-1}-2)|&amp;lt; \varepsilon，即\lim_{x \to 1}{x^2-1 \over x-1}=2$$  &lt;/p&gt;
+&lt;p&gt;$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt; \varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta= \varepsilon$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$得|({x^2-1 \over x-1}-2)|&amp;lt; \varepsilon，即\lim_{x \to 1}{x^2-1 \over x-1}=2$$  &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;更新&quot;&gt;&lt;a href=&quot;#更新&quot; class=&quot;headerlink&quot; title=&quot;更新&quot;&gt;&lt;/a&gt;更新&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;2016/05/01&lt;/strong&gt;：首发。&lt;br&gt;&lt;strong&gt;2016/05/12&lt;/strong&gt;：回过头看了下，有些讲的不是很清楚，重新组织下。&lt;/p&gt;
 &lt;hr&gt;
@@ -170,7 +170,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;有点虚，这个知识点确实比较偏，也不好做，只在课本见过，没办法，记下背下。&lt;br&gt;
+      &lt;p&gt;最怕考定义的题，没办法，记下背下。&lt;br&gt;
     
     </summary>
     
@@ -587,6 +587,54 @@
   </entry>
   
   <entry>
+    <title>Clojure 学习日记 — 0序言</title>
+    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
+    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/</id>
+    <published>2016-01-19T16:00:00.000Z</published>
+    <updated>2016-05-12T17:06:30.595Z</updated>
+    
+    <content type="html">&lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;lisp介绍&quot;&gt;&lt;a href=&quot;#lisp介绍&quot; class=&quot;headerlink&quot; title=&quot;lisp介绍&quot;&gt;&lt;/a&gt;lisp介绍&lt;/h3&gt;&lt;p&gt;说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  &lt;/p&gt;
+&lt;p&gt;lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，&lt;br&gt;而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 &lt;/p&gt;
+&lt;p&gt;现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，&lt;br&gt;到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来&lt;/li&gt;
+&lt;li&gt;lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了&lt;/li&gt;
+&lt;li&gt;lisp是一种研究型、实验室语言，应用不广，无法推广。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。&lt;br&gt;综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;clojure介绍&quot;&gt;&lt;a href=&quot;#clojure介绍&quot; class=&quot;headerlink&quot; title=&quot;clojure介绍&quot;&gt;&lt;/a&gt;clojure介绍&lt;/h3&gt;&lt;p&gt;虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。&lt;br&gt;2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  &lt;/li&gt;
+&lt;li&gt;可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  &lt;/li&gt;
+&lt;li&gt;clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  &lt;/li&gt;
+&lt;li&gt;clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;综上所述，clojure的这个坑我是掉定了，我也愿意！  &lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;关于本文&quot;&gt;&lt;a href=&quot;#关于本文&quot; class=&quot;headerlink&quot; title=&quot;关于本文&quot;&gt;&lt;/a&gt;关于本文&lt;/h3&gt;&lt;p&gt;2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，&lt;br&gt;索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
+    
+  </entry>
+  
+  <entry>
     <title>IDEA 下的 maven+git 开发</title>
     <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DIDEA%E4%B8%8B%E7%9A%84maven+git%E5%BC%80%E5%8F%91/"/>
     <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/</id>
@@ -658,54 +706,6 @@
       <category term="IDEA" scheme="http://blog.caiyuyu.net/tags/IDEA/"/>
     
       <category term="maven" scheme="http://blog.caiyuyu.net/tags/maven/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Clojure 学习日记 — 0序言</title>
-    <link href="http://blog.caiyuyu.net/2016/01/20/2016-01-20-%5B%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%5DClojure%20%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%20%E2%80%94%200%E5%BA%8F%E8%A8%80/"/>
-    <id>http://blog.caiyuyu.net/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/</id>
-    <published>2016-01-19T16:00:00.000Z</published>
-    <updated>2016-05-12T17:06:30.595Z</updated>
-    
-    <content type="html">&lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;lisp介绍&quot;&gt;&lt;a href=&quot;#lisp介绍&quot; class=&quot;headerlink&quot; title=&quot;lisp介绍&quot;&gt;&lt;/a&gt;lisp介绍&lt;/h3&gt;&lt;p&gt;说起clojure可能没多少人知道，可能最多只知道她是一种函数式语言、lisp方言，类似common lisp，  &lt;/p&gt;
-&lt;p&gt;lisp的设计思想是公认的强大，有人甚至说当今最高级的主流语言，也只是刚刚接近1958年出生的Lisp所在的水平，&lt;br&gt;而且之后发展的语言都有借鉴部分的lisp的思想，像java、python、ruby等。 &lt;/p&gt;
-&lt;p&gt;现在lisp作为一种小众语种，知道的人少，学习的人更少了，这其中的曲曲折折、坑坑洼洼我也不是很了解，&lt;br&gt;到底是什么原因导致一个如此牛掰的语言沦落至此？原因总结如下(我是没资格说这种话的，参考大牛)  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;最最大的原因，生态圈有问题，因为她太太灵活了，你根本不可能制作出一款IDE来&lt;/li&gt;
-&lt;li&gt;lisp残缺不全，源码其实只写了一部分，但是就是这一部分包括宏定义这些就可以让常人仰望了&lt;/li&gt;
-&lt;li&gt;lisp是一种研究型、实验室语言，应用不广，无法推广。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在我大二的时候很迷恋lisp，看了一点语法，大概了解了lisp现状最后不得不不了了之，难是一部分原因，主要是你付出后得到的回报几乎微乎其微。&lt;br&gt;综合这些来看，其实现在有人学习lisp主要出于一种图腾崇拜思想去学习它，类似用emacs喝咖啡的感觉。  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;clojure介绍&quot;&gt;&lt;a href=&quot;#clojure介绍&quot; class=&quot;headerlink&quot; title=&quot;clojure介绍&quot;&gt;&lt;/a&gt;clojure介绍&lt;/h3&gt;&lt;p&gt;虽然lisp现在发展几乎停滞，但是取lisp精华，去其糟粕的变种语言如Scheme、clojure却一直在前进。&lt;br&gt;2015暑假，在我大三的这一年我美丽地邂逅了clojure，又重新燃起我对lisp的喜爱，clojure有很多优点，我只说我比较看重的几点。  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ol&gt;
-&lt;li&gt;基于jvm平台的lisp变种，弥补的lisp那可怕的生态圈又保持着lisp的灵活高效。  &lt;/li&gt;
-&lt;li&gt;可以被应用到企业上，据我所知clojure有一些优秀的web框架，如果学好clojure可能还能找的一个不错的工作。  &lt;/li&gt;
-&lt;li&gt;clojure+clojureScript几乎可以实现全栈，用一种语言实现全栈，想想该有多舒坦，而且还是这种简洁的语言。  &lt;/li&gt;
-&lt;li&gt;clojure的社区还是比较活跃的，在国内是有点冷淡，但是国外还是很热的，很多人在讨论她。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;综上所述，clojure的这个坑我是掉定了，我也愿意！  &lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;关于本文&quot;&gt;&lt;a href=&quot;#关于本文&quot; class=&quot;headerlink&quot; title=&quot;关于本文&quot;&gt;&lt;/a&gt;关于本文&lt;/h3&gt;&lt;p&gt;2015下半年断断续续的学了一点时间的clojure语法，但是只是囫囵吞枣，感觉什么都没学到，再加上学校课程也挺紧的，&lt;br&gt;索性推翻，重新学一遍，谨以本文做个记录，记录下心得，记录下我大clojure的成长之路。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;吼吼吼，clojure你别跑，我来了，啦啦啦！&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="学习笔记" scheme="http://blog.caiyuyu.net/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="clojure" scheme="http://blog.caiyuyu.net/tags/clojure/"/>
     
   </entry>
   

@@ -31,7 +31,7 @@
 
   
   
-  <link href="https://o76gsq892.qnssl.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-<link href="https://o76gsq892.qnssl.com/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="https://o76gsq892.qnssl.com/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="git," />
@@ -81,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://o76gsq892.qnssl.com/images/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://o76gsq892.qnssl.com/images/favicon.ico?v=5.0.2" />
 
 
 
@@ -132,16 +132,22 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
     }
   };
 </script>
 
+
+
+
+  <link rel="canonical" href="http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/"/>
+
+
   <title> Windows下 TortoiseGit+Coding 的使用 | Tornado' blog </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -171,7 +177,7 @@
   <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -203,8 +209,6 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
             首页
           </a>
         </li>
@@ -213,17 +217,21 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -233,9 +241,15 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            日程
           </a>
         </li>
       
@@ -243,19 +257,7 @@
         <li class="menu-item menu-item-guestbooks">
           <a href="/guestbooks" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
+            menu.guestbooks
           </a>
         </li>
       
@@ -263,10 +265,8 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="popup-trigger">
           
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
             搜索
           </a>
@@ -278,19 +278,12 @@
   
     <div class="site-search">
       
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
-</script>
-
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
 
 
     </div>
@@ -316,7 +309,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -327,9 +320,7 @@
             
             
               
-                
-                    [技术备忘]Windows下 TortoiseGit+Coding 的使用
-                  
+                Windows下 TortoiseGit+Coding 的使用
               
             
           </h1>
@@ -472,6 +463,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
     <div>
       
         
+
       
     </div>
 
@@ -566,7 +558,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
       
 
       <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
                alt="Tornado" />
@@ -676,11 +668,11 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
@@ -718,53 +710,53 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/post-details.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
 
 
 
@@ -777,7 +769,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = '2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/';
-      var disqus_title = 'Windows下 TortoiseGit+Coding 的使用';
+      var disqus_title = "Windows下 TortoiseGit+Coding 的使用";
       var disqus_url = 'http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/';
 
       function run_disqus_script(disqus_script){
@@ -790,10 +782,16 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
       run_disqus_script('count.js');
       
+        var disqus_config = function () {
+            this.page.url = disqus_url;
+            this.page.identifier = disqus_identifier;
+            this.page.title = disqus_title;
+        };
         run_disqus_script('embed.js');
       
     </script>
   
+
 
 
 
@@ -837,13 +835,13 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
             var $resultContent = document.getElementById(content_id);
             $input.addEventListener('input', function(){
                 var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
+                var str='<ul class=\"search-result-list\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length > 1) {
                 // perform local searching
                 datas.forEach(function(data) {
-                    var isMatch = true;
+                    var isMatch = false;
                     var content_index = [];
                     var data_title = data.title.trim().toLowerCase();
                     var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
@@ -852,20 +850,17 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
                     var index_content = -1;
                     var first_occur = -1;
                     // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
+                    if(data_title != '') {
                         keywords.forEach(function(keyword, i) {
                             index_title = data_title.indexOf(keyword);
                             index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
+                            if( index_title >= 0 || index_content >= 0 ){
+                                isMatch = true;
+								if (i == 0) {
                                     first_occur = index_content;
                                 }
-                            }
+                            } 
+							
                         });
                     }
                     // show search results
@@ -892,7 +887,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
                                 var regS = new RegExp(keyword, "gi");
                                 match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
                             });
-                            
+
                             str += "<p class=\"search-result\">" + match_content +"...</p>"
                         }
                         str += "</li>";
@@ -908,7 +903,7 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
     });}
 
     // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
+    $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
@@ -928,27 +923,8 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
     });
   </script>
 
+
   
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script>
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 
   
 
@@ -982,6 +958,14 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
           }
         })
         .fail(function (object, error) {
@@ -1052,6 +1036,9 @@ helper = store</code><br>这样就只要输入一次就会自动保存，不过�
 
 
   
+
+  
+
 
 </body>
 </html>

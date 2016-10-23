@@ -31,7 +31,7 @@
 
   
   
-  <link href="https://o76gsq892.qnssl.com/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -65,9 +65,9 @@
 
 
 
-<link href="https://o76gsq892.qnssl.com/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="https://o76gsq892.qnssl.com/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Tornado blog" />
@@ -81,7 +81,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://o76gsq892.qnssl.com/images/favicon.ico?v=5.0.1" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://o76gsq892.qnssl.com/images/favicon.ico?v=5.0.2" />
 
 
 
@@ -108,16 +108,22 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: '0',
       author: '博主'
     }
   };
 </script>
 
+
+
+
+  <link rel="canonical" href="http://blog.caiyuyu.net/"/>
+
+
   <title> Tornado' blog </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
 
   
 
@@ -149,7 +155,7 @@
  ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
       <div class="header-inner"><div class="site-meta ">
   
 
@@ -181,8 +187,6 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
             首页
           </a>
         </li>
@@ -191,17 +195,21 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+            关于
           </a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
           </a>
@@ -211,9 +219,15 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-schedule">
+          <a href="/schedule" rel="section">
+            
+            日程
           </a>
         </li>
       
@@ -221,19 +235,7 @@
         <li class="menu-item menu-item-guestbooks">
           <a href="/guestbooks" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            留言
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
+            menu.guestbooks
           </a>
         </li>
       
@@ -241,10 +243,8 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="javascript:;" class="popup-trigger">
           
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
             搜索
           </a>
@@ -256,19 +256,12 @@
   
     <div class="site-search">
       
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'sKD35EzS1yd6vbyx3_KV','2.0.0');
-</script>
-
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
 
 
     </div>
@@ -294,7 +287,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -307,9 +300,7 @@
               
                 
                 <a class="post-title-link" href="/2016/05/14/2016-05-14-[阅读随笔]活着/" itemprop="url">
-                  
-                    [阅读随笔]活着
-                  
+                  活着
                 </a>
               
             
@@ -389,7 +380,7 @@
           <p><img src="/img/pics/2016-05-14/download.png" alt=""></p>
 <p>那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/14/2016-05-14-[阅读随笔]活着/" rel="contents">
+            <a class="btn" href="/2016/05/14/2016-05-14-[阅读随笔]活着/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -428,7 +419,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -441,9 +432,7 @@
               
                 
                 <a class="post-title-link" href="/2016/05/11/2016-05-11-[技术备忘]实现一个带预览的Markdown编辑器/" itemprop="url">
-                  
-                    [技术备忘]实现一个带预览的Markdown编辑器
-                  
+                  实现一个带预览的Markdown编辑器
                 </a>
               
             
@@ -522,7 +511,7 @@
         
           <p>在一个小项目需要实现到这个，虽然不是很难，但是没接触过相关知识的可能一头雾水，索性讲下，主要库的运用。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/11/2016-05-11-[技术备忘]实现一个带预览的Markdown编辑器/" rel="contents">
+            <a class="btn" href="/2016/05/11/2016-05-11-[技术备忘]实现一个带预览的Markdown编辑器/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -561,7 +550,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -574,9 +563,7 @@
               
                 
                 <a class="post-title-link" href="/2016/05/03/2016-05-03-[阅读随笔]乡村教师/" itemprop="url">
-                  
-                    [阅读随笔]乡村教师
-                  
+                  乡村教师
                 </a>
               
             
@@ -656,7 +643,7 @@
           <p>刘大的短篇，从来不知道在科幻的背景下“教师”一词可以表现得如此震撼人心。</p>
 <p>怎么说呢？如果不是在科幻的大背景下，那这篇小说讲述的就是普普通通的、以赞颂教师蜡炬成灰精神的故事，但在这里，科幻的恢弘和细腻的人文相得益彰，从更高的位置、更高的文明层次来解读“教师”，你会被震撼到，我们从来没有意识到，我们的生命与文明竟如此的不可思议。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/03/2016-05-03-[阅读随笔]乡村教师/" rel="contents">
+            <a class="btn" href="/2016/05/03/2016-05-03-[阅读随笔]乡村教师/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -695,7 +682,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -708,9 +695,7 @@
               
                 
                 <a class="post-title-link" href="/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/" itemprop="url">
-                  
-                    [考研归纳]由极限定义证明收敛值
-                  
+                  由极限定义证明收敛值
                 </a>
               
             
@@ -787,9 +772,9 @@
 
       
         
-          <p>有点虚，这个知识点确实比较偏，也不好做，只在课本见过，没办法，记下背下。<br>
+          <p>最怕考定义的题，没办法，记下背下。<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/" rel="contents">
+            <a class="btn" href="/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -828,7 +813,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -841,9 +826,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/" itemprop="url">
-                  
-                    [二次元向]火影—15年完结纪念致我的雏田大小姐
-                  
+                  火影—15年完结纪念致我的雏田大小姐
                 </a>
               
             
@@ -923,7 +906,7 @@
           <p><img src="/img/pics/2016-04-27/3.png" alt=""></p>
 <p>我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  </p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/" rel="contents">
+            <a class="btn" href="/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -962,7 +945,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -975,9 +958,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/" itemprop="url">
-                  
-                    [考研归纳]单射、满射和双射
-                  
+                  单射、满射和双射
                 </a>
               
             
@@ -1056,7 +1037,7 @@
         
           <p>搞混了几次，稍作记录下。<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/" rel="contents">
+            <a class="btn" href="/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1095,7 +1076,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1108,9 +1089,7 @@
               
                 
                 <a class="post-title-link" href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" itemprop="url">
-                  
-                    [技术备忘]Ajax实现bootstrap-paginator的分页
-                  
+                  Ajax实现bootstrap-paginator的分页
                 </a>
               
             
@@ -1189,7 +1168,7 @@
         
           <p>网站开发实现分页是不可避免的，找到个bootstrap-paginator，最主要是挺漂亮的有木有？<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/" rel="contents">
+            <a class="btn" href="/2016/04/22/2016-04-22-[技术备忘]Ajax实现bootstrap-paginator的分页/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1228,7 +1207,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1241,9 +1220,7 @@
               
                 
                 <a class="post-title-link" href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" itemprop="url">
-                  
-                    [阅读随笔]第一次亲密接触
-                  
+                  第一次亲密接触
                 </a>
               
             
@@ -1323,7 +1300,7 @@
           <p><img src="/img/pics/2016-02-11/第一次亲密接触.png" alt=""></p>
 <p>无论多么美好浪漫的假设都只是一个假言命题，只要前件不成立，后件就没有讨论的意义了。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/" rel="contents">
+            <a class="btn" href="/2016/02/11/2016-02-11-[阅读随笔]第一次亲密接触/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1362,7 +1339,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1375,9 +1352,7 @@
               
                 
                 <a class="post-title-link" href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/" itemprop="url">
-                  
-                    [基础知识]Java中传值和传引用
-                  
+                  Java中传值和传引用
                 </a>
               
             
@@ -1456,7 +1431,7 @@
         
           <p>老虎老鼠，傻傻分不清楚。<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/" rel="contents">
+            <a class="btn" href="/2016/02/05/2016-02-05-[基础知识]Java中传值和传引用/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1495,7 +1470,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1508,9 +1483,7 @@
               
                 
                 <a class="post-title-link" href="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" itemprop="url">
-                  
-                    [学习笔记]Clojure 学习日记 — 3进阶语法
-                  
+                  Clojure 学习日记 — 3进阶语法
                 </a>
               
             
@@ -1589,7 +1562,7 @@
         
           <p>嗯，其实也是比较基础的语法，但是跟平时的语言不太一样，所以称之为进阶。<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/" rel="contents">
+            <a class="btn" href="/2016/01/30/2016-01-30-[学习笔记]Clojure 学习日记 — 3进阶语法/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1628,7 +1601,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1641,9 +1614,7 @@
               
                 
                 <a class="post-title-link" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" itemprop="url">
-                  
-                    [学习笔记]Clojure 学习日记 — 2基础语法
-                  
+                  Clojure 学习日记 — 2基础语法
                 </a>
               
             
@@ -1722,7 +1693,7 @@
         
           <p>唉，觉得有点啰嗦，废话太多，写着写着就变成了写博文，我是写笔记、写笔记。<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/" rel="contents">
+            <a class="btn" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 2基础语法/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1761,7 +1732,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -1774,9 +1745,7 @@
               
                 
                 <a class="post-title-link" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" itemprop="url">
-                  
-                    [学习笔记]Clojure 学习日记 — 1入门
-                  
+                  Clojure 学习日记 — 1入门
                 </a>
               
             
@@ -1855,7 +1824,7 @@
         
           <p>这个系列只是笔记，本非博文什么的，写给自己看，纯粹做个记录，里面的观点看法只是个人见解，仅作参考。</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/" rel="contents">
+            <a class="btn" href="/2016/01/26/2016-01-26-[学习笔记]Clojure 学习日记 — 1入门/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1894,140 +1863,7 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" itemprop="url">
-                  
-                    [技术备忘]IDEA 下的 maven+git 开发
-                  
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-20T00:00:00+08:00" content="2016-01-20">
-              2016-01-20
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
-                    <span itemprop="name">技术备忘</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" class="leancloud_visitors" data-flag-title="IDEA 下的 maven+git 开发">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -2040,9 +1876,7 @@
               
                 
                 <a class="post-title-link" href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/" itemprop="url">
-                  
-                    [学习笔记]Clojure 学习日记 — 0序言
-                  
+                  Clojure 学习日记 — 0序言
                 </a>
               
             
@@ -2121,7 +1955,7 @@
         
           <p>吼吼吼，clojure你别跑，我来了，啦啦啦！</p>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/" rel="contents">
+            <a class="btn" href="/2016/01/20/2016-01-20-[学习笔记]Clojure 学习日记 — 0序言/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2160,7 +1994,138 @@
   
   
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" itemprop="url">
+                  IDEA 下的 maven+git 开发
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-01-20T00:00:00+08:00" content="2016-01-20">
+              2016-01-20
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
+                    <span itemprop="name">技术备忘</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/" class="leancloud_visitors" data-flag-title="IDEA 下的 maven+git 开发">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>不错不错，有了maven开发就简单多了，不会出现那么多莫名其妙的结构。<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/01/20/2016-01-20-[技术备忘]IDEA下的maven+git开发/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -2173,9 +2138,7 @@
               
                 
                 <a class="post-title-link" href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" itemprop="url">
-                  
-                    [技术备忘]Windows下 Emacs+Markdown 的使用
-                  
+                  Windows下 Emacs+Markdown 的使用
                 </a>
               
             
@@ -2254,7 +2217,7 @@
         
           <p>emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？<br>
           <div class="post-more-link text-center">
-            <a class="btn" href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/" rel="contents">
+            <a class="btn" href="/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2319,7 +2282,7 @@
       
 
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
                alt="Tornado" />
@@ -2418,11 +2381,11 @@
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
-  Theme -
+  主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT.Pisces
   </a>
@@ -2460,49 +2423,49 @@
 
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/jquery/index.js?v=2.1.3"></script>
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/schemes/pisces.js?v=5.0.1"></script>
-
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
+
+
+
+  
   
 
 
-  <script type="text/javascript" src="https://o76gsq892.qnssl.com/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.2"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
 
 
 
@@ -2515,7 +2478,7 @@
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
       var disqus_identifier = 'index.html';
-      var disqus_title = '';
+      var disqus_title = "";
       var disqus_url = '';
 
       function run_disqus_script(disqus_script){
@@ -2530,6 +2493,7 @@
       
     </script>
   
+
 
 
 
@@ -2573,13 +2537,13 @@
             var $resultContent = document.getElementById(content_id);
             $input.addEventListener('input', function(){
                 var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';                
+                var str='<ul class=\"search-result-list\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length > 1) {
                 // perform local searching
                 datas.forEach(function(data) {
-                    var isMatch = true;
+                    var isMatch = false;
                     var content_index = [];
                     var data_title = data.title.trim().toLowerCase();
                     var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
@@ -2588,20 +2552,17 @@
                     var index_content = -1;
                     var first_occur = -1;
                     // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
+                    if(data_title != '') {
                         keywords.forEach(function(keyword, i) {
                             index_title = data_title.indexOf(keyword);
                             index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
+                            if( index_title >= 0 || index_content >= 0 ){
+                                isMatch = true;
+								if (i == 0) {
                                     first_occur = index_content;
                                 }
-                            }
+                            } 
+							
                         });
                     }
                     // show search results
@@ -2628,7 +2589,7 @@
                                 var regS = new RegExp(keyword, "gi");
                                 match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
                             });
-                            
+
                             str += "<p class=\"search-result\">" + match_content +"...</p>"
                         }
                         str += "</li>";
@@ -2644,7 +2605,7 @@
     });}
 
     // handle and trigger popup window;
-    $('.popup-trigger').mousedown(function(e) {
+    $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
@@ -2664,27 +2625,8 @@
     });
   </script>
 
+
   
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-  </script>
-
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-      var all = MathJax.Hub.getAllJax(), i;
-      for (i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-      }
-    });
-  </script>
-  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
 
   
 
@@ -2718,6 +2660,14 @@
             var element = document.getElementById(url);
 
             $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
           }
         })
         .fail(function (object, error) {
@@ -2788,6 +2738,9 @@
 
 
   
+
+  
+
 
 </body>
 </html>
