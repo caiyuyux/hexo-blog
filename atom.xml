@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-10-24T03:35:23.507Z</updated>
+  <updated>2016-10-24T08:13:33.077Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -16,9 +16,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>如何使用JavaScript调用Disqus API</title>
+    <link href="http://blog.caiyuyu.net/2016/10/24/2016-10-24-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5D%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8JavaScript%E8%B0%83%E7%94%A8Disqus%20API/"/>
+    <id>http://blog.caiyuyu.net/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/</id>
+    <published>2016-10-23T16:00:00.000Z</published>
+    <updated>2016-10-24T08:13:33.077Z</updated>
+    
+    <content type="html">&lt;p&gt;第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;Disqus-是什么？&quot;&gt;&lt;a href=&quot;#Disqus-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Disqus 是什么？&quot;&gt;&lt;/a&gt;Disqus 是什么？&lt;/h3&gt;&lt;p&gt;简而言之，Disqus就是一个评论系统，广泛应用于新闻媒体、博客等社交平台，提供评论的接口；好像网络有时不太好，需要科学上网，所以国外大多是用Disqus，国内类似的有多说、友言等，都差不多，在我看来，第三方评论系统的一个好处在于可以搭载在静态网站上来实现“动态”，这样是其广泛运用于个人博客的原因，在动态网站上你完全可以自己实现一个评论系统，但是如果在静态网站上&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="技术备忘" scheme="http://blog.caiyuyu.net/categories/%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="Disqus" scheme="http://blog.caiyuyu.net/tags/Disqus/"/>
+    
+      <category term="JavaScript" scheme="http://blog.caiyuyu.net/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>无题</title>
-    <link href="http://blog.caiyuyu.net/2016/10/24/2016-10-24-%5B%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91%5Dtest/"/>
-    <id>http://blog.caiyuyu.net/2016/10/24/2016-10-24-[二次元向]test/</id>
+    <link href="http://blog.caiyuyu.net/2016/10/24/2016-10-24-%5B%E4%B8%80%E5%8F%B6%E7%9F%A5%E7%A7%8B%5D%E6%97%A0%E9%A2%98/"/>
+    <id>http://blog.caiyuyu.net/2016/10/24/2016-10-24-[一叶知秋]无题/</id>
     <published>2016-10-23T16:00:00.000Z</published>
     <updated>2016-10-24T03:35:23.507Z</updated>
     

@@ -70,7 +70,7 @@
 <link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Tornado blog" />
+  <meta name="keywords" content="Disqus,JavaScript," />
 
 
 
@@ -88,22 +88,16 @@
 
 
 
-<meta name="description">
+<meta name="description" content="第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="无题">
-<meta property="og:url" content="http://blog.caiyuyu.net/2016/10/24/2016-10-24-[二次元向]test/index.html">
+<meta property="og:title" content="如何使用JavaScript调用Disqus API">
+<meta property="og:url" content="http://blog.caiyuyu.net/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/index.html">
 <meta property="og:site_name" content="Tornado's blog">
-<meta property="og:description">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/1.jpg">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/2.jpg">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/3.png">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/4.jpg">
-<meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/5.jpg">
-<meta property="og:updated_time" content="2016-10-24T03:35:23.507Z">
+<meta property="og:description" content="第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。">
+<meta property="og:updated_time" content="2016-10-24T08:13:33.077Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="无题">
-<meta name="twitter:description">
-<meta name="twitter:image" content="http://blog.caiyuyu.net/img/pics/2016-10-24/1.jpg">
+<meta name="twitter:title" content="如何使用JavaScript调用Disqus API">
+<meta name="twitter:description" content="第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。">
 
 
 
@@ -124,10 +118,10 @@
 
 
 
-  <link rel="canonical" href="http://blog.caiyuyu.net/2016/10/24/2016-10-24-[二次元向]test/"/>
+  <link rel="canonical" href="http://blog.caiyuyu.net/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/"/>
 
 
-  <title> 无题 | Tornado's blog </title>
+  <title> 如何使用JavaScript调用Disqus API | Tornado's blog </title>
 </head>
 
 <body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
@@ -284,8 +278,83 @@
   
   
 
-  <article class="post post-type-picture " itemscope itemtype="//schema.org/Article">
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何使用JavaScript调用Disqus API
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-24T00:00:00+08:00" content="2016-10-24">
+              2016-10-24
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术备忘/" itemprop="url" rel="index">
+                    <span itemprop="name">技术备忘</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/" class="leancloud_visitors" data-flag-title="如何使用JavaScript调用Disqus API">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
     
 
 
@@ -295,7 +364,10 @@
       
 
       
-        <div class="group-picture"><div class="group-picture-container"><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/img/pics/2016-10-24/1.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/img/pics/2016-10-24/2.jpg" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 100%;"><img src="/img/pics/2016-10-24/3.png" alt=""></div></div><div class="group-picture-row"><div class="group-picture-column" style="width: 50%;"><img src="/img/pics/2016-10-24/4.jpg" alt=""></div><div class="group-picture-column" style="width: 50%;"><img src="/img/pics/2016-10-24/5.jpg" alt=""></div></div></div></div>
+        <p>第三方评论系统存在的意义？绝对不是可以让开发者偷懒而存在的，虽然确实可以偷下懒，哈哈。</p>
+<a id="more"></a>
+<h3 id="Disqus-是什么？"><a href="#Disqus-是什么？" class="headerlink" title="Disqus 是什么？"></a>Disqus 是什么？</h3><p>简而言之，Disqus就是一个评论系统，广泛应用于新闻媒体、博客等社交平台，提供评论的接口；好像网络有时不太好，需要科学上网，所以国外大多是用Disqus，国内类似的有多说、友言等，都差不多，在我看来，第三方评论系统的一个好处在于可以搭载在静态网站上来实现“动态”，这样是其广泛运用于个人博客的原因，在动态网站上你完全可以自己实现一个评论系统，但是如果在静态网站上</p>
+
       
     </div>
 
@@ -315,7 +387,29 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/Disqus/" rel="tag">#Disqus</a>
+          
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+        </div>
+      
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/10/24/2016-10-24-[一叶知秋]无题/" rel="next" title="无题">
+                <i class="fa fa-chevron-left"></i> 无题
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
@@ -387,7 +481,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">15</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -404,7 +498,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -460,7 +554,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Disqus-是什么？"><span class="nav-number">1.</span> <span class="nav-text">Disqus 是什么？</span></a></li></ol></div>
             
           </div>
         </section>
@@ -587,9 +681,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'tornadosblog';
-      var disqus_identifier = '2016/10/24/2016-10-24-[二次元向]test/';
-      var disqus_title = "无题";
-      var disqus_url = 'http://blog.caiyuyu.net/2016/10/24/2016-10-24-[二次元向]test/';
+      var disqus_identifier = '2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/';
+      var disqus_title = "如何使用JavaScript调用Disqus API";
+      var disqus_url = 'http://blog.caiyuyu.net/2016/10/24/2016-10-24-[技术备忘]如何使用JavaScript调用Disqus API/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
