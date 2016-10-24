@@ -7,7 +7,7 @@
       <title><![CDATA[活着]]></title>
       <url>http://blog.caiyuyu.net/2016/05/14/2016-05-14-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E6%B4%BB%E7%9D%80/</url>
       <content type="html"><![CDATA[<p><img src="/img/pics/2016-05-14/download.png" alt=""></p>
-<p>那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。</p>
+<p>那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看这样的书，因为会觉得难受，看的时候一种生命的厚重感压得喘不过气来；余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。</p>
 <a id="more"></a>
 <p>这个故事围绕着主人公福贵展开，从少时的纨绔到败家后的各种艰辛，描绘了生活的各种无奈，不是什么特别新颖的题材，但是余华特有的表现手法将这一切刻画得很真实。</p>
 <blockquote>
@@ -38,10 +38,10 @@
 <a id="more"></a>
 <h2 id="什么是markdown"><a href="#什么是markdown" class="headerlink" title="什么是markdown"></a>什么是markdown</h2><p>好吧，大家可能都懂，我一笔带过，一种轻量级标记语言，使用特定格式的语法对文本进行处理从而产生特定格式，本文就是一个例子，好处是精于内容疏于排版，over！</p>
 <h2 id="需要导入的库"><a href="#需要导入的库" class="headerlink" title="需要导入的库"></a>需要导入的库</h2><h3 id="ace-builds"><a href="#ace-builds" class="headerlink" title="ace-builds"></a><a href="https://github.com/ajaxorg/ace-builds" target="_blank" rel="external">ace-builds</a></h3><p>这个是功能核心，有了这个你就可以将<code>textarea</code>转换成一个带格式的语法编辑器，类似的库有<code>CodeMirror</code>，这里不讨论。</p>
-<h3 id="marked"><a href="#marked" class="headerlink" title="marked"></a><a href="https://github.com/chjj/marked" target="_blank" rel="external">marked</a></h3><p>实现markdown的预览功能，但是不知道为什么，对于表格的格式和图片大小的处理有点问题，不过没事，写个css对总体样式稍微修饰下，美观不少，(注：这个是我在前人基础上改进的)。</p>
+<h3 id="marked"><a href="#marked" class="headerlink" title="marked"></a><a href="https://github.com/chjj/marked" target="_blank" rel="external">marked</a></h3><p>实现markdown的预览功能，但是不知道为什么，对于表格的格式和图片大小的处理有点问题，不过没事，写个css对总体样式稍微修饰下，美观不少。</p>
 <h3 id="highlight"><a href="#highlight" class="headerlink" title="highlight"></a><a href="https://highlightjs.org/" target="_blank" rel="external">highlight</a></h3><p>用marked解析的代码块是不包含语法高亮的，用这个实现，可以选择样式，我这里用的是<code>rainbow</code>。</p>
 <h3 id="bootstrap-markdown-editor"><a href="#bootstrap-markdown-editor" class="headerlink" title="bootstrap-markdown-editor"></a><a href="https://github.com/inacho/bootstrap-markdown-editor" target="_blank" rel="external">bootstrap-markdown-editor</a></h3><p>这个是界面框架，内置兼容<code>ace-builds</code>和<code>marked</code>，基于<code>bootstrap</code>。</p>
-<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap/css/bootstrap.min.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap/css/bootstrap-theme.min.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/bootstrap-markdown-editor.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/rainbow.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/css.css"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"editor"</span>&gt;</span>###title<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"bootstrap/js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/bootstrap-markdown-editor.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/ace-builds/src-noconflict/ace.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/marked.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/highlight.pack.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span><br><span class="line">    jQuery(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params">$</span>) </span>&#123;</span><br><span class="line">        $(<span class="string">'#editor'</span>).markdownEditor(&#123;</span><br><span class="line">            preview: <span class="literal">true</span>,</span><br><span class="line">            onPreview: <span class="function"><span class="keyword">function</span> (<span class="params">content, callback</span>) </span>&#123;</span><br><span class="line">                callback( marked(content) );</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>demo<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap/css/bootstrap.min.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"bootstrap/css/bootstrap-theme.min.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/bootstrap-markdown-editor.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/rainbow.css"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span> <span class="attr">href</span>=<span class="string">"css/css.css"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">textarea</span> <span class="attr">name</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"editor"</span>&gt;</span>###title<span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"bootstrap/js/bootstrap.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/bootstrap-markdown-editor.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/ace-builds/src-noconflict/ace.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/marked.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"js/highlight.pack.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span><br><span class="line">    jQuery(document).ready(function($) &#123;</span><br><span class="line">        $('#editor').markdownEditor(&#123;</span><br><span class="line">            preview: true,</span><br><span class="line">            onPreview: function (content, callback) &#123;</span><br><span class="line">                callback( marked(content) );</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;);</span><br><span class="line"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p><strong>注意</strong>:在<code>marked.min.js</code>中配置高亮</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">marked.defaults = &#123;</span><br><span class="line">    gfm: <span class="literal">true</span>,</span><br><span class="line">    tables: <span class="literal">true</span>,</span><br><span class="line">    breaks: <span class="literal">false</span>,</span><br><span class="line">    pedantic: <span class="literal">false</span>,</span><br><span class="line">    sanitize: <span class="literal">false</span>,</span><br><span class="line">    smartLists: <span class="literal">false</span>,</span><br><span class="line">    silent: <span class="literal">false</span>,</span><br><span class="line">    highlight: <span class="function"><span class="keyword">function</span> (<span class="params">code</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> hljs.highlightAuto(code).value;</span><br><span class="line">    &#125;,</span><br><span class="line">    langPrefix: <span class="string">"lang-"</span>,</span><br><span class="line">    smartypants: <span class="literal">false</span>,</span><br><span class="line">    headerPrefix: <span class="string">""</span>,</span><br><span class="line">    renderer: <span class="keyword">new</span> Renderer,</span><br><span class="line">    xhtml: <span class="literal">false</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><iframe style="width:100%; height:445px;" name="iFrame1" scrolling="no" src="http://yinyizhixian.github.io/bootstrap-markdown-demo/" frameborder="0"></iframe>
@@ -57,45 +57,13 @@
       <content type="html"><![CDATA[<p>刘大的短篇，从来不知道在科幻的背景下“教师”一词可以表现得如此震撼人心。</p>
 <p>怎么说呢？如果不是在科幻的大背景下，那这篇小说讲述的就是普普通通的、以赞颂教师蜡炬成灰精神的故事，但在这里，科幻的恢弘和细腻的人文相得益彰，从更高的位置、更高的文明层次来解读“教师”，你会被震撼到，我们从来没有意识到，我们的生命与文明竟如此的不可思议。</p>
 <a id="more"></a>
-<p>在地球一个偏远的小山村，故事拉开序幕，没有知识、没有文化带来精神的愚昧和意志的麻木，人理散失几近凭本能行事，眼光狭隘得看不见未来，只为单纯活下去却活得不像人，这样是很可怕的；而身为教师的李老师想的是尽最大的努力教育孩子，争取为这个小山村带来一点点的光明，孩子希望是有的，但是更可能的是，一直窝在山疙瘩里出不去，在周围人无时不刻的影响下泯灭了心中最后一缕烛光，是这样的，但是也不能不去做，总要有人去做的，不是你就是我，种子已经播下，埋在土里静静积蓄着力量，等着来年或者不知道多少年后的雨水的浇灌，总有破土而出的机会的；我想，李老师应该是这么想的，也这么做了，无愧于教师的身份。</p>
+<p>在地球一个偏远的小山村，故事拉开序幕，没有知识、没有文化带来精神的愚昧和意志的麻木，人理散失几近凭本能行事，眼光狭隘得看不见未来，只为单纯活下去却活得不像人，这样是很可怕的；而身为教师的李老师想的是尽最大的努力教育孩子，争取为这个小山村带来一点点的光明，孩子希望是有的，但是更可能的是，一直窝在山疙瘩里出不去，在周围人无时不刻的影响下泯灭了心中最后一缕烛光。</p>
+<p>是这样的，但是也不能不去做，总要有人去做的，不是你我就是他，种子已经播下，埋在土里静静积蓄着力量，等着来年或者不知道多少年后的雨水的浇灌，总有破土而出的机会的；我想，李老师应该是这么想的，也这么做了，无愧于教师的身份。</p>
 <p>终究，李老师离开了人世，而此时碳基文明与硅基文明持续两万年的星际交战进入尾声，联邦将建立一条五百光年宽的隔离带，摧毁隔离带中大部分恒星，不幸的是，银河系恰在此列，出于对生命的尊重，只能进行文明级别的甄别，放弃3C文明以下的区域，在奇点炸弹来临之际，小山村的18个孩子用牛三向宇宙证明了一个奇迹：</p>
 <blockquote>
 <p>一种以每秒1至10比特速率进行声波交流的物种<br>在没有任何外部高级文明培植的情况下创造了5B文明<br>有一种名为“教师”的个体，有一定数量，分布于种群的各个角落<br>在没有记忆遗传的基础上，在每代之间积累和传递知识，充当文明传承的媒介</p>
 </blockquote>
 <p>确实很伟大，这种伟大不仅是停留在一个民族一个星球，而是上升到宇宙文明的高度，来源于星际深处，他们肩负无可睥睨的使命，怀揣希望和梦想，奏响一曲来自太古时代的歌谣。</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[由极限定义证明收敛值]]></title>
-      <url>http://blog.caiyuyu.net/2016/05/01/2016-05-01-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E7%94%B1%E6%9E%81%E9%99%90%E5%AE%9A%E4%B9%89%E8%AF%81%E6%98%8E%E6%94%B6%E6%95%9B%E5%80%BC/</url>
-      <content type="html"><![CDATA[<p>最怕考定义的题，没办法，记下背下。<br><a id="more"></a></p>
-<h3 id="数列定义的极限证明"><a href="#数列定义的极限证明" class="headerlink" title="数列定义的极限证明"></a>数列定义的极限证明</h3><p>根据数列极限的定义证明 $\lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$</p>
-<p><em>证明</em>：  </p>
-<blockquote>
-<p>$$|X_ n-a|=|{3n+1 \over 2n+1}-{3 \over 2}|={1 \over 2(2n+1)}&lt;{1 \over 4n} $$<br>$$要使|{3n+1 \over 2n+1}-{3 \over 2}|&lt;  \varepsilon，  只要{1 \over 4n}&lt;  \varepsilon$$<br>$$即n&gt;{1 \over 4  \varepsilon}，所以 \forall \varepsilon &gt;0，取N=[{1 \over 4 \varepsilon}]$$<br>$$当n&gt;N 时$$<br>$$|{3n+1 \over 2n+1}-{3 \over 2}|&lt; \varepsilon，即 \lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$$</p>
-</blockquote>
-<hr>
-<h3 id="函数定义的极限证明"><a href="#函数定义的极限证明" class="headerlink" title="函数定义的极限证明"></a>函数定义的极限证明</h3><p>根据函数极限的定义证明 $\lim_{x \to 1}{2x-1}=1$</p>
-<p><em>证明</em></p>
-<blockquote>
-<p>$$|f(x)-A|=|(2x-1)-1|=2|x-1|$$<br>$$要使|f(x)-A|&lt;\varepsilon，即\forall \varepsilon &gt;0，取 \delta={\varepsilon \over 2}$$<br>$$当0&lt;|x-1|&lt; \delta 时$$<br>$$得|(2x-1)-1|&lt;\varepsilon，即\lim_{x \to 1}{2x-1}=1$$</p>
-</blockquote>
-<h3 id="详细讲解与分析"><a href="#详细讲解与分析" class="headerlink" title="详细讲解与分析"></a>详细讲解与分析</h3><p>给出一道例题，根据函数极限的定义证明 $\lim_{x \to 1}{x^2-1 \over x-1}=2$</p>
-<p><em>证明配讲解</em></p>
-<p>首先，看到这种题，直接先抄一遍，如果是数列写$|X_n-a|$，函数写$|f(x)-A|$，</p>
-<blockquote>
-<p>$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$  </p>
-</blockquote>
-<p>这里把公式化简一下，如果最后的公式比较复杂，出现平方、多个自变量或者常数项的情况，如上面第一题的${1 \over 2(2n+1)}$，就考虑把${1 \over 4n+2}$放缩成${1 \over 4n}$；</p>
-<p>不放的话上面$N$就变成$N=[{1 \over 4\varepsilon}-{1 \over 2}]$，不好看嘛，不放缩也是可以的，而且这种定义证明题对于放缩的程度好像也没什么要求，不要太离谱了就行；</p>
-<p>然后回来这道，这道不放缩，上面得出结果是$|x-1|$，在后面补上$&lt; \varepsilon$;</p>
-<p>然后再确定一个中间变量 $\delta$(数列是N,需要作取整处理)，那$\delta$的值怎么确定呢？上面已经得出一个表达式，$|x-1|&lt; \varepsilon$，不等号前面已经不可再化，所有直接 $\delta=\varepsilon$，如果是$2|x-1|&lt;\varepsilon$，就需要取$\delta={\varepsilon \over 2}$，得到$|x-1|&lt; \delta$。</p>
-<blockquote>
-<p>$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$<br>$$要使|f(x)-A|&lt; \varepsilon，即\forall \varepsilon &gt;0，取 \delta= \varepsilon$$<br>$$当0&lt;|x-1|&lt; \delta 时$$<br>$$得|({x^2-1 \over x-1}-2)|&lt; \varepsilon，即\lim_{x \to 1}{x^2-1 \over x-1}=2$$  </p>
-</blockquote>
-<h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p><strong>2016/05/01</strong>：首发。<br><strong>2016/05/12</strong>：回过头看了下，有些讲的不是很清楚，重新组织下。</p>
-<hr>
 ]]></content>
     </entry>
     
@@ -106,7 +74,7 @@
 <p>我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  </p>
 <a id="more"></a>
 <p>所以呢？我还记得当时刚刚看火影时的震撼，在看的过程中也确实带给我很多收获和享受，但是时至今日，火影对我来说，更多的是一种情怀的味道，是对小学中学的一个回味，而雏田是我最喜欢一个人，我之所以称之为“人”而非“人物”，是因为我不愿意单单将其停留在火影这个世界里面。</p>
-<p>雏田很可爱很可爱很可爱，重要的事情说三遍，雏田是个很柔弱、很容易害羞的小女生，动不动就脸红，手足无措的戳手指，然而她并不只是个花瓶，她是典型的外柔内刚，也有坚强的一面，执拗起来也会让你很头疼，哈，如果有这样的女生陪着会很轻松、很舒服。</p>
+<p>雏田很可爱很可爱很可爱，重要的事情说三遍，雏田是个很柔弱、很容易害羞的小女生，动不动就脸红，手足无措的戳手指，然而她并不只是个花瓶，她是典型的外柔内刚，也有坚强的一面，执拗起来也会让你很头疼。</p>
 <p>可惜，幸福的路上总是曲折的，雏田遇上了不解风情的鸣人，只能望着鸣人的背影，一直追逐着，也变得越来越坚强，但不够，雏田有了自己的想法，不满足于跟在喜欢的人的身后，她想与之肩并肩，很好，她成功了。</p>
 <p>鸣人是幸运的，因为有雏田一直等着他，雏田也是幸运的，因为她终于等来了鸣人的后知后觉；如果要用一句话来形容这段感情，那么我只能说：</p>
 <blockquote>
@@ -117,20 +85,6 @@
 
 
 
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[单射、满射和双射]]></title>
-      <url>http://blog.caiyuyu.net/2016/04/23/2016-04-23-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E5%8D%95%E5%B0%84%E3%80%81%E6%BB%A1%E5%B0%84%E5%92%8C%E5%8F%8C%E5%B0%84/</url>
-      <content type="html"><![CDATA[<p>搞混了几次，稍作记录下。<br><a id="more"></a></p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>设$X、Y$是两个非空集合，如果存在一个法则$f$，使得对$X$中每个元素$x$，按法则$f$，在$Y$中有唯一确定的元素$y$与之对应，则称$f$为从$X$到$Y$的映射，记作: $f:X \to Y$</p>
-<p>简单来说，有一点是需要注意的，就是$X$集合里面的原像一定要跟$Y$集合里面的像有关系对应，而$Y$中可以有“多余”的元素，即没有对应关系的。</p>
-<hr>
-<h3 id="映射的四种情况"><a href="#映射的四种情况" class="headerlink" title="映射的四种情况"></a>映射的四种情况</h3><p>基础概念清楚了，看下图就差不多了。  </p>
-<p>既单射且满射(双射)<br><img src="/img/pics/2016-04-23/1.svg.png" alt=""><br>单射非满射<br><img src="/img/pics/2016-04-23/2.svg.png" alt=""><br>满射非单射<br><img src="/img/pics/2016-04-23/3.svg.png" alt=""><br>非单射非满射<br><img src="/img/pics/2016-04-23/4.svg.png" alt=""></p>
-<hr>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" target="_blank" rel="external">维基百科</a>  </p>
 ]]></content>
     </entry>
     
@@ -472,8 +426,8 @@
 <li>使用python的Markdown包</li>
 <li>使用pandoc工具</li>
 </ul>
-<h3 id="使用python的markdown包"><a href="#使用python的markdown包" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><p>####搭建python环境<br>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
-<p>####下载Markdown包并安装<br>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
+<h3 id="使用python的markdown包"><a href="#使用python的markdown包" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><h4 id="搭建python环境"><a href="#搭建python环境" class="headerlink" title="搭建python环境"></a>搭建python环境</h4><p>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
+<h4 id="下载Markdown包并安装"><a href="#下载Markdown包并安装" class="headerlink" title="下载Markdown包并安装"></a>下载Markdown包并安装</h4><p>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
 <blockquote>
 <p>pip install markdown</p>
 </blockquote>
@@ -484,7 +438,7 @@
 </blockquote>
 <p><img src="/img/pics/2015-08-29/installMarkdown.png" alt="install"></p>
 <p>又是一大堆信息出来，个人觉得python这点很好，可以让我们很清楚的知道产生了那些文件。<br>我们可以看到在<code>Scripts</code>文件夹下产生了一个名为<code>markdown_py</code>的批处理文件。</p>
-<p>####修改markdown-mode.el<br>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
+<h4 id="修改markdown-mode-el"><a href="#修改markdown-mode-el" class="headerlink" title="修改markdown-mode.el"></a>修改markdown-mode.el</h4><p>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
 <p>打开<code>markdown-mode.el</code>文件，在800多行左右可以看到如下</p>
 <p><img src="/img/pics/2015-08-29/el.png" alt="el"></p>
 <p>将<code>markdown</code>改成<code>markdown_py</code></p>
@@ -498,16 +452,44 @@
 </blockquote>
 <p><img src="/img/pics/2015-08-29/t2.png" alt="t2"></p>
 <p>不过确实，在md文件加上这一句确实不太美观，所以我推荐第二种方法，更好更强大。</p>
-<p>###使用pandoc工具</p>
-<p>####下载pandoc并安装<br>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
+<h3 id="使用pandoc工具"><a href="#使用pandoc工具" class="headerlink" title="使用pandoc工具"></a>使用pandoc工具</h3><h4 id="下载pandoc并安装"><a href="#下载pandoc并安装" class="headerlink" title="下载pandoc并安装"></a>下载pandoc并安装</h4><p>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
 <p>pandoc可以解析markdown文件，但是它并不仅仅支持markdown的标记语法，还支持语法高亮和LaTex数学公式，可以把它当作markdown的拓展。</p>
 <p>以下是官网介绍，可以简单看一下。</p>
 <p><img src="/img/pics/2015-08-29/pandoc.png" alt="pandoc"></p>
-<p>####修改markdown-mode.el<br>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
+<h4 id="修改markdown-mode-el-1"><a href="#修改markdown-mode-el-1" class="headerlink" title="修改markdown-mode.el"></a>修改markdown-mode.el</h4><p>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
 <p>打开<code>markdown-mode.el</code>，还是刚才那个位置</p>
 <p><img src="/img/pics/2015-08-29/el.png" alt=""></p>
 <p><code>pandoc</code>的命令选项如下</p>
-<p>||选项||描述|||<br>||<code>-f html</code>||转换成html文件||<br>||<code>-t markdown</code>||解析markdown||<br>||<code>--ascii</code>||解决中文乱码||<br>||<code>--highlight-style pygments</code>||支持语法高亮||<br>||<code>--mathjax</code>||支持 LaTex数学公式||</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-f html</code></td>
+<td>转换成html文件</td>
+</tr>
+<tr>
+<td><code>-t markdown</code></td>
+<td>解析markdown</td>
+</tr>
+<tr>
+<td><code>--ascii</code></td>
+<td>解决中文乱码</td>
+</tr>
+<tr>
+<td><code>--highlight-style pygments</code></td>
+<td>支持语法高亮</td>
+</tr>
+<tr>
+<td><code>--mathjax</code></td>
+<td>支持 LaTex数学公式</td>
+</tr>
+</tbody>
+</table>
 <p>一股脑都加进去吧，将<code>markdown</code>修改为如下</p>
 <blockquote>
 <p><code>pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax</code></p>
@@ -529,7 +511,7 @@
 <p><code>2.Git支持的代码托管平台比较多</code><br>好像开源中国的Git@OSC支持svn，这点不确定，没用过，这也从侧面反映了svn的托管平台确实少。<br>git的就多了,基本上有名的托管平台都是支持的。<br>像大名鼎鼎的<code>gitHub</code>,支持无限的公有项目和私有项目<code>gitlab</code>,还有国内速度极快的<code>coding</code>等等，这个很多，有兴趣可以自己找下。</p>
 <p>据说git可是Linus用C耗费两周写出来的，各种狂霸酷炫拽有木有，<br>具体教程可以参考<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的教程</a>，写得很不错。</p>
 <h3 id="下载及安装所需工具"><a href="#下载及安装所需工具" class="headerlink" title="下载及安装所需工具"></a>下载及安装所需工具</h3><h4 id="下载git-for-windows"><a href="#下载git-for-windows" class="headerlink" title="下载git for windows"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">git for windows</a></h4><p>进入git的官网,选择windows版本下载，</p>
-<p><img src="/img/pics/2015-07-15/gitdown.png" alt="git"></p>
+<p><img src="/img/pics/2015-07-15/gitDown.png" alt="git"></p>
 <p><img src="/img/pics/2015-07-15/gitDown2.png" alt="git"></p>
 <h4 id="下载TortoiseGit"><a href="#下载TortoiseGit" class="headerlink" title="下载TortoiseGit"></a>下载<a href="http://git-scm.com/download/" target="_blank" rel="external">TortoiseGit</a></h4><p>习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。<br>选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。</p>
 <p><img src="/img/pics/2015-07-15/TortoiseGit.png" alt="tortoiseGit"></p>

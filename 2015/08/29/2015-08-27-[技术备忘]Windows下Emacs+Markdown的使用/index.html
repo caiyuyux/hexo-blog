@@ -103,7 +103,7 @@
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/pandoc.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/el.png">
 <meta property="og:image" content="http://blog.caiyuyu.net/img/pics/2015-08-29/well.png">
-<meta property="og:updated_time" content="2016-05-12T17:06:06.803Z">
+<meta property="og:updated_time" content="2016-10-24T00:20:14.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows下 Emacs+Markdown 的使用">
 <meta name="twitter:description" content="emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？">
@@ -386,8 +386,8 @@
 <li>使用python的Markdown包</li>
 <li>使用pandoc工具</li>
 </ul>
-<h3 id="使用python的markdown包"><a href="#使用python的markdown包" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><p>####搭建python环境<br>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
-<p>####下载Markdown包并安装<br>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
+<h3 id="使用python的markdown包"><a href="#使用python的markdown包" class="headerlink" title="使用python的markdown包"></a>使用python的markdown包</h3><h4 id="搭建python环境"><a href="#搭建python环境" class="headerlink" title="搭建python环境"></a>搭建python环境</h4><p>下载python (<a href="https://www.python.org" target="_blank" rel="external">https://www.python.org</a>)<br>然后安装，这个简单，就不用我说了，无脑操作。</p>
+<h4 id="下载Markdown包并安装"><a href="#下载Markdown包并安装" class="headerlink" title="下载Markdown包并安装"></a>下载Markdown包并安装</h4><p>打开<code>cmd</code>，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。</p>
 <blockquote>
 <p>pip install markdown</p>
 </blockquote>
@@ -398,7 +398,7 @@
 </blockquote>
 <p><img src="/img/pics/2015-08-29/installMarkdown.png" alt="install"></p>
 <p>又是一大堆信息出来，个人觉得python这点很好，可以让我们很清楚的知道产生了那些文件。<br>我们可以看到在<code>Scripts</code>文件夹下产生了一个名为<code>markdown_py</code>的批处理文件。</p>
-<p>####修改markdown-mode.el<br>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
+<h4 id="修改markdown-mode-el"><a href="#修改markdown-mode-el" class="headerlink" title="修改markdown-mode.el"></a>修改markdown-mode.el</h4><p>我们生成的批处理文件名是<code>markdown_py</code>，但是<code>markdown-mode.el</code>里面默认的指令名是<code>markdown</code>,所以需要修改下。</p>
 <p>打开<code>markdown-mode.el</code>文件，在800多行左右可以看到如下</p>
 <p><img src="/img/pics/2015-08-29/el.png" alt="el"></p>
 <p>将<code>markdown</code>改成<code>markdown_py</code></p>
@@ -412,16 +412,44 @@
 </blockquote>
 <p><img src="/img/pics/2015-08-29/t2.png" alt="t2"></p>
 <p>不过确实，在md文件加上这一句确实不太美观，所以我推荐第二种方法，更好更强大。</p>
-<p>###使用pandoc工具</p>
-<p>####下载pandoc并安装<br>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
+<h3 id="使用pandoc工具"><a href="#使用pandoc工具" class="headerlink" title="使用pandoc工具"></a>使用pandoc工具</h3><h4 id="下载pandoc并安装"><a href="#下载pandoc并安装" class="headerlink" title="下载pandoc并安装"></a>下载pandoc并安装</h4><p>下载pandoc (<a href="http://www.pandoc.org" target="_blank" rel="external">http://www.pandoc.org</a>)，选择windows版本，然后安装。</p>
 <p>pandoc可以解析markdown文件，但是它并不仅仅支持markdown的标记语法，还支持语法高亮和LaTex数学公式，可以把它当作markdown的拓展。</p>
 <p>以下是官网介绍，可以简单看一下。</p>
 <p><img src="/img/pics/2015-08-29/pandoc.png" alt="pandoc"></p>
-<p>####修改markdown-mode.el<br>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
+<h4 id="修改markdown-mode-el-1"><a href="#修改markdown-mode-el-1" class="headerlink" title="修改markdown-mode.el"></a>修改markdown-mode.el</h4><p>安装完pandoc后，环境变量会多出一个<code>pandoc</code>的指令，</p>
 <p>打开<code>markdown-mode.el</code>，还是刚才那个位置</p>
 <p><img src="/img/pics/2015-08-29/el.png" alt=""></p>
 <p><code>pandoc</code>的命令选项如下</p>
-<p>||选项||描述|||<br>||<code>-f html</code>||转换成html文件||<br>||<code>-t markdown</code>||解析markdown||<br>||<code>--ascii</code>||解决中文乱码||<br>||<code>--highlight-style pygments</code>||支持语法高亮||<br>||<code>--mathjax</code>||支持 LaTex数学公式||</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-f html</code></td>
+<td>转换成html文件</td>
+</tr>
+<tr>
+<td><code>-t markdown</code></td>
+<td>解析markdown</td>
+</tr>
+<tr>
+<td><code>--ascii</code></td>
+<td>解决中文乱码</td>
+</tr>
+<tr>
+<td><code>--highlight-style pygments</code></td>
+<td>支持语法高亮</td>
+</tr>
+<tr>
+<td><code>--mathjax</code></td>
+<td>支持 LaTex数学公式</td>
+</tr>
+</tbody>
+</table>
 <p>一股脑都加进去吧，将<code>markdown</code>修改为如下</p>
 <blockquote>
 <p><code>pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax</code></p>
@@ -547,7 +575,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">16</span>
+              <span class="site-state-item-count">14</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -620,7 +648,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决什么问题？"><span class="nav-number">1.</span> <span class="nav-text">解决什么问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用python的markdown包"><span class="nav-number">2.</span> <span class="nav-text">使用python的markdown包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决什么问题？"><span class="nav-number">1.</span> <span class="nav-text">解决什么问题？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用python的markdown包"><span class="nav-number">2.</span> <span class="nav-text">使用python的markdown包</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#搭建python环境"><span class="nav-number">2.1.</span> <span class="nav-text">搭建python环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#下载Markdown包并安装"><span class="nav-number">2.2.</span> <span class="nav-text">下载Markdown包并安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改markdown-mode-el"><span class="nav-number">2.3.</span> <span class="nav-text">修改markdown-mode.el</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用pandoc工具"><span class="nav-number">3.</span> <span class="nav-text">使用pandoc工具</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#下载pandoc并安装"><span class="nav-number">3.1.</span> <span class="nav-text">下载pandoc并安装</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改markdown-mode-el-1"><span class="nav-number">3.2.</span> <span class="nav-text">修改markdown-mode.el</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
           </div>
         </section>

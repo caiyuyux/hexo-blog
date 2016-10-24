@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.caiyuyu.net/"/>
-  <updated>2016-05-15T13:45:52.526Z</updated>
+  <updated>2016-10-24T00:05:53.796Z</updated>
   <id>http://blog.caiyuyu.net/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://blog.caiyuyu.net/2016/05/14/2016-05-14-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E6%B4%BB%E7%9D%80/"/>
     <id>http://blog.caiyuyu.net/2016/05/14/2016-05-14-[阅读随笔]活着/</id>
     <published>2016-05-13T16:00:00.000Z</published>
-    <updated>2016-05-15T13:45:52.526Z</updated>
+    <updated>2016-10-24T00:05:53.796Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-05-14/download.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。&lt;/p&gt;
+&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看这样的书，因为会觉得难受，看的时候一种生命的厚重感压得喘不过气来；余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;这个故事围绕着主人公福贵展开，从少时的纨绔到败家后的各种艰辛，描绘了生活的各种无奈，不是什么特别新颖的题材，但是余华特有的表现手法将这一切刻画得很真实。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -49,7 +49,7 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;/img/pics/2016-05-14/download.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看看这样的书，因为会觉得难受，一种生命的厚重感压得喘不过气来，余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。&lt;/p&gt;
+&lt;p&gt;那个给我推荐这本书的你过来，我保证不打死你。是真的，不喜欢看这样的书，因为会觉得难受，看的时候一种生命的厚重感压得喘不过气来；余华这个人是很厉害的，在莫言获奖前很多人都说他很可能第一个获得诺贝尔文学奖，由此可见一斑。&lt;/p&gt;
     
     </summary>
     
@@ -65,16 +65,16 @@
     <link href="http://blog.caiyuyu.net/2016/05/11/2016-05-11-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5D%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%B8%A6%E9%A2%84%E8%A7%88%E7%9A%84Markdown%E7%BC%96%E8%BE%91%E5%99%A8/"/>
     <id>http://blog.caiyuyu.net/2016/05/11/2016-05-11-[技术备忘]实现一个带预览的Markdown编辑器/</id>
     <published>2016-05-10T16:00:00.000Z</published>
-    <updated>2016-05-12T17:08:09.370Z</updated>
+    <updated>2016-10-24T00:07:18.971Z</updated>
     
     <content type="html">&lt;p&gt;在一个小项目需要实现到这个，虽然不是很难，但是没接触过相关知识的可能一头雾水，索性讲下，主要库的运用。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;什么是markdown&quot;&gt;&lt;a href=&quot;#什么是markdown&quot; class=&quot;headerlink&quot; title=&quot;什么是markdown&quot;&gt;&lt;/a&gt;什么是markdown&lt;/h2&gt;&lt;p&gt;好吧，大家可能都懂，我一笔带过，一种轻量级标记语言，使用特定格式的语法对文本进行处理从而产生特定格式，本文就是一个例子，好处是精于内容疏于排版，over！&lt;/p&gt;
 &lt;h2 id=&quot;需要导入的库&quot;&gt;&lt;a href=&quot;#需要导入的库&quot; class=&quot;headerlink&quot; title=&quot;需要导入的库&quot;&gt;&lt;/a&gt;需要导入的库&lt;/h2&gt;&lt;h3 id=&quot;ace-builds&quot;&gt;&lt;a href=&quot;#ace-builds&quot; class=&quot;headerlink&quot; title=&quot;ace-builds&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/ajaxorg/ace-builds&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ace-builds&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这个是功能核心，有了这个你就可以将&lt;code&gt;textarea&lt;/code&gt;转换成一个带格式的语法编辑器，类似的库有&lt;code&gt;CodeMirror&lt;/code&gt;，这里不讨论。&lt;/p&gt;
-&lt;h3 id=&quot;marked&quot;&gt;&lt;a href=&quot;#marked&quot; class=&quot;headerlink&quot; title=&quot;marked&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/chjj/marked&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;marked&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;实现markdown的预览功能，但是不知道为什么，对于表格的格式和图片大小的处理有点问题，不过没事，写个css对总体样式稍微修饰下，美观不少，(注：这个是我在前人基础上改进的)。&lt;/p&gt;
+&lt;h3 id=&quot;marked&quot;&gt;&lt;a href=&quot;#marked&quot; class=&quot;headerlink&quot; title=&quot;marked&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/chjj/marked&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;marked&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;实现markdown的预览功能，但是不知道为什么，对于表格的格式和图片大小的处理有点问题，不过没事，写个css对总体样式稍微修饰下，美观不少。&lt;/p&gt;
 &lt;h3 id=&quot;highlight&quot;&gt;&lt;a href=&quot;#highlight&quot; class=&quot;headerlink&quot; title=&quot;highlight&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://highlightjs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;highlight&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;用marked解析的代码块是不包含语法高亮的，用这个实现，可以选择样式，我这里用的是&lt;code&gt;rainbow&lt;/code&gt;。&lt;/p&gt;
 &lt;h3 id=&quot;bootstrap-markdown-editor&quot;&gt;&lt;a href=&quot;#bootstrap-markdown-editor&quot; class=&quot;headerlink&quot; title=&quot;bootstrap-markdown-editor&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://github.com/inacho/bootstrap-markdown-editor&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;bootstrap-markdown-editor&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;这个是界面框架，内置兼容&lt;code&gt;ace-builds&lt;/code&gt;和&lt;code&gt;marked&lt;/code&gt;，基于&lt;code&gt;bootstrap&lt;/code&gt;。&lt;/p&gt;
-&lt;h2 id=&quot;示例代码&quot;&gt;&lt;a href=&quot;#示例代码&quot; class=&quot;headerlink&quot; title=&quot;示例代码&quot;&gt;&lt;/a&gt;示例代码&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;demo&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/css/bootstrap.min.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/css/bootstrap-theme.min.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/bootstrap-markdown-editor.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/rainbow.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/css.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;container&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;editor&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;###title&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/jquery.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/js/bootstrap.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/bootstrap-markdown-editor.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/ace-builds/src-noconflict/ace.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/marked.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/highlight.pack.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;javascript&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    jQuery(&lt;span class=&quot;built_in&quot;&gt;document&lt;/span&gt;).ready(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;$&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $(&lt;span class=&quot;string&quot;&gt;&#39;#editor&#39;&lt;/span&gt;).markdownEditor(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            preview: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            onPreview: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;content, callback&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                callback( marked(content) );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;示例代码&quot;&gt;&lt;a href=&quot;#示例代码&quot; class=&quot;headerlink&quot; title=&quot;示例代码&quot;&gt;&lt;/a&gt;示例代码&lt;/h2&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;lang&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;en&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;meta&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;charset&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;UTF-8&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;demo&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/css/bootstrap.min.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/css/bootstrap-theme.min.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/bootstrap-markdown-editor.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/rainbow.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rel&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;css/css.css&quot;&lt;/span&gt;/&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;class&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;container&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;id&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;editor&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;###title&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/jquery.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;bootstrap/js/bootstrap.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/bootstrap-markdown-editor.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/ace-builds/src-noconflict/ace.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/marked.min.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;js/highlight.pack.js&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;undefined&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    jQuery(document).ready(function($) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        $(&#39;#editor&#39;).markdownEditor(&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            preview: true,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            onPreview: function (content, callback) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                callback( marked(content) );&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;:在&lt;code&gt;marked.min.js&lt;/code&gt;中配置高亮&lt;/p&gt;
 &lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;marked.defaults = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    gfm: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    tables: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    breaks: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    pedantic: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    sanitize: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    smartLists: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    silent: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    highlight: &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;code&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; hljs.highlightAuto(code).value;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    langPrefix: &lt;span class=&quot;string&quot;&gt;&quot;lang-&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    smartypants: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    headerPrefix: &lt;span class=&quot;string&quot;&gt;&quot;&quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    renderer: &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; Renderer,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    xhtml: &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&quot;效果&quot;&gt;&lt;a href=&quot;#效果&quot; class=&quot;headerlink&quot; title=&quot;效果&quot;&gt;&lt;/a&gt;效果&lt;/h2&gt;&lt;iframe style=&quot;width:100%; height:445px;&quot; name=&quot;iFrame1&quot; scrolling=&quot;no&quot; src=&quot;http://yinyizhixian.github.io/bootstrap-markdown-demo/&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;
@@ -105,12 +105,13 @@
     <link href="http://blog.caiyuyu.net/2016/05/03/2016-05-03-%5B%E9%98%85%E8%AF%BB%E9%9A%8F%E7%AC%94%5D%E4%B9%A1%E6%9D%91%E6%95%99%E5%B8%88/"/>
     <id>http://blog.caiyuyu.net/2016/05/03/2016-05-03-[阅读随笔]乡村教师/</id>
     <published>2016-05-02T16:00:00.000Z</published>
-    <updated>2016-05-12T17:08:01.290Z</updated>
+    <updated>2016-10-24T00:09:50.548Z</updated>
     
     <content type="html">&lt;p&gt;刘大的短篇，从来不知道在科幻的背景下“教师”一词可以表现得如此震撼人心。&lt;/p&gt;
 &lt;p&gt;怎么说呢？如果不是在科幻的大背景下，那这篇小说讲述的就是普普通通的、以赞颂教师蜡炬成灰精神的故事，但在这里，科幻的恢弘和细腻的人文相得益彰，从更高的位置、更高的文明层次来解读“教师”，你会被震撼到，我们从来没有意识到，我们的生命与文明竟如此的不可思议。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;在地球一个偏远的小山村，故事拉开序幕，没有知识、没有文化带来精神的愚昧和意志的麻木，人理散失几近凭本能行事，眼光狭隘得看不见未来，只为单纯活下去却活得不像人，这样是很可怕的；而身为教师的李老师想的是尽最大的努力教育孩子，争取为这个小山村带来一点点的光明，孩子希望是有的，但是更可能的是，一直窝在山疙瘩里出不去，在周围人无时不刻的影响下泯灭了心中最后一缕烛光，是这样的，但是也不能不去做，总要有人去做的，不是你就是我，种子已经播下，埋在土里静静积蓄着力量，等着来年或者不知道多少年后的雨水的浇灌，总有破土而出的机会的；我想，李老师应该是这么想的，也这么做了，无愧于教师的身份。&lt;/p&gt;
+&lt;p&gt;在地球一个偏远的小山村，故事拉开序幕，没有知识、没有文化带来精神的愚昧和意志的麻木，人理散失几近凭本能行事，眼光狭隘得看不见未来，只为单纯活下去却活得不像人，这样是很可怕的；而身为教师的李老师想的是尽最大的努力教育孩子，争取为这个小山村带来一点点的光明，孩子希望是有的，但是更可能的是，一直窝在山疙瘩里出不去，在周围人无时不刻的影响下泯灭了心中最后一缕烛光。&lt;/p&gt;
+&lt;p&gt;是这样的，但是也不能不去做，总要有人去做的，不是你我就是他，种子已经播下，埋在土里静静积蓄着力量，等着来年或者不知道多少年后的雨水的浇灌，总有破土而出的机会的；我想，李老师应该是这么想的，也这么做了，无愧于教师的身份。&lt;/p&gt;
 &lt;p&gt;终究，李老师离开了人世，而此时碳基文明与硅基文明持续两万年的星际交战进入尾声，联邦将建立一条五百光年宽的隔离带，摧毁隔离带中大部分恒星，不幸的是，银河系恰在此列，出于对生命的尊重，只能进行文明级别的甄别，放弃3C文明以下的区域，在奇点炸弹来临之际，小山村的18个孩子用牛三向宇宙证明了一个奇迹：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一种以每秒1至10比特速率进行声波交流的物种&lt;br&gt;在没有任何外部高级文明培植的情况下创造了5B文明&lt;br&gt;有一种名为“教师”的个体，有一定数量，分布于种群的各个角落&lt;br&gt;在没有记忆遗传的基础上，在每代之间积累和传递知识，充当文明传承的媒介&lt;/p&gt;
@@ -133,66 +134,17 @@
   </entry>
   
   <entry>
-    <title>由极限定义证明收敛值</title>
-    <link href="http://blog.caiyuyu.net/2016/05/01/2016-05-01-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E7%94%B1%E6%9E%81%E9%99%90%E5%AE%9A%E4%B9%89%E8%AF%81%E6%98%8E%E6%94%B6%E6%95%9B%E5%80%BC/"/>
-    <id>http://blog.caiyuyu.net/2016/05/01/2016-05-01-[考研归纳]由极限定义证明收敛值/</id>
-    <published>2016-04-30T16:00:00.000Z</published>
-    <updated>2016-07-03T14:37:02.680Z</updated>
-    
-    <content type="html">&lt;p&gt;最怕考定义的题，没办法，记下背下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;数列定义的极限证明&quot;&gt;&lt;a href=&quot;#数列定义的极限证明&quot; class=&quot;headerlink&quot; title=&quot;数列定义的极限证明&quot;&gt;&lt;/a&gt;数列定义的极限证明&lt;/h3&gt;&lt;p&gt;根据数列极限的定义证明 $\lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;证明&lt;/em&gt;：  &lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$|X_ n-a|=|{3n+1 \over 2n+1}-{3 \over 2}|={1 \over 2(2n+1)}&amp;lt;{1 \over 4n} $$&lt;br&gt;$$要使|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt;  \varepsilon，  只要{1 \over 4n}&amp;lt;  \varepsilon$$&lt;br&gt;$$即n&amp;gt;{1 \over 4  \varepsilon}，所以 \forall \varepsilon &amp;gt;0，取N=[{1 \over 4 \varepsilon}]$$&lt;br&gt;$$当n&amp;gt;N 时$$&lt;br&gt;$$|{3n+1 \over 2n+1}-{3 \over 2}|&amp;lt; \varepsilon，即 \lim_{n \to \infty}{3n+1 \over 2n+1}={3 \over 2}$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;函数定义的极限证明&quot;&gt;&lt;a href=&quot;#函数定义的极限证明&quot; class=&quot;headerlink&quot; title=&quot;函数定义的极限证明&quot;&gt;&lt;/a&gt;函数定义的极限证明&lt;/h3&gt;&lt;p&gt;根据函数极限的定义证明 $\lim_{x \to 1}{2x-1}=1$&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;证明&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$|f(x)-A|=|(2x-1)-1|=2|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt;\varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta={\varepsilon \over 2}$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$得|(2x-1)-1|&amp;lt;\varepsilon，即\lim_{x \to 1}{2x-1}=1$$&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;详细讲解与分析&quot;&gt;&lt;a href=&quot;#详细讲解与分析&quot; class=&quot;headerlink&quot; title=&quot;详细讲解与分析&quot;&gt;&lt;/a&gt;详细讲解与分析&lt;/h3&gt;&lt;p&gt;给出一道例题，根据函数极限的定义证明 $\lim_{x \to 1}{x^2-1 \over x-1}=2$&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;证明配讲解&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;首先，看到这种题，直接先抄一遍，如果是数列写$|X_n-a|$，函数写$|f(x)-A|$，&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;这里把公式化简一下，如果最后的公式比较复杂，出现平方、多个自变量或者常数项的情况，如上面第一题的${1 \over 2(2n+1)}$，就考虑把${1 \over 4n+2}$放缩成${1 \over 4n}$；&lt;/p&gt;
-&lt;p&gt;不放的话上面$N$就变成$N=[{1 \over 4\varepsilon}-{1 \over 2}]$，不好看嘛，不放缩也是可以的，而且这种定义证明题对于放缩的程度好像也没什么要求，不要太离谱了就行；&lt;/p&gt;
-&lt;p&gt;然后回来这道，这道不放缩，上面得出结果是$|x-1|$，在后面补上$&amp;lt; \varepsilon$;&lt;/p&gt;
-&lt;p&gt;然后再确定一个中间变量 $\delta$(数列是N,需要作取整处理)，那$\delta$的值怎么确定呢？上面已经得出一个表达式，$|x-1|&amp;lt; \varepsilon$，不等号前面已经不可再化，所有直接 $\delta=\varepsilon$，如果是$2|x-1|&amp;lt;\varepsilon$，就需要取$\delta={\varepsilon \over 2}$，得到$|x-1|&amp;lt; \delta$。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;$$|f(x)-A|=|{x^2-1 \over x-1}-2|=|x-1|$$&lt;br&gt;$$要使|f(x)-A|&amp;lt; \varepsilon，即\forall \varepsilon &amp;gt;0，取 \delta= \varepsilon$$&lt;br&gt;$$当0&amp;lt;|x-1|&amp;lt; \delta 时$$&lt;br&gt;$$得|({x^2-1 \over x-1}-2)|&amp;lt; \varepsilon，即\lim_{x \to 1}{x^2-1 \over x-1}=2$$  &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;更新&quot;&gt;&lt;a href=&quot;#更新&quot; class=&quot;headerlink&quot; title=&quot;更新&quot;&gt;&lt;/a&gt;更新&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;2016/05/01&lt;/strong&gt;：首发。&lt;br&gt;&lt;strong&gt;2016/05/12&lt;/strong&gt;：回过头看了下，有些讲的不是很清楚，重新组织下。&lt;/p&gt;
-&lt;hr&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最怕考定义的题，没办法，记下背下。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="考研归纳" scheme="http://blog.caiyuyu.net/categories/%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3/"/>
-    
-    
-      <category term="postgraduate" scheme="http://blog.caiyuyu.net/tags/postgraduate/"/>
-    
-  </entry>
-  
-  <entry>
     <title>火影—15年完结纪念致我的雏田大小姐</title>
     <link href="http://blog.caiyuyu.net/2016/04/27/2016-04-27-%5B%E4%BA%8C%E6%AC%A1%E5%85%83%E5%90%91%5D%E7%81%AB%E5%BD%B1%E2%80%9415%E5%B9%B4%E5%AE%8C%E7%BB%93%E7%BA%AA%E5%BF%B5%E8%87%B4%E6%88%91%E7%9A%84%E9%9B%8F%E7%94%B0%E5%A4%A7%E5%B0%8F%E5%A7%90/"/>
     <id>http://blog.caiyuyu.net/2016/04/27/2016-04-27-[二次元向]火影—15年完结纪念致我的雏田大小姐/</id>
     <published>2016-04-26T16:00:00.000Z</published>
-    <updated>2016-05-13T11:26:41.715Z</updated>
+    <updated>2016-10-24T00:12:16.586Z</updated>
     
     <content type="html">&lt;p&gt;&lt;img src=&quot;/img/pics/2016-04-27/3.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;我们在听故事的时候，一直喜欢问：后来呢后来呢？但是并不是每个故事都会有结果，所幸，我们等到了，火影历经15年，终于完结了，更加喜闻乐见的、我们一直等着的，我们的雏田大小姐终于修成正果，如愿以偿了，意料之外也意料之中。  &lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;所以呢？我还记得当时刚刚看火影时的震撼，在看的过程中也确实带给我很多收获和享受，但是时至今日，火影对我来说，更多的是一种情怀的味道，是对小学中学的一个回味，而雏田是我最喜欢一个人，我之所以称之为“人”而非“人物”，是因为我不愿意单单将其停留在火影这个世界里面。&lt;/p&gt;
-&lt;p&gt;雏田很可爱很可爱很可爱，重要的事情说三遍，雏田是个很柔弱、很容易害羞的小女生，动不动就脸红，手足无措的戳手指，然而她并不只是个花瓶，她是典型的外柔内刚，也有坚强的一面，执拗起来也会让你很头疼，哈，如果有这样的女生陪着会很轻松、很舒服。&lt;/p&gt;
+&lt;p&gt;雏田很可爱很可爱很可爱，重要的事情说三遍，雏田是个很柔弱、很容易害羞的小女生，动不动就脸红，手足无措的戳手指，然而她并不只是个花瓶，她是典型的外柔内刚，也有坚强的一面，执拗起来也会让你很头疼。&lt;/p&gt;
 &lt;p&gt;可惜，幸福的路上总是曲折的，雏田遇上了不解风情的鸣人，只能望着鸣人的背影，一直追逐着，也变得越来越坚强，但不够，雏田有了自己的想法，不满足于跟在喜欢的人的身后，她想与之肩并肩，很好，她成功了。&lt;/p&gt;
 &lt;p&gt;鸣人是幸运的，因为有雏田一直等着他，雏田也是幸运的，因为她终于等来了鸣人的后知后觉；如果要用一句话来形容这段感情，那么我只能说：&lt;/p&gt;
 &lt;blockquote&gt;
@@ -216,36 +168,6 @@
     
     
       <category term="にじげん" scheme="http://blog.caiyuyu.net/tags/%E3%81%AB%E3%81%98%E3%81%92%E3%82%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>单射、满射和双射</title>
-    <link href="http://blog.caiyuyu.net/2016/04/23/2016-04-23-%5B%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3%5D%E5%8D%95%E5%B0%84%E3%80%81%E6%BB%A1%E5%B0%84%E5%92%8C%E5%8F%8C%E5%B0%84/"/>
-    <id>http://blog.caiyuyu.net/2016/04/23/2016-04-23-[考研归纳]单射、满射和双射/</id>
-    <published>2016-04-22T16:00:00.000Z</published>
-    <updated>2016-05-12T17:07:31.122Z</updated>
-    
-    <content type="html">&lt;p&gt;搞混了几次，稍作记录下。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;headerlink&quot; title=&quot;定义&quot;&gt;&lt;/a&gt;定义&lt;/h3&gt;&lt;p&gt;设$X、Y$是两个非空集合，如果存在一个法则$f$，使得对$X$中每个元素$x$，按法则$f$，在$Y$中有唯一确定的元素$y$与之对应，则称$f$为从$X$到$Y$的映射，记作: $f:X \to Y$&lt;/p&gt;
-&lt;p&gt;简单来说，有一点是需要注意的，就是$X$集合里面的原像一定要跟$Y$集合里面的像有关系对应，而$Y$中可以有“多余”的元素，即没有对应关系的。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;映射的四种情况&quot;&gt;&lt;a href=&quot;#映射的四种情况&quot; class=&quot;headerlink&quot; title=&quot;映射的四种情况&quot;&gt;&lt;/a&gt;映射的四种情况&lt;/h3&gt;&lt;p&gt;基础概念清楚了，看下图就差不多了。  &lt;/p&gt;
-&lt;p&gt;既单射且满射(双射)&lt;br&gt;&lt;img src=&quot;/img/pics/2016-04-23/1.svg.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;单射非满射&lt;br&gt;&lt;img src=&quot;/img/pics/2016-04-23/2.svg.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;满射非单射&lt;br&gt;&lt;img src=&quot;/img/pics/2016-04-23/3.svg.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;非单射非满射&lt;br&gt;&lt;img src=&quot;/img/pics/2016-04-23/4.svg.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;参考&quot;&gt;&lt;a href=&quot;#参考&quot; class=&quot;headerlink&quot; title=&quot;参考&quot;&gt;&lt;/a&gt;参考&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;维基百科&lt;/a&gt;  &lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;搞混了几次，稍作记录下。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="考研归纳" scheme="http://blog.caiyuyu.net/categories/%E8%80%83%E7%A0%94%E5%BD%92%E7%BA%B3/"/>
-    
-    
-      <category term="postgraduate" scheme="http://blog.caiyuyu.net/tags/postgraduate/"/>
     
   </entry>
   
@@ -714,7 +636,7 @@
     <link href="http://blog.caiyuyu.net/2015/08/29/2015-08-27-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DWindows%E4%B8%8BEmacs+Markdown%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://blog.caiyuyu.net/2015/08/29/2015-08-27-[技术备忘]Windows下Emacs+Markdown的使用/</id>
     <published>2015-08-28T16:00:00.000Z</published>
-    <updated>2016-05-12T17:06:06.803Z</updated>
+    <updated>2016-10-24T00:20:14.393Z</updated>
     
     <content type="html">&lt;p&gt;emacs竟然不能预览markdown，不可能，还有什么是没万能的emacs做不到的？&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;解决什么问题？&quot;&gt;&lt;a href=&quot;#解决什么问题？&quot; class=&quot;headerlink&quot; title=&quot;解决什么问题？&quot;&gt;&lt;/a&gt;解决什么问题？&lt;/h3&gt;&lt;p&gt;简单的来说，本文解决的是你在emacs下使用 &lt;code&gt;C+c C+c p&lt;/code&gt; 指令预览markdown文件发生的错误，类似如下。&lt;/p&gt;
@@ -728,8 +650,8 @@
 &lt;li&gt;使用python的Markdown包&lt;/li&gt;
 &lt;li&gt;使用pandoc工具&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;使用python的markdown包&quot;&gt;&lt;a href=&quot;#使用python的markdown包&quot; class=&quot;headerlink&quot; title=&quot;使用python的markdown包&quot;&gt;&lt;/a&gt;使用python的markdown包&lt;/h3&gt;&lt;p&gt;####搭建python环境&lt;br&gt;下载python (&lt;a href=&quot;https://www.python.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.python.org&lt;/a&gt;)&lt;br&gt;然后安装，这个简单，就不用我说了，无脑操作。&lt;/p&gt;
-&lt;p&gt;####下载Markdown包并安装&lt;br&gt;打开&lt;code&gt;cmd&lt;/code&gt;，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。&lt;/p&gt;
+&lt;h3 id=&quot;使用python的markdown包&quot;&gt;&lt;a href=&quot;#使用python的markdown包&quot; class=&quot;headerlink&quot; title=&quot;使用python的markdown包&quot;&gt;&lt;/a&gt;使用python的markdown包&lt;/h3&gt;&lt;h4 id=&quot;搭建python环境&quot;&gt;&lt;a href=&quot;#搭建python环境&quot; class=&quot;headerlink&quot; title=&quot;搭建python环境&quot;&gt;&lt;/a&gt;搭建python环境&lt;/h4&gt;&lt;p&gt;下载python (&lt;a href=&quot;https://www.python.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www.python.org&lt;/a&gt;)&lt;br&gt;然后安装，这个简单，就不用我说了，无脑操作。&lt;/p&gt;
+&lt;h4 id=&quot;下载Markdown包并安装&quot;&gt;&lt;a href=&quot;#下载Markdown包并安装&quot; class=&quot;headerlink&quot; title=&quot;下载Markdown包并安装&quot;&gt;&lt;/a&gt;下载Markdown包并安装&lt;/h4&gt;&lt;p&gt;打开&lt;code&gt;cmd&lt;/code&gt;，输入如下，会自行下载安装，python的环境变量如果没有设置要先设置好。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;pip install markdown&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -740,7 +662,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-08-29/installMarkdown.png&quot; alt=&quot;install&quot;&gt;&lt;/p&gt;
 &lt;p&gt;又是一大堆信息出来，个人觉得python这点很好，可以让我们很清楚的知道产生了那些文件。&lt;br&gt;我们可以看到在&lt;code&gt;Scripts&lt;/code&gt;文件夹下产生了一个名为&lt;code&gt;markdown_py&lt;/code&gt;的批处理文件。&lt;/p&gt;
-&lt;p&gt;####修改markdown-mode.el&lt;br&gt;我们生成的批处理文件名是&lt;code&gt;markdown_py&lt;/code&gt;，但是&lt;code&gt;markdown-mode.el&lt;/code&gt;里面默认的指令名是&lt;code&gt;markdown&lt;/code&gt;,所以需要修改下。&lt;/p&gt;
+&lt;h4 id=&quot;修改markdown-mode-el&quot;&gt;&lt;a href=&quot;#修改markdown-mode-el&quot; class=&quot;headerlink&quot; title=&quot;修改markdown-mode.el&quot;&gt;&lt;/a&gt;修改markdown-mode.el&lt;/h4&gt;&lt;p&gt;我们生成的批处理文件名是&lt;code&gt;markdown_py&lt;/code&gt;，但是&lt;code&gt;markdown-mode.el&lt;/code&gt;里面默认的指令名是&lt;code&gt;markdown&lt;/code&gt;,所以需要修改下。&lt;/p&gt;
 &lt;p&gt;打开&lt;code&gt;markdown-mode.el&lt;/code&gt;文件，在800多行左右可以看到如下&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-08-29/el.png&quot; alt=&quot;el&quot;&gt;&lt;/p&gt;
 &lt;p&gt;将&lt;code&gt;markdown&lt;/code&gt;改成&lt;code&gt;markdown_py&lt;/code&gt;&lt;/p&gt;
@@ -754,16 +676,44 @@
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-08-29/t2.png&quot; alt=&quot;t2&quot;&gt;&lt;/p&gt;
 &lt;p&gt;不过确实，在md文件加上这一句确实不太美观，所以我推荐第二种方法，更好更强大。&lt;/p&gt;
-&lt;p&gt;###使用pandoc工具&lt;/p&gt;
-&lt;p&gt;####下载pandoc并安装&lt;br&gt;下载pandoc (&lt;a href=&quot;http://www.pandoc.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.pandoc.org&lt;/a&gt;)，选择windows版本，然后安装。&lt;/p&gt;
+&lt;h3 id=&quot;使用pandoc工具&quot;&gt;&lt;a href=&quot;#使用pandoc工具&quot; class=&quot;headerlink&quot; title=&quot;使用pandoc工具&quot;&gt;&lt;/a&gt;使用pandoc工具&lt;/h3&gt;&lt;h4 id=&quot;下载pandoc并安装&quot;&gt;&lt;a href=&quot;#下载pandoc并安装&quot; class=&quot;headerlink&quot; title=&quot;下载pandoc并安装&quot;&gt;&lt;/a&gt;下载pandoc并安装&lt;/h4&gt;&lt;p&gt;下载pandoc (&lt;a href=&quot;http://www.pandoc.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.pandoc.org&lt;/a&gt;)，选择windows版本，然后安装。&lt;/p&gt;
 &lt;p&gt;pandoc可以解析markdown文件，但是它并不仅仅支持markdown的标记语法，还支持语法高亮和LaTex数学公式，可以把它当作markdown的拓展。&lt;/p&gt;
 &lt;p&gt;以下是官网介绍，可以简单看一下。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-08-29/pandoc.png&quot; alt=&quot;pandoc&quot;&gt;&lt;/p&gt;
-&lt;p&gt;####修改markdown-mode.el&lt;br&gt;安装完pandoc后，环境变量会多出一个&lt;code&gt;pandoc&lt;/code&gt;的指令，&lt;/p&gt;
+&lt;h4 id=&quot;修改markdown-mode-el-1&quot;&gt;&lt;a href=&quot;#修改markdown-mode-el-1&quot; class=&quot;headerlink&quot; title=&quot;修改markdown-mode.el&quot;&gt;&lt;/a&gt;修改markdown-mode.el&lt;/h4&gt;&lt;p&gt;安装完pandoc后，环境变量会多出一个&lt;code&gt;pandoc&lt;/code&gt;的指令，&lt;/p&gt;
 &lt;p&gt;打开&lt;code&gt;markdown-mode.el&lt;/code&gt;，还是刚才那个位置&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-08-29/el.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;pandoc&lt;/code&gt;的命令选项如下&lt;/p&gt;
-&lt;p&gt;||选项||描述|||&lt;br&gt;||&lt;code&gt;-f html&lt;/code&gt;||转换成html文件||&lt;br&gt;||&lt;code&gt;-t markdown&lt;/code&gt;||解析markdown||&lt;br&gt;||&lt;code&gt;--ascii&lt;/code&gt;||解决中文乱码||&lt;br&gt;||&lt;code&gt;--highlight-style pygments&lt;/code&gt;||支持语法高亮||&lt;br&gt;||&lt;code&gt;--mathjax&lt;/code&gt;||支持 LaTex数学公式||&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;选项&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-f html&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;转换成html文件&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;-t markdown&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;解析markdown&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--ascii&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;解决中文乱码&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--highlight-style pygments&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;支持语法高亮&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;--mathjax&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;支持 LaTex数学公式&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;一股脑都加进去吧，将&lt;code&gt;markdown&lt;/code&gt;修改为如下&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;pandoc -f markdown -t html --ascii --highlight-style pygments --mathjax&lt;/code&gt;&lt;/p&gt;
@@ -793,7 +743,7 @@
     <link href="http://blog.caiyuyu.net/2015/07/15/2015-07-15-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DWindows%E4%B8%8BTortoiseGit+Coding%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>http://blog.caiyuyu.net/2015/07/15/2015-07-15-[技术备忘]Windows下TortoiseGit+Coding的使用/</id>
     <published>2015-07-14T16:00:00.000Z</published>
-    <updated>2016-05-12T17:05:57.523Z</updated>
+    <updated>2016-10-24T00:21:44.452Z</updated>
     
     <content type="html">&lt;p&gt;git可是个好东西，版本控制嘛，不满意回滚呗，有异议开分支呗。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -803,7 +753,7 @@
 &lt;p&gt;&lt;code&gt;2.Git支持的代码托管平台比较多&lt;/code&gt;&lt;br&gt;好像开源中国的Git@OSC支持svn，这点不确定，没用过，这也从侧面反映了svn的托管平台确实少。&lt;br&gt;git的就多了,基本上有名的托管平台都是支持的。&lt;br&gt;像大名鼎鼎的&lt;code&gt;gitHub&lt;/code&gt;,支持无限的公有项目和私有项目&lt;code&gt;gitlab&lt;/code&gt;,还有国内速度极快的&lt;code&gt;coding&lt;/code&gt;等等，这个很多，有兴趣可以自己找下。&lt;/p&gt;
 &lt;p&gt;据说git可是Linus用C耗费两周写出来的，各种狂霸酷炫拽有木有，&lt;br&gt;具体教程可以参考&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的教程&lt;/a&gt;，写得很不错。&lt;/p&gt;
 &lt;h3 id=&quot;下载及安装所需工具&quot;&gt;&lt;a href=&quot;#下载及安装所需工具&quot; class=&quot;headerlink&quot; title=&quot;下载及安装所需工具&quot;&gt;&lt;/a&gt;下载及安装所需工具&lt;/h3&gt;&lt;h4 id=&quot;下载git-for-windows&quot;&gt;&lt;a href=&quot;#下载git-for-windows&quot; class=&quot;headerlink&quot; title=&quot;下载git for windows&quot;&gt;&lt;/a&gt;下载&lt;a href=&quot;http://git-scm.com/download/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git for windows&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;进入git的官网,选择windows版本下载，&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/img/pics/2015-07-15/gitdown.png&quot; alt=&quot;git&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/pics/2015-07-15/gitDown.png&quot; alt=&quot;git&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-07-15/gitDown2.png&quot; alt=&quot;git&quot;&gt;&lt;/p&gt;
 &lt;h4 id=&quot;下载TortoiseGit&quot;&gt;&lt;a href=&quot;#下载TortoiseGit&quot; class=&quot;headerlink&quot; title=&quot;下载TortoiseGit&quot;&gt;&lt;/a&gt;下载&lt;a href=&quot;http://git-scm.com/download/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;TortoiseGit&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;习惯把Tortoise叫小乌龟，Tortoise也有svn版的，是Windows下的可视化界面。&lt;br&gt;选择最新的当前版本，现在最新的是1.8.14.0，然后选择 32bit/64bit下载。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/pics/2015-07-15/TortoiseGit.png&quot; alt=&quot;tortoiseGit&quot;&gt;&lt;/p&gt;
