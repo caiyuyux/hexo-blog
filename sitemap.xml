@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.caiyuyu.net/about/index.html</loc>
+    
+    <lastmod>2016-10-24T00:30:49.837Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.caiyuyu.net/2015/07/15/2015-07-15-%5B%E6%8A%80%E6%9C%AF%E5%A4%87%E5%BF%98%5DWindows%E4%B8%8BTortoiseGit+Coding%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
     
     <lastmod>2016-10-24T00:21:44.452Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://blog.caiyuyu.net/guestbooks/index.html</loc>
     
     <lastmod>2016-05-14T05:19:53.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.caiyuyu.net/about/index.html</loc>
-    
-    <lastmod>2016-05-14T05:19:42.485Z</lastmod>
     
   </url>
   
